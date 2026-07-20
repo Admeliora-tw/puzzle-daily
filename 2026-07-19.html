@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-07-19 · No.10</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 4.5rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:38px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:10px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:9.5px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:16px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:12px;line-height:1.65;color:#3a3020}
+.s-src{font-size:9px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.why{font-size:11px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:13px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:11.5px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:9px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.35rem 0;border-bottom:.5px solid #ececec;font-size:11.5px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:10px}
+.wire .src{font-size:9px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:11.5px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.6rem}
+.pr-name{font-size:12px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:11px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:11px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin-bottom:.75rem}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:12px;line-height:1.7;color:#3a3020;margin-bottom:.6rem}
+.f-lede a{color:var(--sage)}
+.f-watch{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#9a8a70;font-weight:600;margin-bottom:3px}
+.f-wli{font-size:11px;line-height:1.65;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.f-wli::before{content:"– "}
+.wl-item{font-size:12px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:10px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.10 · 2026年7月19日 週日</span><span>Front Page · News Wire · Regional · Focus</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">社群同日湧現四個本報首見拼圖工作室／系列名稱</h2>
+    <p class="s-body">今日 r/Jigsawpuzzles 熱門貼文中同時出現四個過往未記錄的名稱：客製化訂製拼圖服務 MartinPuzzle（完成一件2,000片《魔戒》主題委製作品）、獨立系列 Werkshoppe「Lemon Market」1000片、Reverie「Floating Library」1000片，以及藝術家 Bri Pippens 創作之「PUZZLES OF COLOR」系列「Moments of Zen」500片。四者均僅單一貼文佐證，成立時間、電商上架狀態均未查證。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span> · Reddit r/Jigsawpuzzles 07/19 · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uzszyf/finally_received_my_first_custom_puzzle_2000/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜此類「社群單日湧現多個首見小眾／客製拼圖名稱」的現象近三日重複出現（07/17六個、07/18四個、07/19四個），持續程度已超過單日偶發，值得評估長尾與客製化拼圖市場是否正在擴張，或是否需調整本報新品牌收錄門檻。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">Ravensburger 兩件5000片拼圖同日完成，主題系列同步曝光</h2>
+    <p class="s-body">Ravensburger（睿思）社群曝光延續昨日書卷主題熱度：今日改以大型拼圖為主，玩家分別完成「Dragon at Day and Night」與「Signs of the Zodiac」兩件5000片拼圖，另有 THEME 主題系列新作「Ross Lynem - Shinny in Trinity」1000片同日分享，顯示既有大型品牌之社群完成密度連續第二天偏高。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源（社群）</span> · Reddit r/Jigsawpuzzles 07/19 · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v0cf2x/signs_of_the_zodiac_ravensburger_5k_pieces_in/" target="_blank">原文 →</a></p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日各查詢均無硬新聞，WJPF報名人數連續第10天缺席。內容全數來自Reddit：四個首見獨立工作室同日現身（連續多日重演），Ravensburger同日兩件5000片完成分享。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.10 · 2026-07-19</span></div>
+
+  <p class="wire-cat">Community · 首見工作室／系列名稱</p>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>Werkshoppe</b>「Lemon Market」1000片完成分享，本報首見，品牌背景未查證。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v06ln7/lemon_market_werkshoppe_1000_piece/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>Reverie</b>「Floating Library」1000片完成分享，本報首見。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v078wz/floating_library_reverie_1000/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>PUZZLES OF COLOR</b>（Bri Pippens 創作）「Moments of Zen」500片，聚焦多元文化題材之獨立系列，本報首見。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uztym0/puzzles_of_color_moments_of_zen_by_bri_pippens/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>MartinPuzzle</b> 客製化訂製拼圖服務 — 詳見頭版一。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uzszyf/finally_received_my_first_custom_puzzle_2000/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">Community · Ravensburger 系列曝光</p>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>「Dragon at Day and Night」5000片</b> 完成分享。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uzwdw5/dragon_at_day_and_night_ravensburger_5000_pieces/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>[THEME] Ross Lynem - Shinny in Trinity</b> 1000片，Ravensburger THEME系列新作。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v09opj/theme_ross_lynem_shinny_in_trinity_1000_pieces/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>「Signs of the Zodiac」5000片</b> — 詳見頭版二。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v0cf2x/signs_of_the_zodiac_ravensburger_5k_pieces_in/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">Official</p>
+  <div class="wire"><span class="geo">[ES]</span> <b>WJPF官網賽制與報名費不變</b> — 個人€50／雙人€60／團體€125；報名人數欄位連續第10天未顯示，Ravensburger仍為冠名贊助。<span class="src">WJPF官網 · <a href="https://worldjigsawpuzzle.org/" target="_blank">→</a></span></div>
+</section>
+
+<!-- ═══ PAGE 3 · REGIONAL PULSE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Regional Pulse · No.10 · 2026-07-19</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse</span><div class="sec-l"></div></div>
+
+  <div class="rsum"><b>Regional Summary</b>｜今日五大地區均無傳統產業新聞訊號；歐洲僅WJPF官網報名人數欄位連續第10天缺席可供記錄，北美、日本、澳洲、中東均無新資訊。今日內容全數來自Reddit社群，不具地域屬性。</div>
+
+  <div class="pulse-region">
+    <p class="pr-name">Europe</p>
+    <p class="pr-li">WJPF官網賽制與報名費（個人€50／雙人€60／團體€125）維持不變，報名人數欄位連續第10天未出現；Alma Belle是否確認參加WJPC 2026正賽仍未有進一步消息。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Japan</p>
+    <p class="pr-quiet">No reliable signal today.</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">North America</p>
+    <p class="pr-quiet">No reliable signal today.</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Australia</p>
+    <p class="pr-quiet">No reliable signal today.</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Middle East</p>
+    <p class="pr-quiet">No reliable signal today.</p>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">追蹤更新</span><div class="sec-l"></div></div>
+  <p style="font-size:11px;color:#3a3020;line-height:1.7">– WJPC 2026 報名人數欄位連續第10天未於官網出現。<a href="https://worldjigsawpuzzle.org/" target="_blank" style="color:var(--sage)">官網 →</a></p>
+  <p style="font-size:11px;color:#3a3020;line-height:1.7">– Final Piece Puzzles 梵谷系列（07/14、07/16、07/18三度現身）今日未再出現。<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uyty8l/starry_valley_no_24_piece_van_gogh_jigsaw_final/" target="_blank" style="color:var(--sage)">前次貼文 →</a></p>
+  <p style="font-size:11px;color:#3a3020;line-height:1.7">– 07/18首見四品牌（Corner Piece Puzzles、PPuzzling、Cartilia、Elena Essex）今日均未再出現。</p>
+</section>
+
+<!-- ═══ PAGE 4 · FOCUS + WATCHLIST ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Focus · No.10 · 2026-07-19</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">本週值得追蹤</span><div class="sec-l"></div></div>
+
+  <p class="f-wli">今日四個首見工作室（Werkshoppe、Reverie、MartinPuzzle、PUZZLES OF COLOR）是否於14天內再度出現</p>
+  <p class="f-wli">Final Piece Puzzles 梵谷系列自07/18後未再現身，近期活躍週期是否已告一段落</p>
+  <p class="f-wli">WJPF官網報名人數欄位是否恢復顯示（連續第10天缺席）</p>
+  <p class="f-wli">r/Puzzles、r/speedpuzzling 速率限制是否持續（speedpuzzling已連續4天失敗）</p>
+  <p class="f-wli">07/18首見四品牌（Corner Piece Puzzles、PPuzzling、Cartilia、Elena Essex）是否僅為單次曝光</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　r/speedpuzzling 連續第4日速率限制失敗，明日優先於序列前段執行</p>
+  <p class="wl-item"><b>2</b>　WJPF 官網報名人數欄位是否恢復顯示（連續第10天缺席）</p>
+  <p class="wl-item"><b>3</b>　今日四個首見工作室是否再度出現或有官方通路資訊</p>
+  <p class="wl-item"><b>4</b>　Final Piece Puzzles 梵谷系列是否再度現身</p>
+  <p class="wl-item"><b>5</b>　07/20 PuzzleWarehouse Blog、07/21 Puzzle Palace AU 排程抓取</p>
+
+  <div class="srcnote">Source Desk: 14 checked · 12 successful · 0 multi-source confirmed · 5 follow-ups</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <span class="pageno" id="pgno">PAGE 1 / 4</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+</body>
+</html>
