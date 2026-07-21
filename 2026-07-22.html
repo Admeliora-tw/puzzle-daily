@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-07-22 · No.13</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 4.5rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:38px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:10px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:9.5px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:16px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:12px;line-height:1.65;color:#3a3020}
+.s-src{font-size:9px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.why{font-size:11px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:13px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:11.5px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:9px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.35rem 0;border-bottom:.5px solid #ececec;font-size:11.5px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:10px}
+.wire .src{font-size:9px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:11.5px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:12px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:11px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:11px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:12px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.wl-item{font-size:12px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:10px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.13 · 2026年7月22日 週三</span><span>Front Page · News Wire &amp; Regional</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日三大重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">Ravensburger（睿思）40,320 片精靈寶可夢（Pokémon）巨型拼圖開放預購，定價 730 美元創品牌新天花板</h2>
+    <p class="s-body">這款完成後長逾 22 英尺、高逾 6 英尺的巨型拼圖由 10 個相連場景組成，收錄數百隻寶可夢角色；採用加厚紙板與抗反光亞麻紋理表層、FSC 認證用紙，預計 2026 年秋冬出貨。730 美元定價與規格延續該品牌先前 40,320 片迪士尼款的同一產品線邏輯，是目前市場上規模最大的官方授權拼圖之一。</p>
+    <img class="newsimg" src="https://www.dexerto.com/cdn-image/wp-content/uploads/2026/07/10/ravensburgerpuzzle.jpg" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Dexerto 報導配圖，Ravensburger 40,320 片精靈寶可夢拼圖</p>
+    <p class="s-src"><span class="ok">✓ 雙來源</span> · IGN 07/21 + Dexerto · <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZ1Z1RTQ5ZWdDdTVTSU9lUWJjNkRzdVhFbnF0NDhBc05jUFNVdDcyampIUDlIazY2T1JPZ3RFNEVGY2pxeTFEQWVQQzlQSF9HcGZfSWdMOC1RM3E2VjZIZTR2ME9RY3ktWkx3RnktRkdPc2x5LXIySzUxeWlJVHlaQTF2SWdXR1BCZjlV?oc=5" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜730 美元的定價確立巨型授權拼圖的新一級價格帶，且是繼迪士尼款之後同規格產品線的第二例，顯示 Ravensburger 正把「金氏世界紀錄級」拼圖當作固定商品線經營，而非一次性話題商品。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">東京国立近代美術館（MOMAT）首次列入本報追蹤：「杉本博司 絶滅写真」個展展至 9 月 13 日</h2>
+    <p class="s-body">展覽自 6 月 16 日起展出杉本博司約 65 件銀鹽攝影作品、橫跨 13 個系列，含多件「透視画（Diorama）」系列世界首展新作，由東京国立近代美術館與日本経済新聞社共同主辦。本報自今日起於藝術策展追蹤表中將 MOMAT（東京国立近代美術館）與紐約 MoMA、東京森美術館三館分列，避免撞名。</p>
+    <img class="newsimg" src="https://art.nikkei.com/sugimoto/assets/img/top/img_main_02@2x.png" onerror="this.style.display='none'">
+    <p class="imgcap">圖／日本経済新聞社「杉本博司 絶滅写真」官方展覽頁</p>
+    <p class="s-src"><span class="ok">✓ 雙來源</span> · Tokyo Art Beat + 美術展ナビ／artexhibition.jp · <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPekpJUTMzXzZrOEJmMzhZeVN1QmQyU2ZSMC1tc3BqSU9jN0RWWllEbmFHeFN1R1R5eUlwMjYxcTh3RlhSOE9iNjZTTkNjalczaG9ZekEzV0xtQkJmTVo0S0YyOWtFZUZlc1V1UnNfZW5vMm8wMXE4QS1qU05SQmthSjRSS2pKY3JGSDlrNHBQRy1Bc1k?oc=5" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜大型攝影個展目前尚未見任何拼圖化或禮品店周邊商品訊號，列入追蹤基準以便後續比對是否走向商品化（同森美術館 Ron Mueck／Mariko Mori 案例）。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed">Reddit 社群出現跨貼文交叉印證：Fred「false fit」品質疑慮</h2>
+    <p class="s-body">一位使用者在完成 Fred 出品、繪者 Matt Grabelsky 的 500 片拼圖時因大量「false fit」（誤導性咬合，非真正對應位置）而中途放棄；貼文下方另一位使用者留言表示「我做過的所有 Fred 拼圖都有 false fit 的問題」，形成同品牌跨貼文的交叉印證，而非單一使用者的個別抱怨。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源（社群，2 則跨貼文交叉印證）</span> · r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v25bwk/fred_puzzle_500_piece_artist_matt_grabelsky_fail/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜「false fit」在拼圖產業語境中屬於明確負評（不同於「tight fit」多為讚美），且出現跨用戶對同一品牌的重複描述，值得列入 Weak Signals 觀察是否為品牌級刀模公差問題而非單一批次瑕疵。</p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日整體訊源密度偏低（本週三固定加開之 MOMAT、藝術家趨勢、阿文精準、歐洲文創四組 Google News 查詢多數落空），故採 2 頁薄刊。唯一硬新聞是 Ravensburger 巨型寶可夢拼圖預購，定價策略延續迪士尼款前例；藝術與社群兩則屬追蹤基準建立與早期品質訊號，暫不升級為頭版等級的商業判斷。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE + REGIONAL + FOCUS ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire &amp; Regional · No.13 · 2026-07-22</span></div>
+
+  <p class="wire-cat">材質與技術創新</p>
+  <div class="wire"><span class="geo">[Global]</span> <b>Ravensburger 40,320 片寶可夢拼圖</b> — 詳見頭版一；規格與定價為本期唯一材質/技術類頭條。<span class="src">IGN · <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZ1Z1RTQ5ZWdDdTVTSU9lUWJjNkRzdVhFbnF0NDhBc05jUFNVdDcyampIUDlIazY2T1JPZ3RFNEVGY2pxeTFEQWVQQzlQSF9HcGZfSWdMOC1RM3E2VjZIZTR2ME9RY3ktWkx3RnktRkdPc2x5LXIySzUxeWlJVHlaQTF2SWdXR1BCZjlV?oc=5" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">全球定價與通路風向</p>
+  <div class="wire"><span class="geo">[UK]</span> <b>Toy World Magazine 徵稿 9 月號《Games &amp; Puzzles》專題</b> — 通路雜誌提前為聖誕檔期拼圖品類布局，投稿截止 8 月 3 日，反映 B2B 通路端對年末拼圖品類的規劃節奏。<span class="src">Toy World Magazine 07/21 · 單一來源 · <a href="https://toyworldmag.co.uk/get-involved-in-toy-worlds-games-and-puzzles-feature-5/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[ES]</span> <b>WJPC 2026 報名費維持不變，Ravensburger 續為冠名贊助</b> — 個人 €50／雙人 €60／團體 €125，9 月 16–20 日瓦亞多利德舉行；報名人數欄位連續多日未顯示，非新資訊，僅作追蹤延續。<span class="src">WJPF 官網 · <a href="https://worldjigsawpuzzle.org/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>Fred「false fit」跨貼文交叉印證</b> — 詳見頭版三；本則不重複展開。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v25bwk/fred_puzzle_500_piece_artist_matt_grabelsky_fail/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>r/Jigsawpuzzles 當日熱帖以完成分享為主</b> — 25 則熱帖中僅 1 則構成品質訊號，其餘為既有品牌／系列完成展示，無新聞價值。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">全球藝術策展與藝術 IP 風向球</p>
+  <div class="wire"><span class="geo">[Japan]</span> <b>MOMAT サマーフェス 2026</b> — 東京国立近代美術館同期舉辦之夏季活動，與「杉本博司 絶滅写真」個展並行；尚未見商品化訊號。<span class="src">Google News（MOMAT 查詢）· <a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE96YTNqNVBZT0lpdHQ2a09fNnZrbGxlMzBrZWdnYUtZRDZJYTlLZEk1akItUVlneFZHMWRtVmVDWEY4R1o5cVhzbUVlTW8tdw" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">社群活動（美國）</p>
+  <div class="wire"><span class="geo">[US]</span> <b>Southington 圖書館拼圖交換活動</b> — 社區圖書館新拼圖入庫並開放交換舊拼圖，草根社群活動之一。<span class="src">Patch 07/21 · 單一來源 · <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQc2ZHUUJpalFZdTcxaWprOXBRNi0ySjRaSGc2eDcxTzBTRW1kY19XUWZmVFNQcGwzOGFYajN3d3Z4X3ZidlZ4Y0Z4N3ZEczl5OGxNZjV1c0MxQ0pwT2tvU0dmN2kydzEzQ3ZlZDZYY3VOYnZRSDFJUEJUUl82ckRWS1FaVWhlWWNkelB3c2lDVU7SAaYBQVVfeXFMUExrUU91bThnUDJmbHRMQ1N0eVJIbTRGVlR2NmlReGZUWWVsY2FPZ2lIak1tY2JCY3Vya0JHMEFSb2VFUGVzRklBZFhtQ2VXY1VXNEp2UEM0eWxvc00tSDk3VVQwZGJVWllwOE1iSi1qZFVIMHBqYTNsUk05MVRvcWFRUFJnV0FQeHZoS1p0Q1BrWDR1UzExUnpFZndUcHlpWkFRSW9tdw?oc=5" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[US]</span> <b>Orcas Island 圖書館拼圖活動 7/26</b> — 地方圖書館社群拼圖活動公告，屬 speed puzzling 向地方社群下沉的既有觀察脈絡之一（見過往 Focus 追蹤）。<span class="src">theorcasonian.com 07/21 · 單一來源 · <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1uTGdCMUR3LWpvN1pGNGlpcWI2YnRJRFBNNVVxTzEzZGpzbnRuRVRsY2tJSkRRWXM0a0I2WUxIbHNONC16Ri1EdVNaNE9aT3hiVWo1c1A5VEhRMzNiMlRTdHE4VUF5a0JzSUpRT0J1cHRCUzBY?oc=5" target="_blank">→</a></span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse</span><div class="sec-l"></div></div>
+  <div class="rsum"><b>Regional Summary</b>｜全球（品牌）與日本（藝術策展）各貢獻一則頭版訊號；歐洲、澳洲今日僅延續既有基準無新變化；中東今日再度無拼圖產業相關訊號。</div>
+  <div class="pulse-region">
+    <p class="pr-name">North America</p>
+    <p class="pr-li">Ravensburger 寶可夢拼圖為北美今日最重要商業訊號；另有 Fred 品質疑慮（Reddit）與兩則地方圖書館社群活動。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Europe</p>
+    <p class="pr-li">AEPUZZ、WJPF 均與前日持平，無新變化；WJPF 報名人數欄位持續未顯示。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Japan</p>
+    <p class="pr-li">MOMAT「杉本博司 絶滅写真」個展首次收錄，為本週三藝術策展查詢之唯一命中；BEVERLY 7 天內無新項目。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Australia</p>
+    <p class="pr-quiet">No reliable signal today（AJPA 無新項目）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Middle East</p>
+    <p class="pr-quiet">No reliable signal today（拼圖產業商業訊號連續多日無新內容）。</p>
+  </div>
+
+  <div class="focus">
+    <p class="f-tag">本週值得追蹤</p>
+    <h2 class="f-hed">Fred「false fit」是否為品牌級刀模公差問題？</h2>
+    <p class="f-lede">今日訊號僅為 2 則跨貼文交叉印證，樣本仍小，但「false fit」在拼圖產業語境屬明確負評（不同於常被誤讀的 "tight fit"），且指向同一品牌而非單一批次。若未來 7–14 天內同品牌再度出現類似描述，將符合洞察庫「同主題第二次出現」門檻，屆時可正式升級為品質訊號追蹤項目。</p>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　Fred 品質疑慮是否再現（跨貼文第 3 次出現即升級）</p>
+  <p class="wl-item"><b>2</b>　Ravensburger 寶可夢拼圖官方通路上架與定價最終確認</p>
+  <p class="wl-item"><b>3</b>　MOMAT「杉本博司 絶滅写真」是否釋出禮品店周邊商品</p>
+  <p class="wl-item"><b>4</b>　r/speedpuzzling 抓取是否恢復（連續多日 429）</p>
+  <p class="wl-item"><b>5</b>　WJPF 報名人數欄位是否重新顯示</p>
+
+  <div class="srcnote">Source Desk: 23 checked · 22 successful · 2 multi-source confirmed · 1 rate-limited (r/speedpuzzling)</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <span class="pageno" id="pgno">PAGE 1 / 2</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+</body>
+</html>
