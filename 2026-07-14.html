@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-07-14 · No.5</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:38px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:10px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:9.5px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:16px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:12px;line-height:1.65;color:#3a3020}
+.s-src{font-size:9px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.why{font-size:11px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:13px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:11.5px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:9px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.35rem 0;border-bottom:.5px solid #ececec;font-size:11.5px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:10px}
+.wire .src{font-size:9px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:11.5px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.6rem}
+.pr-name{font-size:12px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:11px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:11px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin-bottom:.75rem}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:12px;line-height:1.7;color:#3a3020;margin-bottom:.6rem}
+.f-lede a{color:var(--sage)}
+.f-watch{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#9a8a70;font-weight:600;margin-bottom:3px}
+.f-wli{font-size:11px;line-height:1.65;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.f-wli::before{content:"– "}
+.wl-item{font-size:12px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:10px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.newsimg{max-width:100%;max-height:280px;object-fit:cover;display:block;margin-top:.5rem}
+.imgcap{font-size:9px;color:#9a8a70;margin-top:3px}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:200px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.85rem .9rem;margin-bottom:.75rem}
+.ap-h{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:5px;margin-bottom:.6rem}
+.ap-t{font-size:10.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:10.5px;color:#7a9464;text-decoration:none;padding:3px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:4px}
+.bchip{font-size:10px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:2px 7px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:7px;font-size:10.5px;color:#3a3020;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:9px;color:#b06020;font-weight:600;min-width:16px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Ravensburger</span><span class="bchip">Trefl</span><span class="bchip">Yazz</span><span class="bchip">Final Piece</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.5 · 2026年7月14日 週二</span><span>Front Page · News Wire · Regional · Focus</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日三大重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">Trefl「Across the Cosmic Universe」9000片漫威拼圖經社群曬圖流出</h2>
+    <p class="s-body">Reddit r/Jigsawpuzzles 玩家分享完成照，帶出 Trefl 漫威授權「Across the Cosmic Universe」9000片拼圖——片數僅次於前日睿思公布的寶可夢40,320片巨作，成為本週第二例大片數里程碑拼圖。官方尚未發布新聞稿，上市時間、定價與是否為近期新品均待查證。</p>
+    <img class="newsimg" src="https://preview.redd.it/xbl6sd87j0dh1.jpg?width=140&height=104&auto=webp&s=dfb771710b8037d58a57f7a46d328c0b59feb984" onerror="this.parentElement.style.display='none'">
+    <p class="imgcap">圖片來源：Reddit u/Alternative_Whole323</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span> · Reddit r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uvebs9/marvel_across_the_cosmic_universe_by_trefl_9000/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜繼睿思40,320片寶可夢紀念拼圖後，Trefl漫威9000片拼圖同週曝光，「破紀錄片數」正成為玩具大廠彼此呼應的行銷語言，但兩起案例目前皆缺乏官方數據佐證實際市場需求。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">小眾品牌 RareRetro、Yazz Puzzles 同日獲社群「初體驗」好評</h2>
+    <p class="s-body">Reddit社群同日出現兩則「第一次嘗試」評價：RareRetro「The American Century」1000片獲讚切割紮實、無誤拼；Yazz Puzzles「Matryoshka」1000片則被玩家特別註明「非AI生成、版權標註藝術家Natalia Zagorii」。兩品牌均為本報首次記錄，成立時間與通路尚待查證。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span> · Reddit r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uvdvx4/the_american_century_1000_pieces_rareretro/" target="_blank">原文 →</a></p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日官方新聞面沉寂——四組Google News查詢與WJPF官網均無新資訊，本週唯一雙來源新聞（睿思寶可夢拼圖）已於昨日見報。今日訊號全數來自Reddit社群：一是巨型拼圖片數話題延續，二是連續第二天出現「陌生品牌初體驗」現象。若此節奏持續，社群完成貼文可能正取代新聞稿，成為小眾拼圖品牌最早曝光的管道（詳見第4頁Focus）。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.5 · 2026-07-14</span></div>
+
+  <p class="wire-cat">Product Launches</p>
+  <div class="wire"><span class="geo">[US]</span> <b>Final Piece Puzzle Co「Great Wave」1000片</b> — 藝術家David Escobar Vallejo浮世繪風格創作款，經社群完成分享曝光，本報首次記錄此品牌，成立背景待查證。<span class="src">Reddit · 單一來源 · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uv9qa5/great_wave_1000_piece_artwork_by_david_escobar/" target="_blank">→</a></span>
+    <img class="newsimg" src="https://preview.redd.it/xrkt37cxmzch1.jpeg?width=640&crop=smart&auto=webp&s=d56140a20191a1a5611d4421e8e8c75a0a3f0dab" onerror="this.parentElement.style.display='none'">
+    <p class="imgcap">圖片來源：Reddit u/mharlan14</p>
+  </div>
+
+  <p class="wire-cat">Community</p>
+  <div class="wire"><span class="geo">[Global]</span> <b>收藏圈比較「Magic Puzzle Company」與「Le Puzz」</b> — 二手/文創拼圖品牌話題延續，社群徵詢兩品牌使用心得。<span class="src">Reddit · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uvbse5/my_most_recent_thrift_store_finds/" target="_blank">→</a></span></div>
+</section>
+
+<!-- ═══ PAGE 3 · REGIONAL PULSE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Regional Pulse · No.5 · 2026-07-14</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse</span><div class="sec-l"></div></div>
+
+  <div class="rsum"><b>Regional Summary</b>｜北美貢獻今日僅有的社群訊號——巨型拼圖片數話題與陌生品牌初體驗；歐洲賽事籌備持續，報名人數連續第5天缺席；日本、中東連續第4天無可靠訊號，澳洲今日亦轉為無新訊號。</div>
+
+  <div class="pulse-region">
+    <p class="pr-name">Europe</p>
+    <p class="pr-li">WJPC 2026報名費結構維持不變（個人50€／雙人60€／團體125€，含拼圖組），惟報名人數欄位連續第5天未見公布。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Japan</p>
+    <p class="pr-quiet">No reliable signal today（連續第4天）.</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">North America</p>
+    <p class="pr-li">Trefl「Across the Cosmic Universe」9000片漫威拼圖與RareRetro、Yazz Puzzles「初體驗」評價同日現身，延續巨型拼圖與小眾品牌雙軌話題。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Australia</p>
+    <p class="pr-quiet">No reliable signal today（社群僅見一般拼圖完成分享，無產業訊號）.</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Middle East</p>
+    <p class="pr-quiet">No reliable signal today（連續第4天）.</p>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">追蹤更新</span><div class="sec-l"></div></div>
+  <p style="font-size:11px;color:#3a3020;line-height:1.7">– dbrand「Robot City」拼圖：官方通路與定價仍未查證（延續自07/13）。</p>
+  <p style="font-size:11px;color:#3a3020;line-height:1.7">– Ravensburger 寶可夢40,320片拼圖：上市日期與定價仍未公布（延續自07/13）。</p>
+  <p style="font-size:11px;color:#3a3020;line-height:1.7">– Piecewise／BAYBY／Hudada／Nee City：今日未再現，持續觀察（延續自07/13）。</p>
+</section>
+
+<!-- ═══ PAGE 4 · FOCUS + WATCHLIST ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Focus · No.5 · 2026-07-14</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Focus</span><div class="sec-l"></div></div>
+
+  <div class="focus">
+    <p class="f-tag">今日專欄</p>
+    <h2 class="f-hed">兩天六個陌生品牌，Reddit正在取代新聞稿成為小眾拼圖品牌的第一現場？</h2>
+    <p class="f-lede">過去兩天，r/Jigsawpuzzles單日熱帖接連帶出六個本報此前未記錄的拼圖品牌名稱——Piecewise、BAYBY、Hudada、Nee City（07/13），以及今日的<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uvdvx4/the_american_century_1000_pieces_rareretro/" target="_blank">RareRetro</a>、<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uuvtgp/matryoshka_1000_pieces_yazz_puzzles/" target="_blank">Yazz Puzzles</a>——全數經由玩家完成分享貼文首次現身，無一件配有官方新聞稿、募資頁面或電商上架公告。這與Google News、募資平台查詢近期持續偏靜形成反差：官方渠道近乎沉寂，小眾品牌卻正透過收藏者的完成照片零散浮出。樣本量仍小，六個名稱均只有單一貼文佐證，尚不足以判定為結構性轉變，但若此節奏持續，意味著editorial判定「新品牌」恐需將Reddit完成貼文納入例行監測，而非僅視為官方消息的補充管道。</p>
+    <p class="f-watch">What to watch</p>
+    <p class="f-wli">這六個品牌中是否有任一個在14天內於電商或社群二次出現</p>
+    <p class="f-wli">Google News品牌/募資查詢是否於近期恢復活躍，形成官方渠道對照組</p>
+    <p class="f-wli">是否有更多「完成分享」貼文附帶品牌成立時間等可查證細節</p>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　Trefl「Across the Cosmic Universe」9000片拼圖是否為新品，上市資訊查證</p>
+  <p class="wl-item"><b>2</b>　RareRetro「The American Century」品牌背景查證</p>
+  <p class="wl-item"><b>3</b>　Yazz Puzzles「Matryoshka」品牌背景查證</p>
+  <p class="wl-item"><b>4</b>　WJPC報名人數是否於官網重新出現（連續第5天缺席）</p>
+  <p class="wl-item"><b>5</b>　dbrand「Robot City」官方通路與定價（延續自07/13）</p>
+
+  <div class="srcnote">Source Desk: 11 checked · 11 successful · 0 multi-source confirmed · 5 follow-ups</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 4</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a><a class="toc-link" onclick="goPage(2);return false;"><span class="toc-n">P3</span>Regional Pulse</a><a class="toc-link" onclick="goPage(3);return false;"><span class="toc-n">P4</span>Focus 與追蹤</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-07-13.html">&larr; 2026-07-13</a><a class="ap-link" href="2026-07-15.html">2026-07-15 &rarr;</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70;font-size:9.5px">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
