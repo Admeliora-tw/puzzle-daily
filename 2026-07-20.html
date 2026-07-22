@@ -72,10 +72,42 @@ body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:v
 .toc{display:flex;gap:4px}
 .toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
 .toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:210px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.85rem .9rem;margin-bottom:.75rem}
+.ap-h{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:5px;margin-bottom:.6rem}
+.ap-t{font-size:10.5px;line-height:1.8;color:#3a3020}
+.ap-link{font-size:10.5px;color:#7a9464;text-decoration:none;border-bottom:.5px solid #c8d4bc}
+.stat{display:flex;align-items:baseline;justify-content:space-between;padding:.3rem 0;border-bottom:.5px solid #f0ece0}
+.stat:last-child{border-bottom:none}
+.stat-n{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900;color:#1e1a14}
+.stat-sub{font-size:11px;font-weight:400;color:#9a8a70}
+.stat-l{font-size:9.5px;color:#6a5a40}
+.bar-row{display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.bar-lbl{font-size:9px;color:#6a5a40;width:56px;flex-shrink:0;line-height:1.3}
+.bar-track{flex:1;height:6px;background:#f0ece0;position:relative}
+.bar-fill{position:absolute;left:0;top:0;height:100%}
+.bar-n{font-size:9.5px;color:#1e1a14;width:14px;text-align:right;font-weight:600}
+.trend-x{display:flex;justify-content:space-between;font-size:7.5px;color:#aaa090;margin-top:3px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
 @media(max-width:560px){.m-name{font-size:32px}}
 </style>
 </head>
 <body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">本期速覽</p>
+    <div class="stat"><span class="stat-n">18</span><span class="stat-l">情報條目</span></div>
+    <div class="stat"><span class="stat-n">24<span class="stat-sub">/26</span></span><span class="stat-l">來源成功</span></div>
+    <div class="stat"><span class="stat-n">1</span><span class="stat-l">雙來源確認</span></div>
+    <div class="stat"><span class="stat-n">5</span><span class="stat-l">待追蹤</span></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">五維度分布</p>
+    <div class="bar-row"><span class="bar-lbl">材質與技術創新</span><span class="bar-track"><span class="bar-fill" style="width:33%;background:#7a9464"></span></span><span class="bar-n">2</span></div><div class="bar-row"><span class="bar-lbl">國際賽事與選手動態</span><span class="bar-track"><span class="bar-fill" style="width:33%;background:#c47a30"></span></span><span class="bar-n">2</span></div><div class="bar-row"><span class="bar-lbl">全球定價與通路風向</span><span class="bar-track"><span class="bar-fill" style="width:50%;background:#9080a8"></span></span><span class="bar-n">3</span></div><div class="bar-row"><span class="bar-lbl">社群排雷與爆款預警</span><span class="bar-track"><span class="bar-fill" style="width:100%;background:#5a8ab0"></span></span><span class="bar-n">6</span></div><div class="bar-row"><span class="bar-lbl">全球藝術策展與藝術</span><span class="bar-track"><span class="bar-fill" style="width:83%;background:#b06a80"></span></span><span class="bar-n">5</span></div>
+  </div>
+</aside>
 <div class="paper" id="paper">
 
 <!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
@@ -243,5 +275,22 @@ body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:v
   go(isNaN(h)?0:h-1);
 })();
 </script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">近 7 日情報量</p>
+    <svg viewBox="0 0 200 68" style="width:100%;height:auto"><polyline points="6.0,55.8 37.3,40.2 68.7,46.4 100.0,40.2 131.3,37.1 162.7,37.1 194.0,6.0" fill="none" stroke="#7a9464" stroke-width="1.5" stroke-linejoin="round"/><circle cx="6.0" cy="55.8" r="2.5" fill="#7a9464"/><circle cx="37.3" cy="40.2" r="2.5" fill="#7a9464"/><circle cx="68.7" cy="46.4" r="2.5" fill="#7a9464"/><circle cx="100.0" cy="40.2" r="2.5" fill="#7a9464"/><circle cx="131.3" cy="37.1" r="2.5" fill="#7a9464"/><circle cx="162.7" cy="37.1" r="2.5" fill="#7a9464"/><circle cx="194.0" cy="6.0" r="2.5" fill="#7a9464"/></svg>
+    <div class="trend-x"><span>07/14</span><span>07/15</span><span>07/16</span><span>07/17</span><span>07/18</span><span>07/19</span><span>07/20</span></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">閱讀導引</p>
+    <p class="ap-t">P1 今日三大重點<br>P2 五維度情報電訊<br>P3 區域脈動<br>P4 專欄與追蹤清單</p>
+    <p class="ap-t" style="margin-top:.6rem;color:#9a8a70">鍵盤 ← → 或滑動可翻頁</p>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+  </div>
+</aside>
+</div>
 </body>
 </html>
