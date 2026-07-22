@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-07-12 · No.3</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:38px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:10px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:9.5px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:16px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:12px;line-height:1.65;color:#3a3020}
+.s-src{font-size:9px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.why{font-size:11px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:13px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:11.5px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:9px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.35rem 0;border-bottom:.5px solid #ececec;font-size:11.5px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:10px}
+.wire .src{font-size:9px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:11.5px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.6rem}
+.pr-name{font-size:12px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:11px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:11px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin-bottom:.75rem}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:12px;line-height:1.7;color:#3a3020;margin-bottom:.6rem}
+.f-lede a{color:var(--sage)}
+.f-watch{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#9a8a70;font-weight:600;margin-bottom:3px}
+.f-wli{font-size:11px;line-height:1.65;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.f-wli::before{content:"– "}
+.wl-item{font-size:12px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:10px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:200px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.85rem .9rem;margin-bottom:.75rem}
+.ap-h{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:5px;margin-bottom:.6rem}
+.ap-t{font-size:10.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:10.5px;color:#7a9464;text-decoration:none;padding:3px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:4px}
+.bchip{font-size:10px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:2px 7px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:7px;font-size:10.5px;color:#3a3020;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:9px;color:#b06020;font-weight:600;min-width:16px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Ravensburger</span><span class="bchip">Gibsons</span><span class="bchip">Trefl</span><span class="bchip">Galison</span><span class="bchip">Piatnik</span><span class="bchip">Cherry Pazzi</span><span class="bchip">PuzzleTubes</span><span class="bchip">English Heritage</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No. 3 · 2026年7月12日 週日</span><span>Front Page · News Wire · Regional · Focus</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日三大重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">AI 生成圖像疑慮擴大：Piatnik 成為 48 小時內第二個遭社群質疑的品牌</h2>
+    <p class="s-body">繼昨日 Trefl「Cat in Paris」被 Reddit 社群質疑疑似使用 AI 生成圖案後，今日 r/Jigsawpuzzles 又出現一則標題直指「Piatnik suspected AI images」的討論串。兩起皆屬社群觀察，非媒體查證，兩品牌官方均尚未回應。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span>（Reddit 討論串，構成 48 小時內第二起同類案例）· <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uthx3j/piatnik_suspected_ai_images/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜若第三起案例出現，可能代表消費者對拼圖品牌「原創手繪」承諾的信任正在鬆動，進而牽動品牌美術外包流程與行銷文案揭露壓力；詳見第 4 頁 Focus。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">WJPC 2026 官網補齊完整賽制與報名費：9 月 16–20 日西班牙瓦亞多利德</h2>
+    <p class="s-body">世界拼圖錦標賽官網今日呈現完整賽事結構：個人賽（分 4 組別）、雙人賽、團體賽、機構賽分四天進行；報名費個人賽 €40、雙人賽 €48、團體賽 €100（5 月底前早鳥優惠已截止）。與 07/10–07/11 連續兩日抓取到的「報名 2,411 人／72 國」數字版面不同，本次未見報名人數欄位。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span> · WJPF 官網 · <a href="https://worldjigsawpuzzle.org/" target="_blank">原文 →</a></p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed">Cherry Pazzi 為 NSW 拼圖錦標賽推出紀念款「Espresso Yourself」</h2>
+    <p class="s-body">澳洲獨立拼圖品牌 Cherry Pazzi 為新南威爾斯州（NSW）拼圖錦標賽個人賽製作 500 片紀念拼圖，經 Reddit 社群分享曝光——是今日少見的澳洲市場訊號。官方通路與定價尚待查證。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span>（Reddit 社群貼文，非媒體報導）· <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uu63vc/cherry_pazzi_espresso_yourself_500pc_solo_puzzle/" target="_blank">原文 →</a></p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日新品發布密度偏低，但兩天內兩起 AI 生成圖像疑慮，比任何單一新品都值得留意——這可能是拼圖業第一次面對「美術原創性」信任考驗的早期訊號，值得持續追蹤是否有第三案例或品牌回應。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.3 · 2026-07-12</span></div>
+
+  <p class="wire-cat">Product Launches</p>
+  <div class="wire"><span class="geo">[Australia]</span> <b>Cherry Pazzi「Espresso Yourself」500 片</b> — 詳見頭版三；NSW 錦標賽紀念款，官方通路與定價待補。<span class="src">Reddit · 單一來源 · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uu63vc/cherry_pazzi_espresso_yourself_500pc_solo_puzzle/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Global]</span> <b>Rolexa puzzle company 推出「The Simple Life」主題系列</b> — 獨立小廠新作透過社群曝光，成立時間與電商上架日期待查證。<span class="src">r/Jigsawpuzzles · 單一來源 · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uu10w1/theme_the_simple_life_rolexa_puzzle_company_1000/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">Brand / Licensing</p>
+  <div class="wire"><span class="geo">[Global]</span> <b>Chuffed Puzzles × 插畫家組合 Frank Moth 聯名「Specific Impulse」500 片</b> — 藝術家聯名款仍是小廠差異化主力策略。<span class="src">r/Jigsawpuzzles · 單一來源 · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1utyukc/specific_impulse_by_duo_artists_frank_moth/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">Events</p>
+  <div class="wire"><span class="geo">[Spain]</span> <b>WJPC 2026 官網補齊賽制與報名費</b> — 詳見頭版二；個人賽 €40、雙人賽 €48、團體賽 €100。<span class="src">WJPF 官網 · <a href="https://worldjigsawpuzzle.org/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[US]</span> <b>Colchester 校舍義賣拼圖 追蹤第 3 日</b> — 尚無新進展，義賣金額與截止日待補。<span class="src">Colchester Sun（07/10 發布）· <a href="https://news.google.com/rss/search?q=Colchester+Historical+Society+jigsaw" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[US]</span> <b>North Dakota／Bluffton 社區賽事持續追蹤</b> — 今日查證無新細節公布。<span class="src">Google News · <a href="https://news.google.com/rss/search?q=North+Dakota+jigsaw+puzzle+championship" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">Community</p>
+  <div class="wire"><span class="geo">[Europe]</span> <b>Piatnik「疑似 AI 生成圖像」討論串</b> — 詳見頭版一；48 小時內第二起同類案例，官方尚未回應。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uthx3j/piatnik_suspected_ai_images/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Global]</span> <b>Ravensburger（睿思）「Enchanted Depths」、Galison「Zero Gravity」等新品開箱持續熱絡</b> — 社群分享氣氛穩定，無異常話題。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/" target="_blank">→</a></span></div>
+</section>
+
+<!-- ═══ PAGE 3 · REGIONAL PULSE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Regional Pulse · No.3 · 2026-07-12</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse</span><div class="sec-l"></div></div>
+
+  <div class="rsum"><b>Regional Summary</b>｜澳洲今日罕見貢獻本週訊號（NSW 錦標賽周邊商品）；歐洲以 AI 生成圖像疑慮延燒為主；日本、中東今日皆無可靠訊號。</div>
+
+  <div class="pulse-region">
+    <p class="pr-name">Europe</p>
+    <p class="pr-li">Piatnik「疑似 AI 生成圖像」討論串成為 48 小時內第二起同類案例。<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uthx3j/piatnik_suspected_ai_images/" target="_blank">來源</a></p>
+    <p class="pr-li">WJPC 2026（西班牙瓦亞多利德）官網補齊賽制與報名費。<a href="https://worldjigsawpuzzle.org/" target="_blank">來源</a></p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Japan</p>
+    <p class="pr-quiet">No reliable signal today.</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">North America</p>
+    <p class="pr-li">Colchester 校舍義賣拼圖追蹤第 3 日，尚無新進展。<a href="https://news.google.com/rss/search?q=Colchester+Historical+Society+jigsaw" target="_blank">來源</a></p>
+    <p class="pr-li">North Dakota／Bluffton 社區賽事持續追蹤中，無新細節。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Australia</p>
+    <p class="pr-li">Cherry Pazzi 為 NSW 拼圖錦標賽推出「Espresso Yourself」紀念拼圖，今日罕見有本地訊號。<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uu63vc/cherry_pazzi_espresso_yourself_500pc_solo_puzzle/" target="_blank">來源</a></p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Middle East</p>
+    <p class="pr-quiet">No reliable signal today.</p>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">追蹤更新</span><div class="sec-l"></div></div>
+  <p style="font-size:11px;color:#3a3020;line-height:1.7">– WJPC 報名數字：今日官網頁面呈現賽制與費用細節，未見報名人數欄位，與 07/10–07/11 連續兩日相同數字的版面不同，列入資料品質觀察，非新進展。<a href="https://worldjigsawpuzzle.org/" target="_blank" style="color:var(--sage)">官網 →</a></p>
+  <p style="font-size:11px;color:#3a3020;line-height:1.7">– North Dakota／Bluffton 賽事：今日查證無新細節，持續追蹤。</p>
+  <p style="font-size:11px;color:#3a3020;line-height:1.7">– Gibsons × English Heritage：今日查證無新公告，SKU 與定價仍待補。</p>
+  <p style="font-size:11px;color:#3a3020;line-height:1.7">– Birdie Puzzles／PuzzleTubes：今日未再出現新資訊，繼續追蹤。</p>
+  <p style="font-size:11px;color:#3a3020;line-height:1.7">– Trefl AI 生成疑慮：官方仍未回應；今日新增 Piatnik 同類案例（詳見頭版一）。</p>
+</section>
+
+<!-- ═══ PAGE 4 · FOCUS + WATCHLIST ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Focus · No.3 · 2026-07-12</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Focus</span><div class="sec-l"></div></div>
+
+  <div class="focus">
+    <p class="f-tag">今日專欄</p>
+    <h2 class="f-hed">AI 生成圖像疑慮，會不會成為拼圖業的下一個信任缺口？</h2>
+    <p class="f-lede">48 小時內，Reddit 拼圖社群連續指出兩個品牌疑似使用 AI 生成拼圖圖案——先是 <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1usozjg/" target="_blank">Trefl「Cat in Paris」</a>，今日又出現 <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1uthx3j/piatnik_suspected_ai_images/" target="_blank">Piatnik</a>。兩起都只是社群觀察，並非媒體查證或品牌承認，但案例累積的速度值得留意：若第三起出現，可能代表消費者對「手繪／原創插畫」品牌承諾的信任正在鬆動，進而牽動包裝與行銷文案的揭露壓力。目前尚未見任何品牌回應或行業協會表態。</p>
+    <p class="f-watch">What to watch</p>
+    <p class="f-wli">是否出現第三個被點名的品牌</p>
+    <p class="f-wli">Trefl 或 Piatnik 官方是否首度回應</p>
+    <p class="f-wli">是否有媒體（而非僅社群）跟進報導</p>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　Piatnik／Trefl AI 疑慮是否出現第三案例或官方回應</p>
+  <p class="wl-item"><b>2</b>　Cherry Pazzi 與 NSW 拼圖錦標賽細節查證</p>
+  <p class="wl-item"><b>3</b>　WJPC 報名人數是否於官網重新出現</p>
+  <p class="wl-item"><b>4</b>　Colchester 校舍義賣拼圖後續（義賣金額／截止日）</p>
+  <p class="wl-item"><b>5</b>　Rolexa／Chuffed Puzzles 品牌背景查證</p>
+
+  <div class="srcnote">Source Desk: 11 checked · 11 successful · 0 multi-source confirmed · 5 follow-ups</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 4</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a><a class="toc-link" onclick="goPage(2);return false;"><span class="toc-n">P3</span>Regional Pulse</a><a class="toc-link" onclick="goPage(3);return false;"><span class="toc-n">P4</span>Focus 與追蹤</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-07-11.html">&larr; 2026-07-11</a><a class="ap-link" href="2026-07-13.html">2026-07-13 &rarr;</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70;font-size:9.5px">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
