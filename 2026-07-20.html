@@ -10,7 +10,7 @@
 :root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
 body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
 .paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
-.page{display:none;padding:1.5rem 1.5rem 4.5rem;animation:fadein .25s ease;min-height:1060px}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
 .page.active{display:block}
 @keyframes fadein{from{opacity:.4}to{opacity:1}}
 .mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
@@ -217,7 +217,7 @@ body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:v
 <div class="nav">
   <button id="prev">← 上一頁</button>
   <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
-    <span class="pageno" id="pgno">PAGE 1 / 4</span>
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 4</span>
     <div class="toc" id="toc"></div>
   </div>
   <button id="next">下一頁 →</button>
