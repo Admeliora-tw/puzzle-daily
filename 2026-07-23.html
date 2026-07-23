@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-07-23 · No.14</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:38px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:10px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:9.5px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:16px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:12px;line-height:1.65;color:#3a3020}
+.s-src{font-size:9px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.why{font-size:11px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:13px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:11.5px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:9px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.35rem 0;border-bottom:.5px solid #ececec;font-size:11.5px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:10px}
+.wire .src{font-size:9px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:11.5px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:12px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:11px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:11px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:12px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.wl-item{font-size:12px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:10px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:200px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.85rem .9rem;margin-bottom:.75rem}
+.ap-h{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:5px;margin-bottom:.6rem}
+.ap-t{font-size:10.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:10.5px;color:#7a9464;text-decoration:none;padding:3px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:4px}
+.bchip{font-size:10px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:2px 7px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:7px;font-size:10.5px;color:#3a3020;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:9px;color:#b06020;font-weight:600;min-width:16px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">BEVERLY</span><span class="bchip">Clementoni</span><span class="bchip">Pomegranate</span><span class="bchip">Elena Essex</span><span class="bchip">Hobbry</span><span class="bchip">Jigsaw Junkies</span><span class="bchip">Tate</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.14 · 2026年7月23日 週四</span><span>Front Page · News Wire &amp; Regional</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日三大重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">Clementoni（可蘭多尼）拼圖遺失片處理方式惹議：官方回應「自行列印裁剪黏貼」</h2>
+    <p class="s-body">一位Reddit使用者反映，購入的Clementoni拼圖到貨後發現缺少一片，透過官方遺失片申訴系統聯繫後，得到的解法是自行列印該處圖案、裁剪並黏貼於厚紙板上自製缺片，而非直接補寄實體拼圖片。使用者形容「這不是客服，是卸責」，並表示「沒想到以Clementoni的品牌聲譽會是這種處理方式」。</p>
+    <img class="newsimg" src="https://i.redd.it/fvs23y4mxueh1.jpeg" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Reddit使用者原貼文配圖</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源（社群）</span> · r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v3vcon/clementonis_worst_customer_service_in_my_life/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜Clementoni為主流市場知名品牌，若「自行裁剪補片」確為其標準遺失片處理流程而非個案疏失，將是罕見涉及規模品牌的客服政策爭議；目前僅單一貼文佐證，尚無跨用戶交叉印證，列入Weak Signals觀察是否有其他使用者提出相同經驗。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">倫敦Tate Modern推出「Frida Kahlo」個展結合餐飲體驗，美術館嘗試商業轉化新模式</h2>
+    <p class="s-body">據Elite Traveler報導，Tate Modern（泰特現代美術館）推出以墨西哥藝術家Frida Kahlo為主題、結合展覽與餐飲的複合體驗（exhibition-cum-dining experience）。本報目前僅查得單一媒體來源披露此嘗試存在，尚未查得完整菜單、票價與是否有對應周邊商品的細節，相關資訊列為待查證項目。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span> · Elite Traveler · <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE93SkZTN1owNTBRNlpWSjlUZnh3cXN0LWxjbnA5eW9TMFVUWDdVaDJzV0RfRWdXaGdkNDl5MmxSS2MzNUgyZDA2MDF2YnZzYnVFWGhDMHVTOGNReERRV3VFYWt5ZHZLVmQ2V0dCMG5pUUJFNHlfQzR5blUwQVdkZw?oc=5" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜「展覽＋餐飲」的複合商業模式，是美術館IP在禮品店周邊之外的另一條商業轉化路徑，不同於本報既有追蹤的Ron Mueck、Mariko Mori等純展覽案例，值得列入美術館商品化觀察表作為新類型追蹤起點。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed">Reddit社群提醒：Amazon拼圖若未選「原廠包裝出貨」恐到貨受損</h2>
+    <p class="s-body">一位使用者在Amazon訂購Pomegranate出品1000片拼圖後，商品在無額外外包裝、僅原廠盒直接貼運送標籤的狀態下送達，盒體碰損、外層膠膜破損，拼圖盒本身甚至是潮濕的。使用者指出，Amazon結帳頁面底部有一個可勾選「以額外包裝出貨」的選項，但預設並未啟用，容易被消費者忽略。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span> · r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v3kcrq/beware_when_ordering_puzzles_off_amazon/" target="_blank">原文 →</a></p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日三則頭條均為單一來源社群／媒體訊號，無雙來源硬新聞：r/Puzzles、r/speedpuzzling連續多日429速率限制無法抓取，中東拼圖產業商業訊號連續13天掛零。社群端出現兩則涉及主流品牌（Clementoni）與零售通路（Amazon）的品管／物流提醒，藝術策展端則首次觀察到「展覽＋餐飲」複合商業模式案例，故採2頁薄刊。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE + REGIONAL + FOCUS ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire &amp; Regional · No.14 · 2026-07-23</span></div>
+
+  <p class="wire-cat">國際賽事與選手動態</p>
+  <div class="wire"><span class="geo">[ES]</span> <b>WJPF官網揭露WJPC歷屆累積數據</b> — 官網頁面顯示歷屆累計「72國、2,411人次參賽、13,900件拼圖完成」，累計獎金池€14,500，YouTube累計觀看450,000次；為本報首次記錄此完整數據，屬既有頁面內容而非2026本屆最新消息，本屆報名人數欄位仍未顯示。<span class="src">WJPF官網 · <a href="https://worldjigsawpuzzle.org/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">全球定價與通路風向</p>
+  <div class="wire"><span class="geo">[US]</span> <b>Amazon拼圖出貨包裝提醒</b> — 詳見頭版三，不重複展開。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v3kcrq/beware_when_ordering_puzzles_off_amazon/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>Clementoni遺失片客服爭議</b> — 詳見頭版一，不重複展開。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v3vcon/clementonis_worst_customer_service_in_my_life/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>Hobbry、Elena Essex 兩弱訊號品牌今日再度現身</b> — 均為單純作品完成分享（Hobbry「Sunroom Stories」500片、Elena Essex「Summer Wheel」1000片），未附帶新增商業資訊，列入Weak Signals延續追蹤，不升級為獨立新聞。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1v3hwxo/hobbry_sunroom_stories_500_pieces/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>r/Jigsawpuzzles當日熱帖以完成分享為主</b> — 25則熱帖中2則構成品管／通路訊號（頭版一、三），其餘均為既有品牌完成分享，無新聞價值。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">全球藝術策展與藝術IP風向球</p>
+  <div class="wire"><span class="geo">[UK]</span> <b>Tate Modern「Frida Kahlo」個展餐飲體驗</b> — 詳見頭版二，不重複展開。<span class="src">Elite Traveler · <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE93SkZTN1owNTBRNlpWSjlUZnh3cXN0LWxjbnA5eW9TMFVUWDdVaDJzV0RfRWdXaGdkNDl5MmxSS2MzNUgyZDA2MDF2YnZzYnVFWGhDMHVTOGNReERRV3VFYWt5ZHZLVmQ2V0dCMG5pUUJFNHlfQzR5blUwQVdkZw?oc=5" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[UK]</span> <b>Jessica Morgan獲任命為Tate館長</b> — 官方新聞稿發布，屬美術館治理人事新聞，非策展或商品化訊號，記錄供未來背景參考。<span class="src">Tate官方新聞稿 07/22 · <a href="https://www.tate.org.uk/press/press-releases/jessica-morgan-appointed-director-of-tate" target="_blank">→</a></span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse</span><div class="sec-l"></div></div>
+  <div class="rsum"><b>Regional Summary</b>｜今日訊源集中於北美（Reddit兩則）與歐洲（英國Tate、西班牙WJPF）；日本Masterpiece Shop排行頁查證後確認為靜態舊頁；澳洲、中東均無新訊號。</div>
+  <div class="pulse-region">
+    <p class="pr-name">North America</p>
+    <p class="pr-li">Clementoni客服爭議與Amazon包裝出貨提醒為今日北美僅有的兩則社群訊號，均為單一來源、無跨貼文交叉印證。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Europe</p>
+    <p class="pr-li">英國：Tate Modern「Frida Kahlo」個展餐飲體驗、Jessica Morgan任命Tate館長；西班牙：WJPF公布歷屆累積數據（72國/2,411人次/13,900件）。AEPUZZ無新訊號。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Japan</p>
+    <p class="pr-li">BEVERLY無新增（仍為07/16發布之9/11新品公告）；本週四排程之Masterpiece Shop排行頁查證後確認為2016–2019年舊文章存檔、非即時排行榜，記錄為系統改進事項（見backstage第18節）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Australia</p>
+    <p class="pr-quiet">No reliable signal today（AJPA無新項目）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Middle East</p>
+    <p class="pr-quiet">No reliable signal today（拼圖產業商業訊號連續13天無新內容）。</p>
+  </div>
+
+  <div class="focus">
+    <p class="f-tag">本週值得追蹤</p>
+    <h2 class="f-hed">美術館IP商業轉化的第三條路徑：從禮品店周邊到「策展＋餐飲」複合體驗</h2>
+    <p class="f-lede">本報過去追蹤的美術館IP商業化案例（Ron Mueck、Mariko Mori等）多聚焦於是否釋出拼圖化或禮品店周邊商品。Tate Modern「Frida Kahlo」個展結合餐飲體驗，展示了另一條路徑——將策展內容轉化為消費場景本身，而非另外製作衍生商品。目前僅單一媒體來源披露，細節（票價、菜單、是否有對應周邊）待查證；若後續有其他美術館跟進類似「策展＋消費體驗」模式，將是值得獨立追蹤的新趨勢類別。</p>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　Clementoni客服爭議是否有其他使用者跨貼文交叉印證</p>
+  <p class="wl-item"><b>2</b>　Tate Modern「Frida Kahlo」餐飲體驗完整詳情（票價／菜單／周邊）</p>
+  <p class="wl-item"><b>3</b>　r/speedpuzzling、r/Puzzles抓取是否恢復（連續多日429）</p>
+  <p class="wl-item"><b>4</b>　Masterpiece Shop是否有其他頁面提供即時排行資訊，取代目前查證為舊頁的ranking頁</p>
+  <p class="wl-item"><b>5</b>　中東拼圖產業訊號連續13天掛零，評估是否需調整輪替查詢組合</p>
+
+  <div class="srcnote">Source Desk: 24 checked · 21 successful · 2 rate-limited (r/Puzzles, r/speedpuzzling) · 1 redirect-only (Jigsaw Junkies → PuzzleWarehouse Blog)</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 2</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-07-22.html">&larr; 2026-07-22</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70;font-size:9.5px">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
