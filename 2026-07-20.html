@@ -73,19 +73,19 @@ body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:v
 .toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
 .toc span.on{background:var(--blk)}
 .layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
-.aside{width:200px;flex-shrink:0;position:sticky;top:1rem}
-.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.85rem .9rem;margin-bottom:.75rem}
-.ap-h{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:5px;margin-bottom:.6rem}
-.ap-t{font-size:10.5px;line-height:1.7;color:#3a3020}
-.ap-link{display:block;font-size:10.5px;color:#7a9464;text-decoration:none;padding:3px 0;border-bottom:.5px solid #f0ece0}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
 .ap-link:last-child{border-bottom:none}
 .ap-link:hover{color:#5a7a3a}
-.bwrap{display:flex;flex-wrap:wrap;gap:4px}
-.bchip{font-size:10px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:2px 7px;white-space:nowrap}
-.toc-link{display:flex;align-items:baseline;gap:7px;font-size:10.5px;color:#3a3020;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
 .toc-link:last-child{border-bottom:none}
 .toc-link:hover{color:#7a9464}
-.toc-n{font-size:9px;color:#b06020;font-weight:600;min-width:16px}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
 .navwrap{display:flex;flex-direction:column;gap:2px}
 @media(max-width:1240px){.aside{display:none}.layout{display:block}}
 @media(max-width:560px){.m-name{font-size:32px}}
@@ -96,7 +96,7 @@ body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:v
 <aside class="aside aside-l">
   <div class="ap">
     <p class="ap-h">今日品牌</p>
-    <div class="bwrap"><span class="bchip">BEVERLY</span><span class="bchip">Ravensburger</span><span class="bchip">Cobble Hill</span><span class="bchip">Ricordi</span><span class="bchip">Elena Essex</span><span class="bchip">HOP House of Puzzles</span><span class="bchip">Reverie</span><span class="bchip">Quokka</span><span class="bchip">Heol Editions</span><span class="bchip">Final Piece</span><span class="bchip">Werkshoppe</span><span class="bchip">Banksy</span><span class="bchip">Jigsaw Junkies</span><span class="bchip">MartinPuzzle</span><span class="bchip">Eor Glas</span><span class="bchip">Tristan Wolf</span><span class="bchip">Tate</span><span class="bchip">Met Museum</span><span class="bchip">Ana Mendieta</span><span class="bchip">Rauschenberg</span><span class="bchip">Barns-Graham</span></div>
+    <div class="bwrap"><span class="bchip">ARTIST ROOMS</span><span class="bchip">BEVERLY</span><span class="bchip">Bookshelf</span><span class="bchip">Bulle d'air</span><span class="bchip">Christmas in July</span><span class="bchip">Cobble Hill</span><span class="bchip">Collie Wobbles</span><span class="bchip">Elena Essex</span><span class="bchip">Farms near Auvers</span><span class="bchip">Hanayama金屬立體</span><span class="bchip">Heol Editions</span><span class="bchip">HOP House of Puzzles</span><span class="bchip">Jigsaw Junkies</span><span class="bchip">Met Museum推出探討</span><span class="bchip">Puzzle Palooza 2026</span><span class="bchip">PuzzleWarehouse部落格刊出</span><span class="bchip">Quokka</span><span class="bchip">Ravensburger</span><span class="bchip">Reverie</span><span class="bchip">Ricordi</span><span class="bchip">Salish Coast Colours</span><span class="bchip">Sunday Rain</span><span class="bchip">Tate Modern</span><span class="bchip">The Egyptian Gods</span><span class="bchip">Wire</span><span class="bchip">グラフィティ</span><span class="bchip">本報首見</span><span class="bchip">正評</span><span class="bchip">阿布達比羅浮宮</span><span class="bchip">負評</span></div>
   </div>
 </aside>
 <div class="paper" id="paper">
@@ -279,7 +279,7 @@ body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:v
   <div class="ap">
     <p class="ap-h">歷期</p>
     <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
-    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70;font-size:9.5px">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
   </div>
 </aside>
 </div>
