@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-08-02 · No.22</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Hobbry</span><span class="bchip">RoseArt</span><span class="bchip">Momibook</span><span class="bchip">Gibsons</span><span class="bchip">Dollar Tree</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.22 · 2026年8月2日 週日</span><span>Front Page · News Wire &amp; Regional</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">Hobbry秋季拼圖組合「Harvest Hues」8月4日正式上市，官網倒數計時證實昨日社群訊號</h2>
+    <p class="s-body">本報昨日（8/1）依Reddit社群轉述報導新品牌Hobbry將於8月4日推出秋季拼圖組合，惟原始公告管道為停用來源Instagram，僅能以社群轉述形式呈現，標記為單一來源。本報今日主動查證Hobbry官方網站（hobbry.com/puzzles），確認頁面已顯示「Our New Puzzles are almost here」倒數計時，鎖定2026年8月4日（週二）上市，系列名稱為「Harvest Hues Puzzle Set」，含Stoop Season、Harvest Kitchen、Pie in the Park、The Book Burrow等6款設計；官網並說明產品採抗反光霧面處理（soft-touch finish for reduced glare）與FSC認證用紙，包裝設計強調可展示性。另有Reddit使用者同日發文分享於美國零售通路Marshalls購得Hobbry萬聖節主題拼圖（非本次秋季系列），顯示該品牌已具備實體零售鋪貨基礎。</p>
+    <img class="newsimg" src="https://i.redd.it/b54ddztaftgh1.jpeg" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Reddit使用者u/Plastic-Garlic4481於Marshalls購得之Hobbry萬聖節拼圖haul</p>
+    <p class="s-src"><span class="ok">✓ 雙來源確認</span>（官網＋零售通路社群回報）· hobbry.com · <a href="https://www.hobbry.com/puzzles" target="_blank">官網 →</a> · r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vcwef3/halloween_hobbry_haul_absolutely_thrilled_to_find/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜昨日標記為⚠單一來源的Hobbry公告，今日透過主動查證品牌官網即獲直接證實——這是本報反查機制首次成功案例：面對永久停用來源（Instagram）之訊號，查證品牌官網比被動等待第二社群來源出現更有效率。官網強調的抗反光霧面處理，亦與本期頭版三Momibook「無反光」訴求形成呼應，顯示抗反光工法已成為多品牌共同強調的賣點。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed"><span class="viral">【🚨 社群爆款】</span>RoseArt「Mushrooms」拼圖惹議：買家懷疑AI生成圖像，並回報大量false fit</h2>
+    <p class="s-body">Reddit使用者StatisticianTop3103於08/02發文，指其購入的RoseArt「Mushrooms」500片拼圖「圖像品質令人失望」，懷疑自己「第一次買到AI生成的拼圖」，並形容標註之原畫藝術家Soren Nyborg「查無其他任何作品或資訊」；貼文並提及「大量false fit」。本則貼文為當日r/Jigsawpuzzles熱門榜第3名。此為「false fit」相關語彙本週累積之第9次獨立回報，本報今日依既定排程正式將該詞彙提升為Tier 3動態搜尋詞（詳見本期Focus）。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span> · r/Jigsawpuzzles（當日熱門第3名）· <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vcrr4p/roseart_mushrooms_500_pcs/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜疑似AI生成圖像與false fit品管問題同時出現於單一產品，是本報首次記錄兩種獨立負面訊號共同出現的案例；若後續有更多買家對同系列提出類似疑慮，將是觀察「疑似AI圖像＋品管瑕疵」是否形成關聯模式的起點。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed"><span class="viral">【🚨 社群爆款】</span>Momibook「曼谷水上人家」獲好評：絲絨觸感搭配無反光霧面工法</h2>
+    <p class="s-body">Reddit使用者xena-pieces於08/02發文分享Momibook「Bangkok on Water」1000片拼圖組裝心得，形容該品牌新品「具備奢華柔軟的絲絨觸感（velvet-touch finish），加上無反光霧面表層（glare-free matte surface），讓每次組裝都格外享受」。本則貼文為當日r/Jigsawpuzzles熱門榜第2名。本報首次記錄Momibook品牌，惟品牌背景資訊（官網、其他通路）尚待補充。</p>
+    <img class="newsimg" src="https://preview.redd.it/ijkinhspmsgh1.jpg?width=640" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Reddit使用者u/xena-pieces分享之Momibook「Bangkok on Water」組裝照</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span> · r/Jigsawpuzzles（當日熱門第2名）· <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vcsdm4/one_of_the_most_vibrant_puzzles_ive_done_all_year/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜「絲絨觸感＋抗反光」的工法組合近期已在Art and Fable（07/29）與Momibook（今日）兩個獨立品牌脈絡中出現，可能是拼圖表層處理的新興趨勢雛形，惟樣本數尚少，列入Weak Signals持續觀察。</p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日藉主動查證品牌官網成功將Hobbry由昨日單一來源訊號升級為雙來源確認，驗證反查機制可行性；「false fit」詞彙亦於今日累積達9次、橫跨7品牌脈絡後正式升級為Tier 3動態搜尋詞。另留意RoseArt疑似AI生成圖像爭議，以及Momibook、Art and Fable兩品牌獨立出現的「絲絨觸感＋抗反光」工法用詞，兩者均屬初期訊號，需更多樣本佐證。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE + REGIONAL ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire &amp; Regional · No.22 · 2026-08-02</span></div>
+
+  <p class="wire-cat">材質與技術創新</p>
+  <div class="wire"><span class="geo">[Global]</span> <b>Hobbry「Harvest Hues」採抗反光霧面處理＋FSC認證用紙</b> — 詳見頭版一，不重複展開。<span class="src">hobbry.com · <a href="https://www.hobbry.com/puzzles" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>Gibsons「Winged Wonders」1000片獲評「拼合精準、厚實耐用」</b> — 使用者形容「愛極了這款拼圖的裁切，拼片吻合度極佳，紙板厚實堅固」，為本報首次記錄Gibsons具體工法描述（此前僅見品牌名稱提及）。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vcwdsc/gibsons_winged_wonders_1000_pcs/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>Momibook「Bangkok on Water」絲絨觸感＋抗反光霧面</b> — 詳見頭版三，不重複展開。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vcsdm4/one_of_the_most_vibrant_puzzles_ive_done_all_year/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">全球定價與通路風向</p>
+  <div class="wire"><span class="geo">[NA]</span> <b>Hobbry確認已於美國零售通路Marshalls鋪貨</b> — 詳見頭版一，不重複展開。</div>
+  <div class="wire"><span class="geo">[NA]</span> <b>Dollar Tree「Puzzle Bugs」1.75美元平價拼圖獲意外好評</b> — Reddit使用者形容其品質「遠優於預期」，設計有趣、組裝愉快，凸顯平價通路拼圖品質提升訊號。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vctfn4/thanks_for_the_heads_up_on_the_puzzle_bugs_at/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire"><span class="geo">[Reddit]</span> <b><span class="viral">【🚨 社群爆款】</span>RoseArt「Mushrooms」疑似AI生成圖像＋false fit回報</b> — 詳見頭版二，不重複展開。</div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>「false fit」詞彙今日正式升級Tier 3動態搜尋詞</b> — 詳見本期Focus。</div>
+
+  <div class="focus">
+    <p class="f-tag">Focus</p>
+    <h3 class="f-hed">「false fit」正式升級Tier 3動態搜尋詞：一個社群語彙九次獨立回報的軌跡</h3>
+    <div class="f-lede">
+      <p><b>現象</b>｜「false fit」（拼片假吻合）一詞自07/29首次進入本報Tier 2語彙追蹤系統以來，累積至今日（08/02）已達9次獨立回報，橫跨Art and Fable、Talking Tables、Table Fun（比較脈絡）、Buffalo Games（3次）、M&amp;M's World周邊（停產收藏商品）、Paperblanks、RoseArt共7個品牌脈絡，其中8次負面／保留用法、1次正面否定用法（Paperblanks「no false fits」）。</p>
+      <p><b>軌跡</b>｜07/29單日新增4次（Art and Fable、Talking Tables、Table Fun、Buffalo Games）；07/30新增2次（M&amp;M's World、Paperblanks）；今日（08/02）新增1次（RoseArt）。今日為本系統既定之Tier 3週日正式評估日。</p>
+      <p><b>意涵</b>｜累積次數與品牌來源數均遠超Tier 3門檻（≥5次、≥3獨立來源），依B節規則正式將「false fit」（原詞，不轉譯）提升為Tier 3動態搜尋詞，自下週起併入搜尋詞庫，並持續依正負用法分開統計。後續觀察重點為此詞彙是否持續擴散至更多品牌，或反映真實產業刀模精度趨勢。</p>
+    </div>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse</span><div class="sec-l"></div></div>
+  <div class="rsum"><b>Regional Summary</b>｜今日訊號集中於北美（Hobbry雙來源確認、RoseArt、Momibook、Gibsons、Dollar Tree共5則）；日本、澳洲、歐洲均無新增訊號，中東本期非排程日（英文GN已降為每週三一次）。</div>
+  <div class="pulse-region">
+    <p class="pr-name">North America</p>
+    <p class="pr-li">Hobbry「Harvest Hues」8/4上市，官網倒數計時證實昨日社群訊號，並確認Marshalls零售鋪貨（頭版一）。</p>
+    <p class="pr-li">RoseArt「Mushrooms」疑似AI生成圖像＋false fit回報，當日熱門第3名（頭版二）。</p>
+    <p class="pr-li">Momibook「Bangkok on Water」絲絨觸感＋抗反光評測，當日熱門第2名（頭版三）。</p>
+    <p class="pr-li">Gibsons「Winged Wonders」拼合精準評測、Dollar Tree平價拼圖意外好評（Wire）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Japan</p>
+    <p class="pr-quiet">No new signal today（BEVERLY連續第17天無新增，仍為07/16之9/11新品公告；Karen Puzzles YouTube最新影片仍為07/05；GN日本查詢僅命中排行榜網站既有商品清單）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Australia</p>
+    <p class="pr-quiet">No new signal today（AJPA連續無新增，仍為06/04「National dates confirmed for 2026」；GN澳洲僅命中既有零售通路清單）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Europe</p>
+    <p class="pr-quiet">No reliable signal today（AEPUZZ今日兩度嘗試抓取均失敗，WJPF僅靜態賽事資訊，與既有資訊一致）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Middle East</p>
+    <p class="pr-quiet">本期非排程日（依C5規則，英文GN已降為每週三一次，下次排程為08/05）。</p>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　「false fit」Tier 3正式生效，追蹤下週搜尋詞庫調整結果</p>
+  <p class="wl-item"><b>2</b>　r/speedpuzzling連續第5日429，結構性失敗特徵明顯，建議明日（週一）檢討抓取時段或替代管道</p>
+  <p class="wl-item"><b>3</b>　RoseArt「Mushrooms」AI生成圖像爭議後續留言與佐證追蹤</p>
+  <p class="wl-item"><b>4</b>　Momibook品牌背景資訊（官網、其他通路）待補</p>
+  <p class="wl-item"><b>5</b>　AEPUZZ今日抓取失敗（curl零位元組＋WebFetch 429），明日重試確認是否為暫時性阻擋</p>
+
+  <div class="srcnote">Source Desk: 16 checked · 14 successful · 0 partial · 2 failed (AEPUZZ, r/speedpuzzling)</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 2</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-08-01.html">&larr; 2026-08-01</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
