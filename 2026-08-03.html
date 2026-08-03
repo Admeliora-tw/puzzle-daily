@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-08-03 · No.23</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Hobbry</span><span class="bchip">Laurence King Publishing</span><span class="bchip">Momibook</span><span class="bchip">RoseArt</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.23 · 2026年8月3日 週一</span><span>Front Page · News Wire &amp; Regional</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed"><span class="viral">【🚨 社群爆款】</span>Hobbry「STORY ARCH」獲社群第三度獨立佐證抗反光霧面工法，明日Harvest Hues系列倒數上市</h2>
+    <p class="s-body">Reddit使用者OldLadyReacts於08/03發文分享Hobbry「STORY ARCH」1000片拼圖組裝心得，形容其霧面處理「不會反射光源，因此無論拼片放在桌面何處都能輕鬆辨識」。此描述與品牌官網宣稱之「soft-touch finish for reduced glare」高度吻合，是Hobbry抗反光霧面特性本週第三次獲得獨立管道佐證——08/01為Marshalls零售鋪貨社群回報、08/02為品牌官網直接確認、今日則為社群實際組裝體驗評測，三者來源性質互異（零售觀察、品牌官方文案、使用者體驗）。本則貼文為當日r/Jigsawpuzzles熱門榜第3名。品牌官網倒數計時顯示，「Harvest Hues」秋季系列將於明日（8/4）正式上市。</p>
+    <img class="newsimg" src="https://preview.redd.it/c429dxv312hh1.jpg?width=640&crop=1:1,smart&auto=webp&s=3b4edaba67ffe9336a2d9d36ab4f305ba996b130" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Reddit使用者u/OldLadyReacts分享之Hobbry「STORY ARCH」拼圖照</p>
+    <p class="s-src"><span class="ok">✓ 雙來源確認</span>（品牌延續，本則為第3次獨立佐證）· r/Jigsawpuzzles（當日熱門第3名）· <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vdyefu/story_arch_hobbry_1000_pieces_the_matte_finish/" target="_blank">原文 →</a> · <a href="https://www.hobbry.com/puzzles" target="_blank">官網 →</a></p>
+    <p class="why"><b>Why it matters</b>｜三個性質互異的獨立來源（零售鋪貨、品牌官網文案、社群實際評測）在四天內針對同一工法特徵交叉確認，顯示Hobbry此賣點並非單純行銷話術，而是消費者組裝時可實際辨識的差異化特徵，為明日Harvest Hues系列上市後的市場接受度提供正面前導訊號。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed"><span class="viral">【🚨 社群爆款】</span>藝術書出版社Laurence King跨界推出「The World of Witches」拼圖，擴大「The World of...」系列拼圖線</h2>
+    <p class="s-body">英國藝術書出版社Laurence King Publishing於官網推出最新拼圖新品「The World of Witches」，1000片，由插畫家Eleanor Taylor繪製，完成尺寸48.5×68公分，內容涵蓋《馬克白》、賽勒姆審巫案、Pendle女巫案等文學與歷史巫術意象，並附學者Dr. Laura Kounine撰寫巫術歷史解說之拉頁海報。本品為該出版社「The World of...」拼圖系列最新一款，延續其一貫將插畫藝術與文化史內容轉譯為拼圖商品的模式。Reddit使用者Thin_Negotiation_705同日於r/Jigsawpuzzles分享本品貼文，為當日熱門榜第1名。</p>
+    <img class="newsimg" src="https://preview.redd.it/wio37x71ozgh1.jpg?width=640&auto=webp&s=8a388c2e296152355b2779b050b4c19942a6140e" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Reddit使用者u/Thin_Negotiation_705分享之「The World of Witches」拼圖照</p>
+    <p class="s-src"><span class="ok">✓ 雙來源確認</span>（品牌官網＋社群回報，當日熱門第1名）· us.laurenceking.com · <a href="https://us.laurenceking.com/products/the-world-of-witches" target="_blank">官網 →</a> · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vdmkoi/the_world_of_witches_newly_released_puzzle_y/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜出版社跨界推出拼圖產品，延續「內容IP轉譯為拼圖商品」的產業趨勢；惟本次以書籍／插畫出版社身分而非美術館身分切入，顯示拼圖作為藝術與知識內容衍生商品的載體，正從美術館機構擴散至更廣泛的出版與內容產業。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed">全球速拼賽事版圖持續擴張：澳洲三州賽程確認至11月墨爾本全國賽，北美速拼賽事年增151%</h2>
+    <p class="s-body">澳洲拼圖協會（AJPA）官方活動頁確認2026年下半年三場賽事日期：8月15日Victoria州賽（Malvern Town Hall）、10月17日ACT州賽（EPIC, Mitchell）、11月28–29日全國錦標賽（MSAC, Albert Park, Melbourne，兩日賽制）。同期Axios報導引用活動平台Eventbrite統計，2024年8月至2025年7月期間美國拼圖競賽場次較前一年成長151%，速拼（speed puzzling）持續從小眾嗜好擴散為社交型競技活動；8月21日南卡羅來納州與阿拉巴馬州速拼錦標賽將透過Zoom線上舉行。</p>
+    <p class="s-src"><span class="ok">✓ 雙來源確認</span> · AJPA官方活動頁 · <a href="https://australianjigsawpuzzle.org.au/events/" target="_blank">原文 →</a> · Axios · <a href="https://www.axios.com/2026/04/03/speed-jigsaw-puzzling-competition" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜澳洲與北美賽事規模同步擴大，顯示速拼／拼圖競賽已從單一區域現象發展為跨洲級趨勢，對品牌贊助、賽事周邊商品與社群動員均具中長期商業意涵。</p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日三則頭版報導呈現拼圖產業三個擴散方向：Hobbry抗反光工法連續三日獲跨管道交叉確認；Laurence King Publishing以出版社身分跨界推出拼圖新品，顯示內容IP轉譯拼圖模式已擴散至美術館以外的內容產業；澳洲與北美賽事規模同步成長。另完成Momibook單一來源反查並成功升級雙來源確認，與昨日Hobbry案例共同構成反查機制連續第二日成功，詳見本期Focus。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE + REGIONAL ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire &amp; Regional · No.23 · 2026-08-03</span></div>
+
+  <p class="wire-cat">材質與技術創新</p>
+  <div class="wire"><span class="geo">[Global]</span> <b>Hobbry「STORY ARCH」抗反光霧面獲第三度社群佐證</b> — 詳見頭版一，不重複展開。</div>
+  <div class="wire"><span class="geo">[UK]</span> <b>Laurence King「The World of Witches」新品拼圖</b> — 詳見頭版二，不重複展開。</div>
+  <div class="wire"><span class="geo">[NA]</span> <b>Momibook「Bangkok on Water」絲絨觸感聲稱獲電商雙來源佐證</b> — 本報針對08/02僅單一Reddit來源之Momibook報導執行反查，於Amazon商品頁（標題含「Touch Film」字樣）與拼圖選物網站TopPuzzleShop品牌介紹頁（描述其產品多為「embossed finish」壓紋處理）取得佐證，⚠單一來源正式升級為✓雙來源確認。<span class="src">Amazon · <a href="https://www.amazon.com/MOMIBOOK-Puzzles-Painting-Dementia-Collaboration/dp/B0D3KZ52LT" target="_blank">→</a> TopPuzzleShop · <a href="https://toppuzzleshop.com/brand/momibook/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">國際賽事與選手動態</p>
+  <div class="wire"><span class="geo">[AU/NA]</span> <b>澳洲三州賽程確認、北美速拼賽事年增151%</b> — 詳見頭版三，不重複展開。</div>
+
+  <p class="wire-cat">全球定價與通路風向</p>
+  <div class="wire"><span class="geo">[UK]</span> <b>Tate Shop拼圖分類頁週一SKU快照：12款商品在架</b> — 錨點商品梵谷「Farms near Auvers」拼圖仍為£17.50，與前次快照持平；定錨商品價格追蹤下次比對排程為明日（週二08/04）。<span class="src">shop.tate.org.uk · <a href="https://shop.tate.org.uk/vincent-van-gogh-farms-near-auvers-jigsaw-puzzle/27278.html" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[NA]</span> <b>Jigsaw Junkies網域永久重定向（301）至PuzzleWarehouse.com/blog</b> — 本報今日依排程查詢Jigsaw Junkies時，網址已整體轉址至PuzzleWarehouse旗下部落格，疑似品牌／網域整併，惟目標頁面本身今日兩度嘗試抓取均回傳空白內容，無法進一步查證整併細節，列入Weak Signal持續觀察。<span class="src">puzzlewarehouse.com/blog · <a href="http://puzzlewarehouse.com/blog" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>RoseArt「Mushrooms」疑似AI生成圖像爭議：反查未獲第二來源</b> — 本報今日依單一來源反查規則主動查證，惟未查得官網、電商或選物站等第二來源佐證，⚠單一來源狀態維持（反查累計第1/3日）。</div>
+
+  <div class="focus">
+    <p class="f-tag">Focus</p>
+    <h3 class="f-hed">反查機制連續第二日奏效：從品牌官網到電商列表，單一來源不必然等於資訊死角</h3>
+    <div class="f-lede">
+      <p><b>現象</b>｜本報07/20起建立「單一來源反查規則」，要求對僅有單一（尤其是Reddit）來源之訊號主動尋找第二來源佐證。08/02首次成功案例為Hobbry（透過品牌官網hobbry.com取得直接證實）；今日（08/03）主動對Momibook「Bangkok on Water」執行反查，透過Amazon商品頁與拼圖選物網站TopPuzzleShop品牌介紹頁取得佐證，成為連續第二個成功案例。</p>
+      <p><b>軌跡</b>｜兩起案例使用不同查證管道——Hobbry使用品牌自有官網（第一方直接來源），Momibook則透過第三方電商平台（Amazon）與拼圖垂直選物站（TopPuzzleShop）取得間接佐證，顯示反查管道不限於品牌官網一種。同期對RoseArt的反查（今日第1次嘗試）則未獲結果，顯示反查成功率取決於該品牌是否具備可查證的線上足跡，而非所有單一來源訊號皆可被動反查成功。</p>
+      <p><b>意涵</b>｜建議將「反查優先序」正式化為：(1) 品牌官網 (2) 主要電商平台商品頁 (3) 垂直拼圖選物站品牌頁，三者依序嘗試；若三者皆無結果（如RoseArt案例），則維持⚠單一來源標記並進入3日觀察窗口。此經驗建議納入C節抓取通則之標準作業程序。</p>
+    </div>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse</span><div class="sec-l"></div></div>
+  <div class="rsum"><b>Regional Summary</b>｜今日訊號分布北美（Hobbry、Momibook反查、速拼賽事成長、Jigsaw Junkies重定向）、歐洲（Laurence King新品、Tate Shop SKU快照）與澳洲（AJPA三州賽程）三地；日本無新增，中東本期非排程日。</div>
+  <div class="pulse-region">
+    <p class="pr-name">North America</p>
+    <p class="pr-li">Hobbry「STORY ARCH」抗反光工法第三度社群佐證，明日Harvest Hues正式上市（頭版一）。</p>
+    <p class="pr-li">北美速拼賽事年增151%，SC/AL州錦標賽8/21 Zoom舉行（頭版三）。</p>
+    <p class="pr-li">Momibook反查成功，⚠單一來源升級✓雙來源確認（Wire／Focus）。</p>
+    <p class="pr-li">Jigsaw Junkies網域重定向至PuzzleWarehouse.com，疑似品牌整併（Wire）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Europe</p>
+    <p class="pr-li">Laurence King Publishing推出「The World of Witches」拼圖新品，當日熱門第1名（頭版二）。</p>
+    <p class="pr-li">Tate Shop拼圖分類頁週一SKU快照，12款商品在架，錨點商品價格持平（Wire）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Australia</p>
+    <p class="pr-li">AJPA確認三州賽事日期，11月28–29日墨爾本全國錦標賽為年度壓軸（頭版三）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Japan</p>
+    <p class="pr-quiet">No new signal today（BEVERLY連續第18天無新增，仍為07/16之9/11新品公告；Karen Puzzles YouTube最新影片仍為07/05；Masterpiece Shop排行榜／首頁本週一排程查詢無具體新品資訊；GN日本僅命中既有商品清單）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Middle East</p>
+    <p class="pr-quiet">本期非排程日（依C5規則，英文GN已降為每週三一次，下次排程為08/05）。</p>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　Hobbry「Harvest Hues」明日（8/4）正式上市，追蹤實際上架、定價與其他款式命名</p>
+  <p class="wl-item"><b>2</b>　RoseArt「Mushrooms」反查第1/3日未獲第二來源，明日續查</p>
+  <p class="wl-item"><b>3</b>　r/speedpuzzling連續第6日429，結構性失敗特徵持續，建議儘速檢討抓取時段或替代UA</p>
+  <p class="wl-item"><b>4</b>　r/Puzzles今日意外429失敗（此前多為200成功），觀察是否為單日暫時性或Reddit整體限流轉趨嚴格</p>
+  <p class="wl-item"><b>5</b>　明日（8/4，週二）為BEVERLY新商品頁／Metro Hobbies／Puzzle Palace AU SKU快照排程日，亦為定錨商品價格追蹤排程日</p>
+  <p class="wl-item"><b>6</b>　PuzzleWarehouse Blog（含Jigsaw Junkies重定向後之目標頁）連續WebFetch回傳空白內容，需評估改用其他抓取方式</p>
+
+  <div class="srcnote">Source Desk: 23 checked · 20 successful · 0 partial · 3 failed (r/Puzzles, r/speedpuzzling, PuzzleWarehouse Blog)</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 2</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-08-02.html">&larr; 2026-08-02</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
