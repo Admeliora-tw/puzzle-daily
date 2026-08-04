@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-08-04 · No.24</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Hobbry</span><span class="bchip">Jour Férié</span><span class="bchip">Enjoy Puzzle</span><span class="bchip">RoseArt</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.24 · 2026年8月4日 週二</span><span>Front Page · News Wire &amp; Regional</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">Hobbry「Harvest Hues」秋季系列今日11:00 AM EDT倒數上市，四款系列名稱首度曝光</h2>
+    <p class="s-body">Hobbry官網倒數計時器確認「Harvest Hues」秋季拼圖系列將於今日（8/4）美東時間上午11:00正式發布，官網已預先揭露系列中四款作品名稱：「Stoop Season」「Harvest Kitchen」「Pie in the Park」「The Book Burrow」，延續品牌一貫之生活感插畫風格。本次上市為本報連續第4日追蹤Hobbry動態：08/01零售鋪貨社群回報、08/02品牌官網抗反光工法確認、08/03社群第三度佐證抗反光霧面工法（當日熱門榜第3名），昨日（08/03）另有Reddit使用者Charlotte_Cody分享「Hobbry Haul Today」貼文，於加拿大Homesense/Marshalls購入9款既有系列產品（均為CAD$16.99），並在文中預告「知道Hobbry明天要出新系列了」，與官網倒數計時互為印證。</p>
+    <p class="s-src"><span class="ok">✓ 雙來源確認</span> · hobbry.com官網倒數頁 · <a href="https://www.hobbry.com/puzzles" target="_blank">官網 →</a> · r/Jigsawpuzzles（Charlotte_Cody「Hobbry Haul Today」） · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vehf7w/hobbry_haul_today/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜本次為Hobbry連續第4日獲本報追蹤的動態，從零售鋪貨、工法確認到新系列上市，構成一條完整的品牌成長軌跡；CAD$16.99的既有系列定價亦為北美中低價位拼圖市場提供參考基準，值得觀察Harvest Hues系列是否維持同一價格帶。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">法國環保拼圖品牌Jour Férié首次記錄：社群「無反光壓紋觸感」評測與品牌「無AI宣言」互為印證</h2>
+    <p class="s-body">Reddit使用者u/Faichu於08/03發文分享法國品牌Jour Férié「Chambre avec vue」1000片拼圖組裝心得，形容「拼合手感是我目前見過最好的，質感霧面，採用回收與可回收材質製作，包裝完全不含塑膠」，並表示「絕對會再買這個品牌」。本報WebSearch查證品牌官網puzzlejourferie.com，確認Jour Férié為法國品牌，由企業經營者Laetitia與插畫藝術總監Céline共同創立，明確標榜「不使用生成式AI繪圖」之品牌承諾，且1000片／500片／100片系列均為法國製造、採用永續管理資源之回收可回收材質，與社群評測描述高度吻合。本報首次記錄此品牌。</p>
+    <p class="s-src"><span class="ok">✓ 雙來源確認</span> · r/Jigsawpuzzles（u/Faichu） · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1veqfl6/chambre_avec_vue_jour_f%C3%A9ri%C3%A9_1000pc/" target="_blank">原文 →</a> · puzzlejourferie.com · <a href="https://puzzlejourferie.com/en/pages/about-us" target="_blank">官網 →</a></p>
+    <p class="why"><b>Why it matters</b>｜「無AI宣言」作為品牌識別策略，與本報近期持續追蹤的RoseArt／Hilltops Breeze等疑似AI生成圖像爭議形成鮮明對照，顯示部分品牌已將「非AI創作」轉化為主動行銷訴求，可能預示產業對AI生成內容爭議的分眾因應策略正在成形。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed"><span class="viral">【⚠ 單一來源】</span>Enjoy Puzzle「Hilltops Breeze」遭社群質疑AI生成圖像，反查僅確認商品確實上市</h2>
+    <p class="s-body">Reddit使用者u/Extension-Context885於08/03發文，分享Enjoy Puzzle「Hilltops Breeze」1000片拼圖組裝心得，表示購買後才發現疑似為AI生成圖像（「樹枝的畫法讓我毫無疑問」），並稱「近200款完成拼圖中，遲早會踩到雷」。本報依單一來源反查規則主動查證，WebSearch確認「Hilltops Breeze」為Enjoy Puzzle官方在售商品（美國選物站The Puzzle Center標價US$24.99），證實商品本身確實存在且為正式上架商品，惟未查得任何官方或第三方資訊證實或否認其畫作是否為AI生成，AI生成聲稱本身仍僅有原始社群貼文單一來源。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span>（商品存在已獲電商佐證，AI生成聲稱本身待查證，反查第1/3日）· r/Jigsawpuzzles（當日熱門榜） · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vep3ao/hilltops_breeze_enjoy_1000_pieces/" target="_blank">原文 →</a> · The Puzzle Center商品頁 · <a href="https://www.thepuzzlecenter.com/collections/enjoy-puzzles" target="_blank">→</a></p>
+    <p class="why"><b>Why it matters</b>｜Enjoy Puzzle為已具一定市場基礎之既有品牌（非新興小廠），若AI生成疑慮屬實，意味此爭議已從新創／小眾品牌擴散至較成熟品牌，與同期RoseArt案例（反查連續第2日未獲第二來源）共同構成「AI生成圖像疑慮」持續累積之觀察樣本。</p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日頭版呈現拼圖產業對AI生成爭議的兩極反應：Jour Férié以「無AI宣言」作為品牌訴求正面切入，Enjoy Puzzle則遭社群質疑捲入AI生成圖像爭議（惟本次反查僅能確認商品存在，無法證實或證偽AI生成聲稱本身）。同時Hobbry「Harvest Hues」新系列今日正式上市，為本報連續第4日追蹤同一品牌動態的完整案例。本期亦為定錨商品價格追蹤系統首次正式執行，6檔中2檔遇阻，詳見本期Focus。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.24 · 2026-08-04</span></div>
+
+  <p class="wire-cat">材質與技術創新</p>
+  <div class="wire"><span class="geo">[NA]</span> <b>Hobbry「Harvest Hues」秋季系列上市</b> — 詳見頭版一，不重複展開。</div>
+  <div class="wire"><span class="geo">[FR]</span> <b>Jour Férié環保拼圖新品牌首次記錄</b> — 詳見頭版二，不重複展開。</div>
+  <div class="wire"><span class="geo">[NA]</span> <b>「6 weeks of puzzles」社群系列品牌評測貼文</b> — Reddit使用者u/Catowldragons整理近6週試玩之7款拼圖（Cavallini、The World of Gatsby、eeBoo、Aurora、Gibsons），逐一評論表層光澤程度與拼合難度，其中提及eeBoo「Cats in Windows」表層過於光滑（glossy）、Gibsons「Tapestry Garden」光澤介於中間，屬純社群比較性描述，未構成獨立品牌工法瑕疵回報，僅存檔供Tier 2語彙庫參考。<span class="src">r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1veu5ti/6_weeks_of_puzzles/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">國際賽事與選手動態</p>
+  <div class="wire"><span class="geo">[EU]</span> <b>Euro Jigsaw Jam線上賽事8月接連舉行</b> — WebSearch查得「Euro Jigsaw Jam FLEX - Mystery Puzzle #158 Pairs」8/12、「Euro Jigsaw Jam LIVE - Mystery Puzzle #159 Pairs」8/16接連舉行；另查得美國「Pieces in the Players」速拼賽8/8於Fenton Village Players舉行，延續本報08/03報導之北美/歐洲賽事版圖擴張趨勢。<span class="src">speedpuzzling.com · <a href="https://www.speedpuzzling.com/events.html" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">全球定價與通路風向</p>
+  <div class="wire"><span class="geo">[Global]</span> <b>定錨商品價格追蹤系統今日首次正式執行</b> — 詳見本期Focus，6檔定錨商品中2檔（Puzzle Palace AU、Metro Hobbies之Ravensburger 1000片代表款）今日遇阻，另4檔成功取得首期基準讀數。</div>
+  <div class="wire"><span class="geo">[SA]</span> <b>Jarir Bookstore Robotime木質拼圖代表款基準讀數：SAR 29</b> — 「DIY Wooden Bloom Craft - Sunflower 3D Puzzle」86片，原價SAR 49現折至SAR 29，列為本期新設之定錨商品基準讀數。<span class="src">jarir.com · <a href="https://www.jarir.com/sa-en/toys-games/puzzles.html" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[AE]</span> <b>Amazon.ae Ravensburger 1000片代表款基準讀數：AED 75.00</b> — 「Ravensburger Fitz Roy Patagonia 1000 Piece Jigsaw Puzzle」Premium SoftClick系列，列為本期新設之定錨商品基準讀數。<span class="src">amazon.ae</span></div>
+  <div class="wire"><span class="geo">[JP]</span> <b>BEVERLY官網1000片新品代表款基準讀數：¥4,070</b> — Nakata「夢見る帆船と花の王国」1000片（會員價¥3,459），列為本期新設之定錨商品基準讀數；官網新品公告本身連續第19天無48小時內新增。<span class="src">be-en.co.jp · <a href="https://be-en.co.jp/products/1000-180" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire"><span class="geo">[Reddit]</span> <span class="viral">【⚠ 單一來源】</span><b>Enjoy Puzzle「Hilltops Breeze」AI生成疑慮</b> — 詳見頭版三，不重複展開。</div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>RoseArt「Mushrooms」反查第2/3日仍未獲第二來源</b> — 本報依規則對08/02 RoseArt AI生成圖像疑慮案持續反查，今日WebSearch「RoseArt Mushrooms puzzle Soren Nyborg AI generated」仍未查得直接相關結果，⚠單一來源狀態維持，進入觀察窗口第2/3日，明日為最後一次反查機會。</div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>r/speedpuzzling連續第7日429失敗</b> — 首次請求與隔5秒重試均429，結構性失敗特徵持續一週，建議儘速檢討抓取時段或替代UA策略。</div>
+
+  <p class="wire-cat">全球藝術策展與藝術IP風向球</p>
+  <div class="wire"><span class="geo">[Tokyo]</span> <b>森美術館「Ron Mueck」個展持續展出至9/23，週邊以線上商店明信片贈品為主</b> — 本期排程日（週二）查詢確認，主展「Ron Mueck」與三檔典藏／研究展（MAM Collection 022、MAM Screen 023、MAM Research 012）均展至9/23；官網僅提及購買展覽圖錄贈明信片之促銷，未見拼圖類週邊商品公告，暫不列入商業轉化建議。<span class="src">mori.art.museum · <a href="https://www.mori.art.museum/en/" target="_blank">→</a></span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期共檢視來源25個（週二排程）· 20成功 · 2部分成功（BEVERLY新商品頁／Puzzle Palace AU：無新品但取得替代讀數）· 3失敗（Metro Hobbies Ravensburger頁面、r/speedpuzzling、國立故宮博物院憑證錯誤）</div>
+</section>
+
+<!-- ═══ PAGE 3 · REGIONAL PULSE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Regional Pulse · No.24 · 2026-08-04</span></div>
+
+  <div class="rsum"><b>Regional Summary</b>｜今日訊號分布北美（Hobbry上市、Enjoy Puzzle爭議、RoseArt反查）、歐洲（Jour Férié新品牌、Euro Jigsaw Jam賽事）與中東（Jarir/Amazon.ae價格基準）三地；日本以定錨商品基準讀數為主，澳洲本期SKU快照多數受阻。</div>
+
+  <div class="pulse-region">
+    <p class="pr-name">North America</p>
+    <p class="pr-li">Hobbry「Harvest Hues」秋季系列今日11:00 AM EDT正式上市，四款系列名稱曝光（頭版一）。</p>
+    <p class="pr-li">Enjoy Puzzle「Hilltops Breeze」遭質疑AI生成圖像，⚠單一來源反查第1/3日（頭版三）。</p>
+    <p class="pr-li">RoseArt反查第2/3日仍未獲第二來源，明日為最後一次嘗試（Wire）。</p>
+    <p class="pr-li">「Pieces in the Players」速拼賽8/8 Fenton Village Players舉行（Wire）。</p>
+    <p class="pr-li">r/speedpuzzling連續第7日429失敗，結構性問題持續（Wire）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Europe</p>
+    <p class="pr-li">法國環保拼圖品牌Jour Férié首次記錄，「無AI宣言」與社群評測互為印證（頭版二）。</p>
+    <p class="pr-li">Euro Jigsaw Jam線上賽事8/12、8/16接連舉行（Wire）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Australia</p>
+    <p class="pr-quiet">本期SKU快照排程日（Metro Hobbies、Puzzle Palace AU），惟兩者均未能取得Ravensburger 1000片代表款具體讀數，詳見本期Focus；除既有AJPA賽事資訊外無其他新增訊號。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Japan</p>
+    <p class="pr-li">BEVERLY新品代表款基準讀數確立：Nakata「夢見る帆船と花の王国」1000片¥4,070（Wire）；惟新品公告本身連續第19天無新增。</p>
+    <p class="pr-li">森美術館「Ron Mueck」個展排程日查詢，無拼圖週邊商品公告（Wire）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">Middle East</p>
+    <p class="pr-li">Jarir Bookstore、Amazon.ae今日依J節價格追蹤排程執行，取得Robotime／Ravensburger基準讀數（Wire）；惟依C5規則本期非中東新聞排程日（英文/阿文GN下次為08/05週三），故無新聞類報導。</p>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Weak Signals · 待觀察</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>–</b>　Puzzle Palace AU官網／搜尋頁均未能列出Ravensburger 1000片產品（多次嘗試均為其他品牌或缺貨品項），需評估是否為該店該類別短期缺貨或站內搜尋功能限制。</p>
+  <p class="wl-item"><b>–</b>　Metro Hobbies官網之collections/search頁面均僅回傳導覽選單，未載入實際商品資料（疑似JS動態載入內容，WebFetch無法解析），連續多次嘗試後暫緩，下次排程日（08/07週五）考慮改用WebSearch替代直接WebFetch。</p>
+  <p class="wl-item"><b>–</b>　國立故宮博物院官網（npm.gov.tw）連續兩次WebFetch回報SSL憑證錯誤，暫無法查證，下次排程日（08/07週五之後續週二）再試。</p>
+
+  <div class="srcnote">Source Desk: 25 checked · 20 successful · 2 partial · 3 failed (Metro Hobbies, r/speedpuzzling, National Palace Museum SSL error)</div>
+</section>
+
+<!-- ═══ PAGE 4 · FOCUS + WATCHLIST + SOURCE DESK ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Focus &amp; Watchlist · No.24 · 2026-08-04</span></div>
+
+  <div class="focus">
+    <p class="f-tag">Focus</p>
+    <h3 class="f-hed">定錨商品價格追蹤系統首次執行：6檔中2檔即刻遇阻，凸顯電商定點監測的結構性脆弱</h3>
+    <div class="f-lede">
+      <p><b>現象</b>｜本報自07/31起規劃、於今日（08/04週二）正式首次執行「定錨商品價格追蹤」機制，預定每週二、五對6檔代表性商品定點記錄價格以建立週比基準。首次執行結果：Tate Shop梵谷「Farms near Auvers」（延續08/03週一SKU快照£17.50）、Jarir Robotime代表款（今日新設基準SAR 29）、Amazon.ae Ravensburger代表款（今日新設基準AED 75.00）、BEVERLY 1000片新品代表款（今日新設基準¥4,070）四檔順利取得讀數；惟Puzzle Palace AU首頁與站內搜尋均未列出任何Ravensburger 1000片商品（多次嘗試僅見Holdson、Galison、Clementoni等其他品牌，或缺貨中的Ravensburger工藝套組），Metro Hobbies之collections與search頁面則僅回傳導覽選單框架，未載入實際商品資料，兩者今日均未能取得代表款讀數。</p>
+      <p><b>軌跡</b>｜此現象與本報07/20起建立的「單一來源反查機制」呈現相似的方法論教訓：Hobbry、Momibook兩案例證實反查管道不限一種，但RoseArt案例（連續兩日未獲結果）也證實並非所有訊號都可被動或主動查證成功。價格追蹤系統首日即遇到同類問題——事先設定的6檔定錨商品中，有2檔因網站結構（JS動態載入、搜尋功能限制）或實際缺貨而無法穩定取值，顯示「選定一次即可長期穩定追蹤」的假設過於樂觀。</p>
+      <p><b>意涵</b>｜建議依J節既有規則「定錨商品下架時於backstage標記並選同店同類替補」，為Puzzle Palace AU暫以Holdson「Seas the Day – Harbour Inn」1000片（$29.90 AUD）作為過渡代打商品，待Ravensburger 1000片品項回補庫存後再行切換；Metro Hobbies則列入下次排程（08/07週五）以WebSearch輔助查找具體商品頁網址後再嘗試WebFetch，而非直接對分類頁面請求。此經驗顯示，新建立的定點監測機制在其首次執行週期就應預留「替代方案」彈性，而非假設所有錨點商品均能長期穩定可得。</p>
+    </div>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　Hobbry「Harvest Hues」正式上市後，追蹤實際上架頁面、四款品項定價與是否維持CAD$16.99價格帶</p>
+  <p class="wl-item"><b>2</b>　RoseArt「Mushrooms」反查第2/3日仍未成功，明日（08/05）為3日觀察窗口最後一次反查機會</p>
+  <p class="wl-item"><b>3</b>　Enjoy Puzzle「Hilltops Breeze」AI生成疑慮反查第1/3日，持續尋找官網／電商／選物站佐證</p>
+  <p class="wl-item"><b>4</b>　Puzzle Palace AU Ravensburger 1000片代表款持續缺席，觀察是否需正式切換為Holdson替代錨點</p>
+  <p class="wl-item"><b>5</b>　r/speedpuzzling連續第7日429，累計已達一週，建議提升為結構性問題並檢討抓取策略</p>
+  <p class="wl-item"><b>6</b>　明日（08/05週三）為中東英文/阿文GN、AEPUZZ相關歐洲文創GN、日本協會分頁、MOMAT專用GN、藝術家趨勢GN排程日，亦為Jarir/Amazon.ae零售觀察（非價格追蹤）排程日</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">Sources today: BEVERLY Atom · AJPA RSS · AEPUZZ RSS · WJPF · r/Jigsawpuzzles · r/Puzzles · r/speedpuzzling · Karen Puzzles YouTube · Toy Book · Toy World Magazine · GN×6 · BEVERLY新品頁 · Metro Hobbies · Puzzle Palace AU · 森美術館 · 國立故宮博物院 · Jarir · Amazon.ae · Hobbry官網 · Jour Férié官網 · The Puzzle Center</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 4</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a><a class="toc-link" onclick="goPage(2);return false;"><span class="toc-n">P3</span>Regional Pulse</a><a class="toc-link" onclick="goPage(3);return false;"><span class="toc-n">P4</span>Focus 與追蹤</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-08-03.html">&larr; 2026-08-03</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
