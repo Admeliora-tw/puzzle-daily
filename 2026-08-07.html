@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-08-07 · No.27</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Buffalo Games</span><span class="bchip">Piecework Puzzles</span><span class="bchip">Professor Puzzle</span><span class="bchip">Metro Hobbies</span><span class="bchip">Puzzle Palace AU</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.27 · 2026年8月7日 週五</span><span>Front Page · News Wire</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">Buffalo Games跨12天累積第5次False Fit回報，惟今日案例源於二手購入需保留因果不確定性</h2>
+    <p class="s-body">Reddit使用者u/Heavy-Attorney-9054今日回報Buffalo Games《Beach Camp》（1000片，畫家Genp Peoples作品）出現false fit問題——完成拼圖過程中，於缺乏圖像引導之區域（主要是散布各處的棕櫚樹叢）需反覆調整鄰接拼片始能正確吻合；另因此件為二手購入（thrifted），開盒後發現缺少3片。使用者本人於文中明確標註為二手商品，故本次印刷層/裁切瑕疵與缺片問題之肇因存在不確定性，可能為原廠瑕疵，也可能為前手保存或使用所致。本報自07/27起已累計記錄Buffalo Games4次獨立false fit回報（分別涉及Photomosaics The Simpsons、Autumn Evening、Dog Days三個系列），加計今日則為第5次；惟因二手購入變數首度出現，本則不計入「同批次製造瑕疵」正式統計，僅作為觀察樣本記錄於brand_typology.md。</p>
+    <p class="s-src"><span class="warn">⚠ 單一貼文，惟屬跨多日累積之獨立樣本第5例</span> · reddit.com/r/Jigsawpuzzles 08/07 · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vhhwd9/beach_camp_buffalo_1000_artist_genp_peoples/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜跨12天、跨3個產品系列、由5位互不相識之使用者各自獨立回報同類型吻合問題，是比單一貼文更值得留意的品牌層級訊號；但今日樣本恰好凸顯D1/D3規則的必要性——二手商品之瑕疵無法排除保存與使用因素，若不加以區分，容易誤將「二手品況」計入「現行產線品管」評價，稀釋既有觀察的可信度。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">本報完成Piecework Puzzles與Professor Puzzle品牌新舊查證，均判定為既有品牌</h2>
+    <p class="s-body">今日Reddit社群訊號中首次出現兩個此前未記錄之品牌名稱，本報依D2-B規則逐一查證：Piecework Puzzles——使用者u/abcdgof分享其《Tutti Frutti》500片（禮物所得）評測，回報消光面印刷、拼片尺寸較大且吻合精準，整體體驗正面；經查證，該品牌由Rachel Hochhauser與Jena Wolfe於2019年共同創立，主打寫實靜物風格拼圖，距今已逾6年，判定【既有品牌】。Professor Puzzle——使用者u/fishtanker93分享其《Discover the Abraham Lake》1000片（二手購入）評測，回報大量false fit、部分拼片剝離、無法完全平整，惟圖像清晰、半光澤表面處理獲肯定；經查證，Professor Puzzle Ltd為英國倫敦公司，正式量產始於2002年，現為國際性拼圖/玩具批發製造商，距今已逾24年，同樣判定【既有品牌】。兩者均未使用「新品牌」或「新進者」等未經證實之表述。</p>
+    <p class="s-src"><span class="ok">✓ 品牌官方頁面查證</span> · pieceworkpuzzles.com／professorpuzzle.com 08/07 · <a href="https://pieceworkpuzzles.com/pages/our-story" target="_blank">Piecework原文 →</a> · <a href="https://professorpuzzle.com/about/in-the-beginning/" target="_blank">Professor Puzzle原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜本則是D2-B「品牌新舊判定鐵則」自07/31訂立以來最完整的一次雙品牌並列查證示範——兩個社群貼文首次出現的品牌名稱，經查證後均非市場新進者，避免了「本報沒看過＝新品牌」的常見誤判陷阱，也提醒讀者Reddit社群曝光度與品牌實際市場資歷未必成正比。</p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日訊號量中等偏弱。核心每日來源（BEVERLY、AJPA、AEPUZZ、WJPF）均無48小時內新增；Reddit r/Jigsawpuzzles取得25則條目，惟具體材質/品質描述僅3則（低於08/06之8則），其中2則涉及二手購入需保留因果判斷。r/speedpuzzling時隔多週首度連線成功，惟內容陳舊（近5個月無新貼文）。價格追蹤（週五排程）進度良好：Metro Hobbies定錨商品累計4次嘗試後首次成功定位；Tate Van Gogh定錨商品價格持平但新增缺貨狀態記錄；Amazon.ae連續第2次503失敗。南卡羅來納州／阿拉巴馬州速拼錦標賽因無法通過官方站台連結查證，依規則不予採用。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.27 · 2026-08-07</span></div>
+
+  <p class="wire-cat">全球定價與通路風向</p>
+  <div class="wire"><span class="geo">[AU]</span> <b>Metro Hobbies定錨商品累積4次嘗試後首次成功定位</b> — Ravensburger 00691-6《Porsche 911R》1000片，AUD $39.99，即日起設為正式定錨基準，取代此前因JS動態載入限制而持續缺讀之狀態。<span class="src">metrohobbies.com.au · <a href="https://www.metrohobbies.com.au/products/ravensburger-00691-6-porsche-911r-1000pc-jigsaw-puzzle" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[AU]</span> <b>Puzzle Palace AU拼圖SKU快照（週五排程）</b> — 記錄6款商品：Holdson《Harmony–Hot Air Balloons》500XL $29.90、Holdson《Seas the Day–Harbour Inn》1000 $29.90（本報定錨過渡代用款，持平）、Holdson《Wasgij Original 48》1000 $29.90、Galison《Fall is in the Air》500 $27.90、Galison《Cats in the Houseplants》500 $27.90、Clementoni《Victorian Promenade》500 $19.90。<span class="src">puzzlepalace.com.au · <a href="https://www.puzzlepalace.com.au/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[UK]</span> <b>Tate Shop定錨商品Van Gogh《Farms near Auvers》價格持平，惟新增缺貨記錄</b> — £17.50與基準一致，惟本期商品頁面顯示「暫無庫存」，為系統追蹤該SKU以來首次記錄此狀態，列入Watchlist觀察。<span class="src">shop.tate.org.uk · <a href="https://shop.tate.org.uk/vincent-van-gogh-farms-near-auvers-jigsaw-puzzle/27278.html" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[SA/AE]</span> <b>中東定錨商品：Jarir持平、Amazon.ae連續第2次失敗</b> — Jarir Robotime《Sunflower》86片SAR 29與基準一致；Amazon.ae本期兩次搜尋嘗試均回報HTTP 503，沿用08/04基準AED 75.00。<span class="src">jarir.com · <a href="https://www.jarir.com/sa-en/toys-games/puzzles.html" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire">今日社群排雷內容集中於頭版一（Buffalo Games）與頭版二（Piecework Puzzles正面／Professor Puzzle負面），Wire無其他新增獨立樣本。</div>
+
+  <p class="wire-cat">材質與技術創新 · 國際賽事與選手動態 · 全球藝術策展</p>
+  <div class="wire">材質與技術創新本期併入頭版二品牌查證報導。國際賽事與選手動態：本期唯一候選（南卡羅來納州／阿拉巴馬州速拼錦標賽8/21）因無法於speedpuzzling.com官方導覽選單中尋得對應州別頁面、直接URL訪問亦回報404，依E2規則不予採用，本維度從缺。全球藝術策展：MOMAT（本期排程日）確認「杉本博司：終わりの始まり」展與夏季祭典既有展期，無新公告；Met Store本期無拼圖商品陳列；Louvre Boutique（實為法國博物館商店聯合平台）未展示個別商品，本維度從缺。</div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期共檢視來源約22個（每天固定約15項＋週五限定7項）· 成功約18個 · 部分成功1個（Louvre Boutique非官方獨立網站）· 失敗3個（AEPUZZ RSS 429、Karen Puzzles YouTube RSS 500、Amazon.ae 503）</div>
+</section>
+
+<!-- ═══ PAGE 3 · REGIONAL PULSE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Regional Pulse · No.27 · 2026-08-07</span></div>
+
+  <p class="rsum">今日訊號來自北美（Buffalo Games累積模式、雙品牌查證）、澳洲（Metro Hobbies定錨定位成功、Puzzle Palace AU SKU快照）、歐洲（Tate缺貨狀態）、中東（Jarir持平、Amazon.ae失敗）；日本本期無新增。</p>
+
+  <div class="pulse-region">
+    <p class="pr-name">日本</p>
+    <p class="pr-quiet">BEVERLY無48小時內新增；定錨商品《夢見る帆船と花の王国》本期未能於官網重新定位，沿用¥4,070基準，列入Watchlist待改點查證。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">中東</p>
+    <p class="pr-li">Jarir Robotime《Sunflower》定錨商品SAR 29與基準持平；Amazon.ae連續第2次503失敗，暫無法重新確認AED定錨讀數。<a href="https://www.jarir.com/sa-en/toys-games/puzzles.html" target="_blank">→</a></p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">北美</p>
+    <p class="pr-li">Buffalo Games《Beach Camp》成為跨12天累積之第5次false fit獨立回報，惟今日樣本源於二手購入，因果存在不確定性（頭版一）。<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vhhwd9/beach_camp_buffalo_1000_artist_genp_peoples/" target="_blank">→</a></p>
+    <p class="pr-li">Piecework Puzzles（既有品牌，2019年創立）獲正面評價；Professor Puzzle（既有品牌，2002年創立）二手購入樣本獲負評，兩者均完成D2-B查證（頭版二）。</p>
+    <p class="pr-li">r/speedpuzzling時隔多週首度連線成功，惟最新貼文為2025年3月，近期社群活躍度極低；The Toy Book／Toy World Magazine均無48小時內新增。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">歐洲</p>
+    <p class="pr-li">Tate Shop定錨商品Van Gogh《Farms near Auvers》£17.50價位持平，惟本期新增「暫無庫存」記錄，列入觀察。<a href="https://shop.tate.org.uk/vincent-van-gogh-farms-near-auvers-jigsaw-puzzle/27278.html" target="_blank">→</a></p>
+    <p class="pr-li">AEPUZZ RSS今日再度429限流未成功。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">澳洲</p>
+    <p class="pr-li">Metro Hobbies定錨商品累積4次嘗試後首次成功定位（Ravensburger《Porsche 911R》1000片AUD $39.99）；Puzzle Palace AU完成週五SKU快照，6款商品價格記錄在案。<a href="https://www.metrohobbies.com.au/products/ravensburger-00691-6-porsche-911r-1000pc-jigsaw-puzzle" target="_blank">→</a></p>
+    <p class="pr-li">AJPA RSS本身無48小時內新增。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 4 · FOCUS + WATCHLIST + SOURCE DESK ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Focus · No.27 · 2026-08-07</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">本週值得追蹤</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>·</b>　Buffalo Games false fit累積模式後續，是否出現第6次「全新購入」樣本以強化（或推翻）現行推論，brand_typology.md已規劃區分全新／二手購入樣本之統計方法</p>
+  <p class="wl-item"><b>·</b>　Piecework Puzzles與Professor Puzzle後續社群評價，觀察窗口第1天</p>
+  <p class="wl-item"><b>·</b>　Metro Hobbies定錨商品首次成功建立，下次排程（08/11週二）將是首度可計算週比之基礎</p>
+  <p class="wl-item"><b>·</b>　Tate Van Gogh定錨商品缺貨狀態，若連續2次排程日仍缺貨需啟動同店同類替補程序</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　Karen Puzzles YouTube RSS本期回報HTTP 500（前期404），頻道經WebSearch確認仍存在，建議改嘗試替代查證方式</p>
+  <p class="wl-item"><b>2</b>　AEPUZZ RSS連續429，持續觀察是否應正式列為結構性限流來源</p>
+  <p class="wl-item"><b>3</b>　BEVERLY官網1000片定錨商品下次排程改用站內搜尋重新定位</p>
+  <p class="wl-item"><b>4</b>　Ravensburger Spieleland兒童拼圖錦標賽資格賽8/8（明日）於德國舉行，後續留意報導</p>
+  <p class="wl-item"><b>5</b>　明日（08/08週六）非固定排程日</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期共檢視來源約22個（週五排程）· 成功約18個 · 部分成功1個 · 失敗3個（AEPUZZ、Karen Puzzles YouTube、Amazon.ae）· 詳見News Wire頁</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 4</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a><a class="toc-link" onclick="goPage(2);return false;"><span class="toc-n">P3</span>Regional Pulse</a><a class="toc-link" onclick="goPage(3);return false;"><span class="toc-n">P4</span>Focus 與追蹤</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-08-06.html">&larr; 2026-08-06</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
