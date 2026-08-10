@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-08-10 · No.30</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0;object-fit:cover}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Galison</span><span class="bchip">Werkshoppe</span><span class="bchip">Hobbry</span><span class="bchip">Pomegranate</span><span class="bchip">New York Puzzle Company</span><span class="bchip">Villager Puzzles</span><span class="bchip">Pieces & Peace</span><span class="bchip">Ravensburger</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.30 · 2026年8月10日 週一</span><span>Front Page · News Wire</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">Galison品質觀察窗口滿8例：社群評價正負恰好對半，達統計呈現門檻</h2>
+    <img class="newsimg" src="https://preview.redd.it/h7nm6z4gsfih1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=564afb667b5d194cc146c750b03c33f3f1ddf239" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Reddit使用者glitter-m0th原貼文實拍，《Quilter's Corner》燙金款</p>
+    <p class="s-body">Reddit今日新增兩則獨立Galison貼文：u/China_hearts分享近期購入之3款Galison拼圖，直言「品質不是市面上最好的，但設計無疑很漂亮」；u/glitter-m0th則於《Quilter's Corner》（1000片，燙金款）評測中稱「喜歡燙金後的完成效果，但上半部拼起來很吃力」，屬正面偏多評語。本報自08/06起針對Galison建立之品質觀察窗口，至此累積滿8個獨立樣本：08/06四篇正負各半（2正2負）、08/07無新樣本、08/08第3樣本缺片負評、08/09第4樣本正面（拼合牢固）、今日第7、8樣本一負一正。8樣本總計正面4例、負面4例，正好對半。</p>
+    <p class="s-src"><span class="ok">✓ 觀察窗口累積8個獨立樣本，橫跨5個交易日</span> · reddit.com/r/Jigsawpuzzles 08/10 · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vjm2g3/exciting_puzzle_delivery/" target="_blank">原文一 →</a> · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vk52sm/quilters_corner_by_galison_1000_pieces/" target="_blank">原文二 →</a></p>
+    <p class="why"><b>Why it matters</b>｜依D7規則，樣本數<8時僅能以絕對數字呈現，今日為觀察窗口首次滿8例，取得以比例呈現之資格。正負對半之結果本身即為訊息：既不支持「系統性品管惡化」，亦不支持「品質穩定良好」之單向敘事，較合理之解讀為Galison品質存在系列間／批次間之明顯差異，而非全品牌一致性問題。詳見Page 4 Focus完整拆解。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">Werkshoppe首次取得具體評測與定價：Homegoods售價US$12.99；Hobbry秋季系列確認第2處門市到貨</h2>
+    <img class="newsimg" src="https://preview.redd.it/1ol0zz94sdih1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=11e6a29c4bd366e04e506fefec188652d864acf9" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Reddit使用者oceansandembers原貼文實拍，攝於美國另一Homegoods門市</p>
+    <p class="s-body">昨日（08/09）頭版報導Werkshoppe／Hobbry秋季新品於美國Homegoods上架、惟門市鋪貨落差明顯。今日出現兩則後續訊號：其一，u/oceansandembers發文確認「我這家Homegoods到貨了全部Hobbry秋季系列」，為繼昨日首例後第2個獨立門市回報同批到貨，佐證鋪貨正逐步擴散而非單一門市個案；其二，u/YoungAggressive3277評測Werkshoppe《Mobile Book Club》（1000片）稱「難度容易、品質佳、外觀漂亮」，並明確標示「於Homegoods以US$12.99購入」——此為Werkshoppe自07/30首次記錄以來，首次取得具體品質評語與定價數據（此前僅有零售陳列照片，工法／評價均為未知）。</p>
+    <p class="s-src"><span class="warn">⚠ 兩則均為單一貼文，暫無第二來源</span> · reddit.com/r/Jigsawpuzzles 08/10 · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vjv5a5/my_home_goods_location_had_all_of_the_hobbry/" target="_blank">原文一 →</a> · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vjwi2f/werkshoppe_mobile_book_club_1010/" target="_blank">原文二 →</a></p>
+    <p class="why"><b>Why it matters</b>｜US$12.99為Homegoods折扣通路之典型定價帶，與該通路「尋寶式」陳列邏輯相符；正面品質評語加上明確定價，使Werkshoppe從「僅有陳列照片」的觀察名單，首度具備可比較之產品情報。</p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日（週一）AJPA活動頁、Tate press、Tate Shop SKU快照、Masterpiece Shop排行榜、Jigsaw Junkies等每週一排程來源恢復查詢，惟均無48小時內新訊號（Tate press最新仍為07/27；Tate Shop快照3款SKU無變動）。Reddit r/Jigsawpuzzles今日識別出8則具材質／通路訊號價值之貼文；完成3起品牌查證（Villager Puzzles、New York Puzzle Company均判定既有品牌；Pieces & Peace因Wayback Machine限流無法判定，誠實標記待查證）。Buffalo Games《Beach Camp》false fit反查滿3日期限，仍未見第二來源，依規則標記「僅單一來源，暫無佐證」並停止反查。r/speedpuzzling連續第2日HTTP 429。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.30 · 2026-08-10</span></div>
+
+  <p class="wire-cat">材質與技術創新</p>
+  <div class="wire"><span class="geo">[NA]</span> <b>Pomegranate《Lolita Lorenzo》1000片</b>（Carol Muthiga-Oyekunle原畫）— 使用者稱「拼片高品質」，惟色彩相近、點描畫風導致組裝難度極高，「完成後就直接送去捐贈，不會再挑戰第二次」。第3次獨立記錄，延續一貫正面評價。<span class="src">reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vjtfhn/lolita_lorenzo_artist_carol_muthigaoyekunle/" target="_blank">→</a></span></div>
+  <img class="newsimg" src="https://preview.redd.it/mb3mo545zfih1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5e08d5ad3171721c8e6f2498c97d1b8835158ca8" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Reddit使用者oxfordsplice原貼文實拍，New York Puzzle Company《Founding Mother》</p>
+  <div class="wire"><span class="geo">[NA]</span> <b>New York Puzzle Company《Founding Mother》1000片</b> — 使用者稱組裝過程愉快，惟缺少1片。品牌查證：2007年由Adam與Sarah創立於紐約，距今逾12個月，判定既有品牌，本報首次記錄。<span class="src">reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vk5wxp/founding_mother_new_york_puzzle_company_1000/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[NA]</span> <b>Villager Puzzles《Quebec City》500片</b>（藝術家Maude Gervais）— 品牌查證發現有趣落差：貼文與商品名雖標示「Quebec City」，惟品牌實際成立於2023年、總部位於加拿大卑詩省（B.C.）Comox，並非魁北克——僅產品主題描繪魁北克市地景。創立者Kelly Striemer專與女性藝術家合作，成立兩年已售出逾5萬件拼圖。距今逾12個月，判定既有品牌，本報首次記錄。<span class="src">reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vjw4m4/villager_puzzles_quebec_city_500_pieces_artist/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">全球定價與通路風向</p>
+  <div class="wire"><span class="geo">[NA]</span> <b>Werkshoppe《Mobile Book Club》Homegoods售價US$12.99</b> — 詳見頭版二，不重複展開。<span class="src">reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vjwi2f/werkshoppe_mobile_book_club_1010/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[EU]</span> <b>Tate Shop拼圖分類本週快照</b> — 確認3款拼圖SKU在架：《Carnation, Lily, Lily, Rose》£15.99、梵谷《Farms near Auvers》£17.50、《The Story of Art in 1000 pieces》£20，均與前次快照相同，無新增或下架。定錨商品Farms near Auvers價格維持£17.50基準，未達10%變動門檻，不列入頭版報導。<span class="src">shop.tate.org.uk · <a href="https://shop.tate.org.uk/vincent-van-gogh-farms-near-auvers-jigsaw-puzzle/27278.html" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire"><span class="geo">[FR]</span> <b>Pieces & Peace《Summer Pool: Claire Wilson》1000片</b> — 使用者稱「有點挑戰性，若附贈海報會更好」，中性偏建設性意見，非重大瑕疵。品牌查證：法國Alizé Group旗下品牌，官網與零售頁面均未載明成立年份，Wayback Machine反查因archive.org限流未完成，本報首次記錄該品牌，歷史待查證。<span class="src">reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vjzpng/summer_pool_claire_wilson_1000_pieces_pieces_and/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[ES]</span> <b>Ravensburger《Coastal Charms》500片</b> — 西語使用者稱「Ravensburger 2026年推出的500片系列很精美，讓人忍不住一直買」，一般性品牌正面評語，非單一產品技術細節。<span class="src">reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vk4gsz/coastal_charms_500_piezas_de_ravensburger/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">國際賽事與選手動態</p>
+  <div class="wire"><span class="geo">[AU]</span> <b>AJPA活動頁本週排程確認3場賽事</b> — Victoria州賽（8/15，Malvern Town Hall，報名費A$50，5天後登場）、ACT州賽（10/17）、全國錦標賽（11/28-29，墨爾本MSAC），均為既有排程，非新公告，惟Victoria州賽即將登場值得留意。<span class="src">australianjigsawpuzzle.org.au · <a href="https://australianjigsawpuzzle.org.au/events/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[NA]</span> <b>Karen Puzzles（YouTube）今日新增2支影片</b> — 宣布挑戰9000片「Disney Museum」主題拼圖，標題稱「可能是我至今最快的一次」；本報僅取得影片標題與發布時間，未逐支觀看驗證內容，列為內容創作者動態觀察。<span class="src">youtube.com/@KarenPuzzles · <a href="https://www.youtube.com/watch?v=tNwM2ELPj-g" target="_blank">→</a></span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期共檢視來源21個（週一固定＋週一限定來源） · 成功19個 · 失敗2個（r/speedpuzzling連續2日HTTP 429；r/Puzzles成功惟內容均為邏輯／腦筋急轉彎類，非拼圖產業訊號，依A2規則排除）</div>
+</section>
+
+<!-- ═══ PAGE 3 · REGIONAL PULSE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Regional Pulse · No.30 · 2026-08-10</span></div>
+
+  <p class="rsum">今日訊號集中於北美（Galison觀察窗口滿8例、Werkshoppe定價與Hobbry跨店確認、3起品牌查證、5則社群品質回報）；澳洲週一活動頁確認近期賽事排程；歐洲Tate Shop完成本週SKU快照，無變動；日本、中東本期無新增訊號。</p>
+
+  <div class="pulse-region">
+    <p class="pr-name">日本</p>
+    <p class="pr-quiet">BEVERLY Atom無48小時內新增（最新仍為08/06公告）；eeBoo×Bornelund聯名新品8/17上市倒數（7天後）；Masterpiece Shop排行榜本週排程查詢惟頁面僅列舊年份彙整文章，無當期排行數據。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">澳洲</p>
+    <p class="pr-li">AJPA活動頁本週排程確認：Victoria州賽8/15（5天後）、ACT州賽10/17、全國錦標賽11/28-29，均為既有排程。<a href="https://australianjigsawpuzzle.org.au/events/" target="_blank">→</a></p>
+    <p class="pr-quiet">AJPA RSS無48小時內新增；本期非SKU快照排程日（Metro Hobbies／Puzzle Palace AU下次08/11週二）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">北美</p>
+    <p class="pr-li">Galison品質觀察窗口滿8個獨立樣本，正負對半，達統計呈現門檻（頭版一）。<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vk52sm/quilters_corner_by_galison_1000_pieces/" target="_blank">→</a></p>
+    <p class="pr-li">Werkshoppe首度取得具體評測與定價（US$12.99）；Hobbry秋季系列確認第2處Homegoods門市到貨（頭版二）。<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vjwi2f/werkshoppe_mobile_book_club_1010/" target="_blank">→</a></p>
+    <p class="pr-li">Pomegranate第3次正面記錄；New York Puzzle Company缺片回報；Villager Puzzles、Pieces & Peace完成品牌查證（1既有、1無法判定）。</p>
+    <p class="pr-li">Buffalo Games《Beach Camp》false fit反查滿3日期限，今日仍未見第二來源，標記「僅單一來源，暫無佐證」並停止反查。</p>
+    <p class="pr-li">Karen Puzzles今日新增2支影片，宣布挑戰9000片拼圖；Jigsaw Junkies、PuzzleWarehouse Blog本週一排程查詢均無48小時內新文章。</p>
+    <p class="pr-li">r/speedpuzzling連續第2日HTTP 429，隔5秒重試仍失敗；r/Puzzles內容經確認均為邏輯類非拼圖產業訊號。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">歐洲</p>
+    <p class="pr-li">Tate Shop拼圖分類本週快照：3款SKU在架，價格與品項均無變動，定錨商品Farms near Auvers維持£17.50。<a href="https://shop.tate.org.uk/vincent-van-gogh-farms-near-auvers-jigsaw-puzzle/27278.html" target="_blank">→</a></p>
+    <p class="pr-quiet">AEPUZZ RSS無48小時內新增；Tate press最新仍為07/27（無拼圖／商品相關公告）；日本協會分頁、歐洲文創GN待08/12（週三）。</p>
+  </div>
+  <div class="pulse-region">
+    <p class="pr-name">中東</p>
+    <p class="pr-quiet">本期非排程日（下次為08/12週三），無新增訊號。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 4 · FOCUS + WATCHLIST + SOURCE DESK ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Focus · No.30 · 2026-08-10</span></div>
+
+  <div class="focus">
+    <p class="f-tag">Focus · 觀察窗口滿8例完整拆解</p>
+    <h3 class="f-hed">Galison觀察窗口五個交易日累積滿8例：正負對半意味著什麼，又不意味著什麼</h3>
+    <div class="f-lede">
+      <p>08/06起本報針對Galison建立品質觀察窗口，今日（08/10）累積滿8個獨立樣本，橫跨5個交易日、8位不同使用者、至少6款不同產品系列。依D7規則，樣本數達8則起可改以比例呈現：完整拆解如下——</p>
+      <p><b>正面（4例）</b>：08/06《Between the Blooms》燙金款（吻合佳、粉塵少）；08/06《Vintage Motel Signs》（品質佳）；08/09《Cosmic Highway》（多次組裝拼合仍牢固）；08/10《Quilter's Corner》燙金款（完成視覺效果佳，惟拼合難度高）。<b>負面（4例）</b>：08/06《Spring Street》（吻合過鬆且缺片）；08/06《Curious Cats》（表面反光、吻合手感異常）；08/08《Cuba》（全新購入缺4片，使用者明確表示不再購買）；08/10「近期購入3款」整體評語（品質非市面最佳）。</p>
+      <p>正負對半（4：4）本身即是一則具編輯意義的訊息：它排除了08/08單一負評樣本曾一度暗示的「系統性品管惡化」敘事，但同樣不支持「品質穩定良好」的樂觀敘事。細看8個樣本可發現一項規律——4個正面樣本中有2個為燙金（foil）系列且均提及「完成視覺效果佳」，暗示Galison之感知品質可能與系列／印刷工藝相關，而非全品牌一致；惟此規律目前僅基於2個燙金正面樣本，仍屬觀察假說而非結論，須待更多燙金系列樣本累積後才能驗證。</p>
+      <p>方法論意義：這是本報「絕對數字→比例呈現」門檻設計以來，首次有品牌實際跨過n≥8門檻，驗證了D7規則的實務可行性——若在樣本數僅4-5例時就以「50%負評」等比例語言呈現，將明顯誇大單一樣本的權重；門檻設計本身即是防止小樣本誤導判斷的護欄。</p>
+    </div>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">本週值得追蹤</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>·</b>　Galison觀察窗口滿8例後是否持續累積（第9、10例）以驗證「燙金系列偏正面」假說，或正負比例是否隨樣本數增加而位移</p>
+  <p class="wl-item"><b>·</b>　Werkshoppe首次取得定價（US$12.99），留意後續是否有更多獨立門市／評測補齊工法細節，目前仍列【工法未知】</p>
+  <p class="wl-item"><b>·</b>　Pieces & Peace品牌成立時間因Wayback Machine限流未查證完成，待archive.org恢復查詢後補齊</p>
+  <p class="wl-item"><b>·</b>　「glossy／glare」系列用詞累積待月度Tier 4語意歸納時一併檢視（延續前期觀察）</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　08/11（週二）Metro Hobbies、Puzzle Palace AU SKU快照、森美術館、故宮、定錨商品價格追蹤（本週首次）恢復排程</p>
+  <p class="wl-item"><b>2</b>　r/speedpuzzling連續2日429，觀察是否第3日恢復連線；若明日仍失敗需評估是否為Reddit端政策性調整</p>
+  <p class="wl-item"><b>3</b>　Piecework Puzzles觀察窗口持續無新增（延續第2-3天記錄，今日Reddit內容中仍未見）</p>
+  <p class="wl-item"><b>4</b>　Hobbry秋季系列鋪貨是否有第3處門市回報，持續驗證通路擴散幅度</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期共檢視來源21個（週一固定＋限定來源） · 成功19個 · 失敗1個（r/speedpuzzling連續429） · 詳見News Wire頁</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 4</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a><a class="toc-link" onclick="goPage(2);return false;"><span class="toc-n">P3</span>Regional Pulse</a><a class="toc-link" onclick="goPage(3);return false;"><span class="toc-n">P4</span>Focus 與追蹤</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-08-09.html">&larr; 2026-08-09</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
