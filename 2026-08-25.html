@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-08-25 · No.41</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0;object-fit:cover}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Reverie Puzzles</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.41 · 2026年8月25日 週二</span><span>Front Page · News Wire</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">澳洲書本主題品牌Reverie Puzzles獲Reddit使用者具體工藝正面佐證，成回頭客</h2>
+    <img class="newsimg" src="https://preview.redd.it/u6ymdogqmclh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=366d72af4ac12d37b3e4b91bd755b977d2981918" alt="Reverie Puzzles Sunday Rain 500片拼圖" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Reddit使用者原貼文「First Reverie Puzzle」實拍照，Reverie Puzzles《Sunday Rain》500片</p>
+    <p class="s-body">本報今日於r/Jigsawpuzzles例行抓取中，觀察到一則具體且附帶明確工法感官描述之品牌正面評測：使用者完成澳洲書本主題拼圖品牌Reverie Puzzles之《Sunday Rain》500片後發文稱，「Only way I can describe Reverie would be the luxury brand of puzzles. The pieces feel amazing, very sturdy pieces, no puzzle dust, colours are just beautiful & important to me, no AI.」並表示已購入多款、另有2款候貨中，屬回頭客而非單次購買。本報查證Reverie Puzzles官網About Us頁，確認品牌構想始於2021年初，距今逾5年，依D2-B規則判定為既有品牌，非新品牌案例，已寫入brand_ledger.md。依D7規則，本期僅此1則貼文提及該品牌，以絕對數字如實記錄，不誇大為統計趨勢。</p>
+    <p class="s-src">reddit.com 2026-08-25 · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1vx7jl6/first_reverie_puzzle/" target="_blank">Reddit原文 →</a> · <a href="https://www.reveriepuzzles.com.au/pages/about-us" target="_blank">Reverie Puzzles官網About Us →</a></p>
+    <p class="why"><b>Why it matters</b>｜貼文中「no AI」一詞為使用者附帶提及，本報並未查證Reverie官網是否存在對應之「非AI」聲明頁面，性質與本週稍早Lantern Press／Galison遭主動查核之案例不同，不宜直接並列比較，詳見本期Focus之方法論釐清。</p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日市場面平靜：BEVERLY、AJPA、AEPUZZ、WJPF均無48小時內新增訊號；定錨商品價格追蹤（每週二排程）5/6檔成功比對，全數與上週持平，未達>10%報導門檻；Amazon.ae定錨商品連續第3次無法查得價格，列入觀察。Karen Puzzles頻道延續每日進度短片系列，Day 12（08/24）稱仍在處理青綠色拼片區塊。r/Puzzles、r/speedpuzzling今日均遭HTTP 429限流。森美術館Ron Mueck個展觀展人次突破30萬。全期採2頁薄刊。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE + WATCHLIST ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.41 · 2026-08-25</span></div>
+
+  <p class="wire-cat">材質與技術創新</p>
+  <div class="wire">本維度今日核心訊號已見頭版（Reverie Puzzles）。其餘來源持平：BEVERLY、AJPA、AEPUZZ均無新增；BEVERLY新商品頁、Metro Hobbies兩項本期排程來源僅取得部分資料（分類統計/導覽結構），未能取得完整個別SKU明細，記錄於backstage。</div>
+
+  <p class="wire-cat">國際賽事與選手動態</p>
+  <div class="wire"><span class="geo">[Global]</span> <b>WJPF官網統計數字與前期完全相同</b> — 72個國家、2,411人次報名、獎金€14,500、YouTube觀看45萬次、拼圖片數投入13,900片；世錦賽確定09/16–20於西班牙巴利亞多利德舉行，Ravensburger為主要贊助商。<span class="src">worldjigsawpuzzle.org · <a href="https://worldjigsawpuzzle.org/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[US]</span> <b>南卡羅來納州、阿拉巴馬州速解錦標賽（08/21，經Zoom舉行）</b> — 已逾48小時窗口，僅作背景記錄；均採500片拼圖、2小時賽制。<span class="src">背景資料，非本期新聞</span></div>
+
+  <p class="wire-cat">全球定價與通路風向</p>
+  <div class="wire">定錨商品價格追蹤（每週二排程）5/6檔成功比對，全數與08/21基準價相比<b>0%變動</b>：Puzzle Palace AU《Little Garden World》持續缺貨候補；Tate Shop梵谷《Farms near Auvers》£17.50持續顯示「currently not available」；Jarir Robotime《Ancient Ship Gothenburg》SR 59；BEVERLY《焼肉ジグソーパズル》1000片維持預售（09/11發售）；Metro Hobbies《The Rocks in Cheow Thailand》$40.99 AUD。<b>Amazon.ae《All Seasons Flower Shop》連續第3次無法查得價格</b>（HTTP 503），沿用67.43 AED，建議下次排程（08/28）評估備援方案。全量詳見backstage第22節。<span class="src">6項定錨商品，詳見backstage</span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire"><span class="geo">[US]</span> <b>Karen Puzzles延續9000片Disney拼圖（Ravensburger）每日進度短片，Day 12稱「仍在奮戰青綠色拼片區塊」</b></span>
+    <img class="newsimg" src="https://i.ytimg.com/vi/KwmDYwa1W30/hqdefault.jpg" alt="Karen Puzzles Day 12短片縮圖" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Karen Puzzles YouTube頻道Day 12短片縮圖</p>
+    <span class="src">本報如實記錄發布時序：08/23主影片「I finished the 9000 piece puzzle. But it was a struggle.」發布35分鐘後，頻道即發布Day 11短片「Finally diving into the teal pieces」，次日（08/24）再發布Day 12短片「still powering through the teal pieces」（18,558次觀看，較主影片122,266次與Day 11短片70,514次明顯下滑）。是否為每日短片與正片發布排程本存在時間差所致，本報不做未經證實之推論，僅記錄客觀數據。youtube.com Karen Puzzles · <a href="https://www.youtube.com/shorts/KwmDYwa1W30" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Reddit]</span> <b>r/Puzzles、r/speedpuzzling今日均遭HTTP 429限流，隔5秒重試仍失敗</b> — r/speedpuzzling本期未延續08/24之短暫恢復現象；r/Jigsawpuzzles本身正常（HTTP 200，25則條目，約24則落於48小時窗口，內容以完成分享為主，無具體工法瑕疵回報）。</div>
+
+  <p class="wire-cat">全球藝術策展與藝術IP風向球</p>
+  <div class="wire"><span class="geo">[JP]</span> <b>森美術館Ron Mueck個展觀展人次突破30萬</b> — 主展（04/29–09/23）並行3項展覽（Timoteus Anggawan Kusno、Josh Kline、韓裔藝術家跨境記憶特展）持平；美術館商店已推出展覽周邊（大托特包等）。<span class="src">mori.art.museum · <a href="https://www.mori.art.museum/en/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[TW]</span> <b>故宮4項現行展覽持平</b> — 《龍藏經》（至11/08）、《物象千秋》異獸特展（至08/30）、《紅樓夢》長期展（至2027/08/15）、《武功遊藝》書畫特展（07/10–09/16），均非48小時內新展，未見商店新品訊息。<span class="src">npm.gov.tw · <a href="https://www.npm.gov.tw/" target="_blank">→</a></span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Focus</span><div class="sec-l"></div></div>
+  <div class="focus">
+    <p class="f-tag">Analysis · Methodology</p>
+    <h3 class="f-hed">「非AI」觀察線的對照組：Reverie獲正面佐證，惟與Lantern Press／Galison之「查核」性質不同</h3>
+    <div class="f-lede">
+      <p>本報自08-21起追蹤品牌「反AI／人手創作」聲明遭社群檢驗之案例——Galison「Real Artists, Real Art」聲明因連續3天反查無法找到可核實證據而結案觀察（08-23）；Lantern Press「Made by Humans, Not by AI」聲明則遭Reddit使用者以具體圖像特徵提出反證（08-24，現仍為單一來源）。今日出現本週內第三起與「非AI」主題相關之貼文：一名使用者分享Reverie Puzzles《Sunday Rain》500片拼圖完成照，讚賞拼合紮實、無拼圖粉塵、色彩美觀，並附帶提及「no AI」。</p>
+      <p>本報須明確指出，Reverie案例與前兩起案例<b>性質並不相同</b>，不宜直接並列為同類案例的第三例。Galison與Lantern Press案例，是本報或社群使用者「主動查核」品牌官網聲明與實際圖像／流程證據是否相符；Reverie案例則是使用者單純的正面購物體驗分享，「no AI」一詞為附帶提及，本報並未查證Reverie官網是否存在對應之「非AI」聲明頁面，亦無人對其提出質疑或查核。若貿然將三者並列為「一週三起同類案例」，將構成無資料支撐之推論。本則Focus之真正價值在於提醒：社群對「非AI」相關語言的關注度提高，不代表所有提及該詞的貼文都具有同等的查核意義，編輯判斷須區分「被質疑的聲明」與「未被質疑的體驗分享」。</p>
+    </div>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　Lantern Press爭議明日（08/26）將達連續3日單一來源門檻，若仍無第二來源將依規則標記並停止反查</p>
+  <p class="wl-item"><b>2</b>　Amazon.ae定錨商品是否於08/28排程恢復可查價，或需評估備援商品</p>
+  <p class="wl-item"><b>3</b>　r/speedpuzzling連線狀態是否再次出現短暫恢復</p>
+  <p class="wl-item"><b>4</b>　BEVERLY新商品頁、Metro Hobbies下次排程（08/28）改採更具體分類URL測試</p>
+  <p class="wl-item"><b>5</b>　Karen Puzzles「9000片Disney拼圖」系列是否於近日內真正完結</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期共檢視來源22項（16項每日固定排程＋6項週二限定排程，含價格追蹤6檔） · 多數成功 · 2項失敗（r/Puzzles、r/speedpuzzling均HTTP 429） · BEVERLY新商品頁／Metro Hobbies部分成功 · Amazon.ae定錨商品連續第3次無法查得</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 2</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度 + Focus</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-08-24.html">&larr; 2026-08-24</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
