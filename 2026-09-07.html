@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-09-07 · No.51</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0;object-fit:cover}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Hobbry</span><span class="bchip">Galison</span><span class="bchip">Buffalo Games</span><span class="bchip">Cobble Hill</span><span class="bchip">Piecely</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.51 · 2026年9月7日 週日</span><span>Front Page · News Wire</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">Hobbry連七日正評紀錄首見雜音：一則貼文同時出現「喜歡手感」與「聽說很多人不喜歡這品質」</h2>
+    <p class="s-body">本報自08/18起持續追蹤之品牌Hobbry（既有品牌，2014年創立），過去一週（09/03–09/06）於Reddit r/Jigsawpuzzles累積之技術評測樣本均為正面（「velvety smooth texture」「No puzzle dust, no false fits, no glare」「little details on the puzzle and box」等）。09/06新出現一則貼文《The Book Burrow》500片，內文為：「First Hobbry and I enjoyed it so much. It's really beautiful when put together. I love the feel of the pieces, though I think a lot of people don't like the quality of these puzzles.」該貼文本身對Hobbry給予正面體驗，但同時提及「聽聞社群普遍不喜歡這個品質」之轉述性評語，為本報觀察期以來首次在同一則貼文中同時出現個人正評與對品牌整體品質之負面轉述。依D7小樣本規則，本報僅以絕對數字呈現，不做趨勢定論：此為單一貼文、單一使用者之轉述性評語，非其本人之獨立負評，亦非可查證之其他負評來源，故僅記錄為觀察訊號。</p>
+    <img class="newsimg" src="https://preview.redd.it/1xn57dhexxnh1.jpeg?width=640&crop=smart&auto=webp&s=767e28aad80a3d54696a5e3304d12e74bd5af41b" alt="The Book Burrow by Hobbry" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Reddit使用者 u/China_hearts 原貼文實拍</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span>（單一貼文內之轉述性評語，非獨立第二來源之負評） · reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1w93hrl/the_book_burrow_hobbry_500_pieces/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜Hobbry是本報連續三週樣本量最高、正評最集中之品牌，若「品質評價分歧」之轉述屬實，可能反映其量產規模擴大後之品管一致性挑戰；惟目前僅一則轉述性評語，本報將持續累積樣本，避免以單筆貼文做出趨勢定論。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">Karen Puzzles YouTube頻道RSS故障修復，發布「布料拼圖」影片：材質創新從紙板／木質延伸至紡織品</h2>
+    <p class="s-body">本報自09/05起列入Watchlist之技術性故障——Karen Puzzles YouTube頻道RSS（channel_id=UC2umy62ojMfxzzHkVcgEUUA）曾連續回傳HTTP 404——本期確認已恢復正常（HTTP 200）。頻道於09/06發布一則影片《Can I solve a jigsaw puzzle made out of fabric?》，主題為以紡織品（布料）製成之拼圖，另同日發布短影音版本《This is a jigsaw puzzle made out of fabric.》。此為本報材質創新維度中，首次記錄以紡織品作為拼圖基材之案例，與既有藍卡紙／灰卡紙／木質／壓克力等材質分類均不相同；惟本報僅取得影片標題與描述，未能取得該布料拼圖之製造商或品牌名稱，具體商品化程度待進一步查證。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源</span>（單一YouTube頻道發布，未見其他媒體報導或商品化訊息） · youtube.com/@KarenPuzzles · <a href="https://www.youtube.com/watch?v=JamLGsx5BZM" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜若紡織品拼圖成為可規模化之新材質類別，將是繼藍卡紙／木質／壓克力之後的第四種基材路線；惟目前僅為單一內容創作者示範性質，距離商品化仍有距離，列入Watchlist持續觀察是否有品牌跟進。</p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日（週日）為Tier 3動態詞彙週度評估排程日：本週（08/31–09/06）Tier 2原始詞彙庫中，「(no) false fit(s)」詞族本週再新增1次獨立來源（Hobbry，09/04），惟累計出現次數與跨來源數均未達Tier 3晉升門檻（≥5次、≥3來源），暫不晉升，詳見backstage第15節。BEVERLY、AJPA、AEPUZZ本期均無新內容（AJPA近5日無更新；AEPUZZ「Cavia拼圖大賽」單一來源反查已於09/05正式收尾）；r/speedpuzzling連續多期HTTP 429限流，本期依規則重試1次仍失敗；另需誠實揭露：本報排程於09/06當日未能產出報紙（技術性中斷），為避免以回溯方式補造內容，本期不補發09/06版本，僅於此註記缺漏。全期頭條外可用項目未達4頁門檻（≥6則），採2頁薄刊。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE + WATCHLIST ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.51 · 2026-09-07</span></div>
+
+  <p class="wire-cat">材質與技術創新</p>
+  <div class="wire"><span class="geo">[Global]</span> <b>Karen Puzzles頻道發布紡織品拼圖示範影片，YouTube RSS技術故障已修復</b> — 詳見頭條二。<span class="src">youtube.com · <a href="https://www.youtube.com/watch?v=JamLGsx5BZM" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[US]</span> <b>Cobble Hill 500片《Fisherman's Wharf》使用者回報「完成尺寸等同1000片」，反映該品牌片型偏大之規格特性</b> — 使用者u/CosyPuzzles分享心得：「I really liked the quality of Cobble Hill puzzles. However, I wasn't expecting the pieces to be this big. This 500 piece puzzle is the size of a 1000 piece puzzle once it's completed.」屬中性規格資訊，非品質評價。<span class="src">reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1w8ypby/fishermans_wharf_by_carl_brenders_cobble_hill_500/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire"><span class="geo">[US]</span> <b>Hobbry品牌首見「正評中夾帶負面轉述」貼文</b> — 詳見頭條一。<span class="src">reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1w93hrl/the_book_burrow_hobbry_500_pieces/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[US]</span> <b>Buffalo Games「bonjour!」系列正面技術評測：印刷品質高、多形狀刀模、中等鬆緊度且無鬆脫件</b> — 使用者u/paintedropes評測《Witch's Library》1000片：「Print quality was high with semi-glossy finish, varied grid-cut pieces. Medium fit, no false fits, and none had to be separated out of the box.」為本週Tier 2詞彙庫中最完整之正面技術評語範例之一。<span class="src">reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1w93kwu/witchs_library_by_brittnie_ortega_buffalo_bonjour/" target="_blank">→</a></span></div>
+  <div class="wire">[Global] <b>Galison金屬燙金系列本期第3則社群回報，方向轉為正面：「The foil is really pretty」</b> — 使用者u/throwaway42098907評測《Whiskers of Autumn》500片，語氣正面簡短，未提及損傷問題。本週累計3則Galison燙金相關回報（09/03正面、09/04負面、今日正面），依D7規則樣本量仍過小，不做趨勢定論，持續累積。<span class="src">reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1w90rei/whiskers_of_autumn_galison_500pcs/" target="_blank">→</a></span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　Hobbry「品質評價分歧」轉述是否有其他獨立使用者提出佐證，持續累積樣本</p>
+  <p class="wl-item"><b>2</b>　Karen Puzzles布料拼圖是否有品牌跟進商品化，或補充製造商資訊</p>
+  <p class="wl-item"><b>3</b>　Galison燙金系列品質回報持續累積（現累計3則，正/負/正各1），觀察是否達D7規則≥8則統計門檻</p>
+  <p class="wl-item"><b>4</b>　r/speedpuzzling連續多期429限流，下次排程確認是否恢復</p>
+  <p class="wl-item"><b>5</b>　世界拼圖錦標賽（WJPC）09/16–20西班牙巴利亞多利德登場倒數，下週起加強賽事排程追蹤</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期共檢視來源14項（週日排程，每日固定來源，無週間限定項目） · 11項成功（其中3項查得新內容：Reddit材質/社群訊號、Karen YouTube復原） · 3項無新內容（AJPA近5日無更新、BEVERLY無新增、AEPUZZ Cavia賽事已於09/05收尾） · 1項技術性失敗（r/speedpuzzling HTTP 429） · 09/06本報排程中斷未產出，本期誠實揭露不補發</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 2</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日兩大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 三維度</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-09-05.html">&larr; 2026-09-05</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
