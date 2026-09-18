@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-09-18 · No.58</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0;object-fit:cover}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">BEVERLY</span><span class="bchip">Tenyo</span><span class="bchip">EPOCH</span><span class="bchip">Art and Fable</span><span class="bchip">Puzzledly</span><span class="bchip">AEPUZZ</span><span class="bchip">Met Store</span><span class="bchip">MoMA</span><span class="bchip">MOMAT</span><span class="bchip">Grandma Moses</span><span class="bchip">竹久夢二</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.58 · 2026年9月18日 週五</span><span>Front Page · News Wire</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日三大重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">WJPC 世界拼圖錦標賽「組織團體決賽」落幕：西班牙 00:54:19 奪冠，德國落後 38 秒居次，瑞典第三</h2>
+    <p class="s-body">世界拼圖錦標賽官方賽事頁顯示，9月18日 13:00 於西班牙巴利亞多利德（Valladolid）展覽館舉行的 Organizations Final（組織決賽，2 小時、2,000 片）已有成績：Speedpuzzling Spain 2026 以 00:54:19 居首，德國隊 00:54:57 居次（差 38 秒），瑞典 00:58:41 第三（與冠軍差約 3 分 44 秒）；澳洲 00:59:30 第四、奧地利 01:06:23 第五。本屆共 35 個組織參賽，印度、巴西、秘魯等新興速拼國家亦有隊伍出賽，部分隊伍在資料擷取時仍在完成中，名次以官方最終頁面為準。賽事另設有當日雙人資格賽（Group A／B），結果本報尚未取得。</p>
+    <p class="s-src"><span class="ok">✓ 官方一手資料</span>（主辦單位賽事頁；官方另有 YouTube 直播） · worldjigsawpuzzle.org · <a href="https://worldjigsawpuzzle.org/wjpc/2026" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜東道主奪冠、德國僅差 38 秒，顯示歐洲速拼組織的競爭密度；賽事聲量通常帶動主辦國速拼與品牌競賽拼圖的關注。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">【🚨 社群排雷】Art and Fable《Paramount》1000 片全新未拆封出現拼片分層、印刷層剝落——本報第二次記錄同類回報</h2>
+    <p class="s-body">Reddit r/Jigsawpuzzles 使用者 u/lavalampy75 於 9月18日發文「Art and Fable quality」：原本因「絨面觸感（velvet feel）、完美咬合、無 AI／藝術家署名爭議、女性小型企業」而將該品牌列為口袋名單，但新購一盒全新未拆封的 1000 片《Paramount》後「相當失望」——絨面觸感雖佳，但「拼片全部在分層（pieces are all separating）」，數片全新拼片的紙面已剝落，誤拼後拔起會使拼片「扯開」，並問這是個別瑕疵還是近年產品皆如此（該款已上市「一兩年」）。依 D1 語境判讀，此處「絨面」為正面、「分層／剝落」為明確負面痛點，歸類品質負評。本報 2026-07-29 已記錄同品牌回報「印刷層於移動拼片時翹起」，本次為同一痛點的第二次獨立出現。</p>
+    <img class="wire-img" src="https://preview.redd.it/9b7n966umaqh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=1f1adff7e7fbdfa8f6ccd625715ea0a8e6f87733" alt="Art and Fable 貼文縮圖" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+    <p class="imgcap">圖／Reddit 使用者 u/lavalampy75 原貼文縮圖</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源（本次）；與 07-29 回報同品牌同痛點，構成跨期累積</span> · reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1wjslqr/art_and_fable_quality/" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜以「軟木絨面＋無反光」為賣點的工法，卻在拼片層間黏著上重複被回報；對主打質感的品牌而言，這是可觀察的品質一致性風險。工法對照表仍記「未確認」，本報不推論產線原因。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed">BEVERLY 公告 2026年10月1日起調漲價格：原物料與物流成本高漲、匯率與人事成本上升</h2>
+    <p class="s-body">BEVERLY 官網公告「2026年10月『価格改定』のお知らせ」（公告日 9月1日，生效日 10月1日起出貨適用）。官方列舉的原因為「全球原材料與物流成本高漲」、匯率變動，以及人事與營運成本上升，並稱「難以維持現行價格」。調價品項與幅度置於另附 PDF「價格改定リスト」，公告內文未列具體數字，本報目前無法取得。公告發布已逾 48 小時，但生效日在未來，依規則納入。</p>
+    <p class="s-src"><span class="ok">✓ 官方一手資料</span>（品牌官網公告） · be-en.co.jp · <a href="https://be-en.co.jp/blogs/news/2026_10_kakakukaitei" target="_blank">原文 →</a></p>
+    <p class="why"><b>Why it matters</b>｜日本一線品牌明確以原料、物流、匯率為由調價，是全球定價風向的直接訊號；幅度待 PDF 清單確認前不做推論。</p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日兩條成本／品質線互相呼應：BEVERLY 以成本壓力調價，而以質感為賣點的 Art and Fable 同一痛點第二度被回報——價格上升時，消費者對品質一致性的容忍度會更低。賽事端由 WJPC 組織決賽主導。⚠ 斷刊記錄：9/12、9/13、9/15 未產出（共 3 日）。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.58 · 2026-09-18</span></div>
+
+  <p class="wire-cat">材質與技術創新</p>
+  <div class="wire"><span class="geo">[Japan]</span> <b>Tenyo「Disney Fantasia Dream」1000 片：世界最小片幅系列，完成後圖面會在吸光後發光</b> — 日本媒體彙整 9月11日發售的新品：Tenyo 三款（Fantasia Dream 1000 片、Thomas Kinkade Studios 彩繪玻璃風《美女與野獸》500 片、《玩具總動員5》500 片），另 BEVERLY 9 款（300／1000 片，含名古屋城、燒肉、月夜、渡月橋秋景等）與 EPOCH 2 款 300 片（小小兵、玩具總動員5，附裝飾貼紙）。來源未載價格；發布日 9月15日，本報首次檢視。<span class="src"><span class="warn">⚠ 單一來源</span> · discoveryjapan blog · <a href="https://www.discovery-japan-partner.com/september-2026-new-jigsaw-puzzle-releases/" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">國際賽事與選手動態</p>
+  <div class="wire"><span class="geo">[Spain]</span> <b>AEPUZZ 一日內公告 3 場西班牙拼圖賽：Armilla、Azkoitia、Ermua</b> — 官方 RSS 於 9月17日新增「I Concurso de puzzles Armilla」「I Concurso de puzzles Azkoitia」「III Concurso de puzzles Ermua」，賽事日期皆在 2026 年 10 月。加上 9/14 的 Alovera 慈善賽，本週 AEPUZZ 已公告 4 場，呼應 WJPC 世界賽在本國舉行。<span class="src"><span class="ok">✓ 官方</span> · aepuzz.es · <a href="https://aepuzz.es/i-concurso-de-puzzles-armilla" target="_blank">Armilla</a> · <a href="https://aepuzz.es/i-concurso-de-puzzles-azkoitia" target="_blank">Azkoitia</a> · <a href="https://aepuzz.es/iii_concurso_puzzles_ermua" target="_blank">Ermua</a></span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire"><span class="geo">[US/Global]</span> <b>Puzzledly「Belly Scratch」1000 片：全新拼圖出現兩片重複、另缺一片</b> — u/Th1stlePatch 於 9月18日表示新購該盒「拿到兩片重複拼片，且缺一片」，「這是第一個 Puzzledly 拼圖，也會是最後一個」。Puzzledly 在本報既有記錄中出現於通路頁面（Oll'eo、Puzzlefolk 商品頁），此貼文是否指其自有品牌或代理品牌，本報「品牌歸屬待查證」。屬計數／品管類負評，單一樣本。<span class="src"><span class="warn">⚠ 單一來源</span> · reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1wjrkew/well_thats_different/" target="_blank">→</a></span></div>
+  <img class="wire-img" src="https://preview.redd.it/wcuwsnfmfaqh1.jpeg?width=640&crop=smart&auto=webp&s=26e13831a79f85c8b096e77f65d3dbcb4e2be84a" alt="Puzzledly Belly Scratch 貼文圖" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Reddit 使用者 u/Th1stlePatch 原貼文實拍</p>
+
+  <p class="wire-cat">全球藝術策展與藝術 IP 風向球</p>
+  <div class="wire"><span class="geo">[US-Cleveland]</span> <b>克里夫蘭美術館「摩西奶奶（Grandma Moses）」大展 9月13日開幕</b> — 【摘要】據 Hyperallergic 秋季展覽彙整，該展以「重新喚起戰後摩西奶奶的遺產」為主軸；摩西奶奶為美國民間素人畫家，題材以鄉村四季、節慶與農家生活為主，畫面繁複、敘事性強，長期是拼圖圖庫常見的題材。【藝術家】Grandma Moses（安娜·瑪麗·羅伯森·摩西）。【作品】清單官方尚未取得。【展期／地點】2026-09-13 起，展期迄日本報尚未取得；美國克里夫蘭美術館。<span class="src">Hyperallergic 彙整 · <span class="warn">⚠ 單一來源，官方頁待補</span> · <a href="https://hyperallergic.com/15-museum-exhibitions-to-see-across-the-us-this-fall/" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[US-NY]</span> <b>MoMA「Taking Back Our Space: Photographic Perspectives」9月20日開幕（MoMA 紐約，非 MOMAT）</b> — 【摘要】展覽將 Marianne Wex 對女性在公共空間如何佔用身體空間的攝影研究，與當代藝術家作品並置；主題偏社會觀察與影像，商品化拼圖潛力屬低至中。【藝術家】Marianne Wex，其餘當代藝術家名單官方尚未取得。【作品】官方尚未公布。【展期／地點】2026-09-20 起，迄日未取得；美國紐約現代美術館。另同館「Sarah Michelson: nowhere」9/15 開幕，為現場表演型展覽。<span class="src">Time Out New York · <span class="warn">⚠ 單一來源</span> · <a href="https://www.timeout.com/newyork/news/all-of-the-must-see-art-exhibitions-coming-to-moma-this-fall-090326" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[Japan-Tokyo]</span> <b>東京國立近代美術館「MOMAT秋びより」9/29–11/15 含「竹久夢二」特展（MOMAT，非 MoMA）</b> — 【新增角度】先前本報僅記錄鏑木清方等收藏展，此次確認同期特展為《竹久夢二：時代をつくった画家》。【摘要】竹久夢二為大正浪漫代表畫家，以纖細嫵媚的「夢二式美人」與插畫、平面設計聞名，圖像風格與日本禮品、文具市場高度相容。【藝術家】竹久夢二。【作品】官方清單未於搜尋結果載明。【展期／地點】秋びより整體為 2026-09-29–11-15，特展個別檔期以官方為準；日本東京國立近代美術館。<span class="src">MOMAT 官網 · <span class="ok">✓ 官方</span> · <a href="https://www.momat.go.jp/events/20260929" target="_blank">→</a></span></div>
+  <div class="wire"><span class="geo">[US-NY]</span> <b>Met Store 官網首頁主推「The Met Cloisters Unicorn Puzzle」US$24.95</b> — 禮品店新品預警：獨角獸掛毯題材拼圖，為博物館商店端的中世紀織品題材商品；本報未查得其是否為本週新上架，僅確認首頁正在主推。<span class="src"><span class="ok">✓ 官方商店</span> · store.metmuseum.org · <a href="https://store.metmuseum.org/the-met-cloisters-unicorn-puzzle-80059122" target="_blank">→</a></span></div>
+</section>
+
+<!-- ═══ PAGE 3 · REGIONAL PULSE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Regional Pulse · No.58 · 2026-09-18</span></div>
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse</span><div class="sec-l"></div></div>
+  <div class="rsum">今日以 WJPC 組織決賽、BEVERLY 調價公告與 Art and Fable 同痛點再現為主軸；澳洲有定錨價格建檔，中東為非排程日。</div>
+  <div class="pulse-region"><p class="pr-name">日本</p><p class="pr-li">BEVERLY 官網 Atom 除 11月13日新品（已於 9/17 報導）外，可見 9/1 兩則舊公告，其中 10 月價格改定為本日頭條三；9月11日 BEVERLY／EPOCH／Tenyo 新品由日文彙整媒體提供（見 Wire）。</p></div>
+  <div class="pulse-region"><p class="pr-name">歐洲</p><p class="pr-li">WJPC 組織決賽（頭條一）；AEPUZZ 單日公告 3 場 10 月賽事；WJPF（wjpf.info）未再嘗試（連續多期失敗）。Louvre Boutique 首頁僅見《Cluedo Louvre》桌遊（€45）與「L'EAU PRIMORDIALE」展覽周邊，無拼圖商品。</p></div>
+  <div class="pulse-region"><p class="pr-name">北美／社群</p><p class="pr-li">Reddit r/Jigsawpuzzles 本日 22 則（09-18 為主）：品質類 2 則（Art and Fable、Puzzledly，皆負面）、中性／正面 1 則（Steeped Dreams「第一個沒缺片的 1000 片」）、其餘為品牌曬圖（Ravensburger×4、Clementoni×2、Galison×2、Birdie、Springbok、MudPuppy、Piatnik、Great American Puzzle Co 等）。r/Puzzles 遭 HTTP 429，未取得；r/speedpuzzling RSS 最新內容為 2025 年，無新內容。Met Store 首頁見獨角獸拼圖。</p></div>
+  <div class="pulse-region"><p class="pr-name">澳洲</p><p class="pr-li">AJPA RSS 無新公告（最新仍為 6/4「National dates confirmed for 2026」）。Puzzle Palace AU Ravensburger 1000 片標價 A$34.90（六款皆同價，已建為定錨紀錄）；Metro Hobbies 商品頁未能透過工具讀出價格。</p></div>
+  <div class="pulse-region"><p class="pr-name">中東</p><p class="pr-li">非排程日（每週三）；Jarir 拼圖分類頁今日 HTTP 404，路徑可能已變更。</p></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　WJPC 雙人賽、團體賽、決賽與閉幕結果（官方賽程頁的完賽標記與今日日期不符，本報不引用，待官方成績頁）</p>
+  <p class="wl-item"><b>2</b>　BEVERLY 價格改定 PDF：調價品項與幅度</p>
+  <p class="wl-item"><b>3</b>　Art and Fable 是否再有第三則分層／剝落回報；Puzzledly 品牌歸屬查證</p>
+  <p class="wl-item"><b>4</b>　Grandma Moses、MoMA、MOMAT 竹久夢二展的官方頁面資訊補齊</p>
+  <p class="wl-item"><b>5</b>　NYPC《Cozy Night In》等 09-14 四則觀察：第 3 次反查無再現，結案為「僅單一來源，暫無佐證」；Heye《Exotic Garden》第 3 次反查同樣無再現，結案</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期（週五排程）共檢視來源約 20 項：可用內容（BEVERLY、WJPC、AEPUZZ、Reddit r/Jigsawpuzzles、Discovery Japan 彙整、MOMAT／藝術 GN、Met Store、Puzzle Palace AU、Tate Shop）；無新內容或不適用（AJPA、r/speedpuzzling、Louvre Boutique）；失敗（r/Puzzles 429、Jarir 404、Metro Hobbies 價格未讀出）。完整清單見 backstage.md。</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 3</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire</a><a class="toc-link" onclick="goPage(2);return false;"><span class="toc-n">P3</span>Regional Pulse</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-09-17.html">&larr; 2026-09-17</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
