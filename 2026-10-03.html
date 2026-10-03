@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-10-03 · No.70</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0;object-fit:cover}
+.wire-img{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0;object-fit:cover}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Toys"R"Us</span><span class="bchip">PPIH（唐吉訶德）</span><span class="bchip">Galison</span><span class="bchip">Ravensburger</span><span class="bchip">PuzzleTwist</span><span class="bchip">Bits &amp; Pieces</span><span class="bchip">Eurographics</span><span class="bchip">やのまん</span><span class="bchip">昭文社</span><span class="bchip">King International</span><span class="bchip">Little Spooky Studio</span><span class="bchip">WerkShoppe</span><span class="bchip">Buffalo Games</span><span class="bchip">Trefl</span><span class="bchip">eeBoo</span><span class="bchip">American Roadtrip</span><span class="bchip">BEVERLY</span><span class="bchip">Marimekko</span><span class="bchip">東京都庭園美術館</span><span class="bchip">名古屋市美術館</span><span class="bchip">WI-JPA</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<!-- ═══ PAGE 1 · FRONT PAGE ═══ -->
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.70 · 2026年10月3日 週六</span><span>Front Page · News Wire</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日三大重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">日本玩具反斗城（Toys"R"Us）在民事再生程序中轉手：約 150 家門市將交給唐吉訶德母公司 PPIH 旗下公司，收購金額約 100 億日圓</h2>
+    <p class="s-body">Toys"R"Us Asia 10/1 宣布，日本子公司 Toys"R"Us-Japan 已與 Pan Pacific International Holdings（PPIH，唐吉訶德的母公司）的關係企業簽訂最終協議，轉讓日本業務。這筆交易是在日本的民事再生程序（類似美國的破產保護）下進行，還需完成一般成交條件與核准。時事通信（nippon.com 轉載）與 Inside Retail Asia 報導，PPIH 將接手日本全部約 150 家門市（含 Babies"R"Us），金額約 100 億日圓。Toys"R"Us Asia 表示，交接期間門市照常營業、客服不中斷；日本以外的中國大陸、香港、台灣、新加坡、馬來西亞、泰國、菲律賓、澳門業務、電商與供應商關係都不受影響。</p>
+    <p class="s-src"><span class="ok">✓ 雙來源確認</span> · toybook.com／nippon.com／insideretail.asia · <a href="https://toybook.com/toys-r-us-asia-to-transfer-japan-business-to-ppih-affiliate/" target="_blank">The Toy Book →</a> · <a href="https://www.nippon.com/en/news/yjj2026100101018/" target="_blank">nippon.com（時事）→</a> · <a href="https://insideretail.asia/2026/10/01/toys-r-us-to-hand-japan-business-to-ppih/" target="_blank">Inside Retail Asia →</a></p>
+    <p class="why"><b>Why it matters</b>｜玩具反斗城是日本主要的玩具量販通路之一，也是拼圖的實體貨架。新東家唐吉訶德以壓縮式陳列、高周轉、低價品為主，接手後拼圖的陳列面積、品項數與進貨條件可能重新談。同一時間 BEVERLY 正在調價（11/2 起拼圖本體漲價），日本拼圖廠同時面對成本上升與通路易主。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">Galison 發布「不用 AI」承諾後兩天，r/Jigsawpuzzles 出現 6 則 Galison 實拼貼文；其中 2 則談切工：《Hometown Cheer》拼片「出盒時還連在一起」，《Spooky Village》則因「咬得太緊」拼第一次就傷了片</h2>
+    <p class="s-body">10/2 到 10/3，6 位不同使用者貼出 Galison 1000 片成品。u/Auntiejanv 拼《Hometown Cheer》，稱讚「色彩鮮豔」，唯一的抱怨是很多拼片出盒時還連著：「看起來沒切好，拼片背面完全沒斷開，我得用撕的，撕掉了一些紙層」，最後補一句「不是大問題」。u/Ok_Challenge_5176 重拼去年買的《Spooky Village》（Joy Latrobe 繪）：「第一次拼時，有些拼片因為咬得太緊而受損」，但仍說圖很可愛、拼得愉快。其餘 4 則都是正面或中性：《Birdhouse Lane》大片綠與白「質感與色彩變化夠多，其實很好拼」；《Lounging Cats》（Alison Kolesar 繪）花紋毯子讓拼圖「有趣又簡單」；《Harvest Market》《Novel Neighborhood》只貼成品。</p>
+    <img class="wire-img" src="https://i.redd.it/elip0im5n6th1.jpg" alt="Galison Hometown Cheer 1000片" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Reddit 使用者 u/Auntiejanv 原貼文實拍</p>
+    <p class="s-src"><span class="ok">✓ 雙來源確認（不同使用者、不同品項，都談切工）</span> · reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1wweg0w/galison_hometown_cheer_1000_pieces/" target="_blank">Hometown Cheer →</a> · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1wvtvlq/spooky_village_by_joy_latrobe_galison_1000_pcs/" target="_blank">Spooky Village →</a> · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1ww9azz/birdhouse_lane_galison_1000_pieces/" target="_blank">Birdhouse Lane →</a> · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1ww42mz/lounging_cats_by_alison_kolesar_1000_galison/" target="_blank">Lounging Cats →</a></p>
+    <p class="why"><b>Why it matters</b>｜兩則問題方向相反：一則是沒切斷，一則是咬合過緊，都指向刀模與壓切的公差。依 D1，拼圖圈的「tight fit」通常是讚美，但這裡伴隨「拼片受損」，是負面。加上 9/30 的色差留言，Galison 三天內有 3 則品質回報，樣本仍小，但「不用 AI」承諾讓更多人拼 Galison、貼 Galison，品質問題也更容易被看見。</p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed">威斯康辛州拼圖錦標賽 10/23–24 在 Rothschild 舉行：預計 300 多人參賽，四個組別分別由 Ravensburger、PuzzleTwist、Bits &amp; Pieces、Eurographics 冠名</h2>
+    <p class="s-body">Wausau Daily Herald 報導（Yahoo 轉載），威斯康辛拼圖協會（WI-JPA）第二屆實體州賽將在 Rothschild 的 Holiday Inn &amp; Suites 舉行，比賽用 500 到 1,000 片拼圖。10/23 晚上 7 點開場是 Ravensburger 冠名的接力賽：40 隊、每隊 3 到 4 人拼兩盒 500 片。10/24 依序是 PuzzleTwist 冠名的個人賽（80 人、500 片）、Bits &amp; Pieces 冠名的雙人賽（80 組、500 片）、Eurographics 冠名的團體賽（40 隊、1,000 片），現場另有公開的拼圖交換區。Wausau 觀光局活動頁也刊出同一場賽事。</p>
+    <p class="s-src"><span class="ok">✓ 雙來源確認</span> · yahoo.com（Wausau Daily Herald）／visitwausau.com · <a href="https://www.yahoo.com/lifestyle/articles/wisconsins-top-speed-puzzlers-compete-071529012.html" target="_blank">賽事報導 →</a> · <a href="https://www.visitwausau.com/event/2026-wisconsin-state-jigsaw-puzzle-championship/3869/" target="_blank">Visit Wausau 活動頁 →</a></p>
+    <p class="why"><b>Why it matters</b>｜一場州賽有四家拼圖品牌分組冠名，比賽用的拼圖就是品牌的展示品。州級賽事已經能吸引品牌出資，速拼在美國不只是社群活動，也是品牌的行銷管道。</p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">日本的拼圖廠同時面對兩件事：成本上漲在轉嫁，量販通路玩具反斗城換了東家。美國這邊，Galison 的「不用 AI」承諾帶來更多曝光，切工問題也跟著被貼出來；州賽則由四家拼圖品牌冠名。<br>⚠ 斷刊記錄：9/24、10/2 未產出（共 2 日）。</p>
+  </div>
+</section>
+
+<!-- ═══ PAGE 2 · NEWS WIRE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.70 · 2026-10-03</span></div>
+
+  <p class="wire-cat">材質與技術創新</p>
+  <div class="wire"><span class="geo">[Japan]</span> <b>やのまん推出燙箔 300 片小尺寸拼圖《ムーミン谷の彗星》兩款，用冷燙金（cold foil）做出金箔光澤，1,650 日圓</b> — 屬「プチ２ライト」系列，完成尺寸 16.5×21.5 公分，9/22 上市，嚕嚕米官方網站 10/2 刊出介紹。兩款分別是依故事順時針排列的「リース（花環）」與「大冒険」。同一天 r/Jigsawpuzzles 也有使用者說 WerkShoppe《Ghost Express》（Claire Wilson 繪）的幽靈「全是亮粉」，拼得很開心（<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1wwas3n/ghost_express_art_by_claire_wilson_1000_piece/" target="_blank">原文</a>）。燙金與亮面效果從高價大盒延伸到 300 片小盒。<span class="src"><span class="ok">✓ 雙來源確認</span> · prtimes.jp／animeanime.jp · <a href="https://prtimes.jp/main/html/rd/p/000000115.000076359.html" target="_blank">PR TIMES →</a> · <a href="https://animeanime.jp/article/2026/09/24/103183.html" target="_blank">アニメ！アニメ！ →</a></span></div>
+  <img class="wire-img" src="https://prcdn.freetls.fastly.net/release_image/76359/115/76359-115-37df4d76bb27805d529d0cb3bbdf1338-1920x1280.jpg" alt="やのまん ムーミン谷の彗星 箔印刷パズル" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／やのまん PR TIMES 新聞稿</p>
+  <div class="wire"><span class="geo">[Japan]</span> <b>昭文社地圖拼圖第 7 款《山と高原地図 ジグソーパズル 尾瀬》10/23 上市：1000 片，直接用登山地圖的等高線與地名</b> — 昭文社 10/2 公告，這是「山と高原地図」創刊 60 週年系列的第 7 款，畫面涵蓋尾瀬ヶ原、尾瀬沼與至仏山（2,228 m）、燧ヶ岳（2,356 m）、会津駒ヶ岳（2,133 m），完成尺寸 50×75 公分，拼的同時能對照地名與等高線。本報 7/10 曾報導同社的京都市街地圖拼圖。<span class="src"><span class="ok">✓ 雙來源確認</span> · prtimes.jp／mapple.co.jp · <a href="https://prtimes.jp/main/html/rd/p/000000833.000007916.html" target="_blank">PR TIMES →</a> · <a href="https://www.mapple.co.jp/28309/" target="_blank">昭文社官網 →</a></span></div>
+
+  <p class="wire-cat">國際賽事與選手動態</p>
+  <div class="wire"><span class="geo">[US · PA]</span> <b>賓州 Centennial 學區第三屆速拼賽今天（10/3）舉行：成人隊拼 500 片、兒童隊拼 300 片，報名費含比賽用拼圖</b> — Centennial Education Foundation 主辦，地點 William Tennent High School 餐廳，中午開賽。每隊最多 4 人；成人隊（13 歲以上）報名費 60 美元，兒童隊（8–12 歲）40 美元，費用含每人一張抽獎券與比賽用拼圖，所得用於學區師生。<span class="src"><span class="warn">⚠ 單一來源</span> · patch.com · <a href="https://patch.com/pennsylvania/warminster/3rd-annual-centennial-speed-puzzling-competition-saturday" target="_blank">→</a></span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire"><span class="geo">[EU · NL]</span> <b>1000 片《Windmills at Kinderdijk》（品牌推定 King International）：朋友卡在天空 3 年，使用者發現 2 片重複拼片；留言者說同款「品質很糟」，拼完就丟</b> — u/nikinaks1 到國外朋友家住 3 天，發現天空區很多拼片形狀太像、容易誤拼（misfit），已修正幾片，還找到 2 片重複（其中一片和風車部分重複），因此不確定盒內片數是否正確。留言建議按形狀分類；一位留言者說 2024 年拼過同款，「我那盒的品牌是 King，品質很糟」，拼完就丟；原貼文沒寫品牌，本報依留言與同名商品推定為 King International 出品。<span class="src"><span class="warn">⚠ 單一來源（社群）</span> · reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1wwick1/desperate_for_help_windmills_at_kinderdijk_1000/" target="_blank">→</a></span></div>
+  <img class="wire-img" src="https://i.redd.it/u9x2kcept7th1.jpeg" alt="King Windmills at Kinderdijk 1000片" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Reddit 使用者 u/nikinaks1 原貼文實拍</p>
+  <div class="wire"><span class="geo">[US]</span> <b>Ravensburger 兩則：新手第一次拼 300 片《Kaleidoscope Kitten》說「很多拼圖粉塵」；另一位買下 40,320 片寶可夢拼圖</b> — u/notconfuseddumpling 說這是第一次拼 Ravensburger，貓很可愛，「但拼圖粉塵很多」。另一位 u/Puzzler13 貼出剛買的 40,320 片寶可夢拼圖，自嘲「這是最後一盒了，我發誓」。<span class="src"><span class="warn">⚠ 單一來源（各一則）</span> · reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1wwhz2p/kaleidoscope_kitten_300_pcs_ravensburger/" target="_blank">Kaleidoscope Kitten →</a> · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1ww30nt/ravensburger_pokémon_40320pc/" target="_blank">40,320 片 →</a></span></div>
+  <div class="wire"><span class="geo">[US · Portland]</span> <b>Little Spooky Studio 1024 片方形拼圖《Trick 'r Treat》：拼片比一般薄、咬合略緊，但好拆</b> — u/es1235 第一次拼這個品牌，喜歡 Regina Prager 的插畫，說拼片「比一般薄一點、咬合略緊，但很好拆開」，想再買同一位藝術家的其他款。Little Spooky Studio 是 Prager 2017 年在波特蘭成立的插畫工作室，拼圖為 1024 片、24×24 吋方形，附海報。<span class="src"><span class="warn">⚠ 單一來源（社群）</span> · reddit.com/r/Jigsawpuzzles · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1ww88zk/trick_r_treat_little_spooky_studio_1024_pieces/" target="_blank">原文 →</a> · <a href="https://www.littlespookystudio.com/pages/meet-the-artist" target="_blank">工作室介紹 →</a></span></div>
+
+  <p class="wire-cat">全球藝術策展與藝術 IP 風向球</p>
+  <div class="wire"><span class="geo">[Tokyo · 東京都庭園美術館]</span> <b>Marimekko 展今天開幕【新增】：Tokyo Art Beat 列出館方周邊 8 選，有托特包、海報、色鉛筆、扇子、羊羹，沒有拼圖</b> — 展覽摘要：「マリメッコ展 模様のちから」以 60 多件歷代洋裝、印花布與印製過程資料，介紹 Marimekko 的圖案美學；1930 年代裝飾藝術風格的館舍與鮮豔印花對照，另有影像紀錄赫爾辛基印花工廠，皆川明以特別裝置呈現日本美感與 Marimekko 對自然的共同視角。藝術家：Maija Isola、Annika Rimala、Maija Louekari、脇阪克二、石本藤雄、皆川明、plaplax。作品：Unikko、Iso Unikko、Seireeni、Kaivo、Iso Laine、Nappimekko、Siirtolapuutarha 等印花。展期與地點：2026/10/3–12/20，東京都庭園美術館。周邊：托特包 2,200 日圓、A3 海報 2,500 日圓（4 色）、色鉛筆 1,200 日圓、紙膠帶 990 日圓、扇子 4,200 日圓等。大面積重複的花卉印花很適合轉成拼圖，但官方周邊目前沒有。<span class="src"><span class="ok">✓ 雙來源確認</span> · tokyoartbeat.com／teien-art-museum.ne.jp · <a href="https://www.tokyoartbeat.com/articles/-/marimekko-art-of-printmaking-teien-art-museum-good-news-202610" target="_blank">周邊 8 選 →</a> · <a href="https://www.teien-art-museum.ne.jp/en/exhibition/20261003-1220_marimekko/" target="_blank">館方展覽頁 →</a></span></div>
+  <div class="wire"><span class="geo">[Nagoya · 名古屋市美術館]</span> <b>梵谷《跳ね橋（朗格盧瓦橋）》巡迴到名古屋，展到 11/29：Wallraf-Richartz 美術館 42 位畫家 70 件作品</b> — 展覽摘要：「ゴッホの跳ね橋と印象派の画家たち」從德國科隆 Wallraf-Richartz 美術館（藏品約 7 萬件）選出 70 件，從寫實主義、巴比松畫派走到印象派、後印象派與 20 世紀色彩畫家，看現代繪畫如何跨世代革新。主打 1888 年梵谷亞爾時期的《跳ね橋》，約 10 年來首次來日。本展先後在宇都宮、大阪展出，名古屋為第三站。藝術家：梵谷、高更、莫內、雷諾瓦、畢沙羅、卡玉伯特、席涅克、秀拉、庫爾貝、馬奈、柯洛、米勒、馬諦斯、波納爾、尤特里羅等。作品：《跳ね橋》（1888）；其餘清單官方網頁未逐件列出。展期與地點：2026/9/19–11/29，名古屋市美術館。<span class="src"><span class="ok">✓ 雙來源確認</span> · art-museum.city.nagoya.jp／bijutsutecho.com · <a href="https://art-museum.city.nagoya.jp/exhibitions/post/van_gogh_and_the_impressionists/" target="_blank">館方頁 →</a> · <a href="https://bijutsutecho.com/magazine/news/promotion/32345" target="_blank">美術手帖 →</a></span></div>
+</section>
+
+<!-- ═══ PAGE 3 · REGIONAL PULSE ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Regional Pulse · No.70 · 2026-10-03</span></div>
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse</span><div class="sec-l"></div></div>
+  <div class="rsum">週六的訊號：日本是通路易主與新品，北美是切工回報與州賽。</div>
+  <div class="pulse-region"><p class="pr-name">日本</p><p class="pr-li">玩具反斗城日本業務轉手 PPIH（頭條一）；やのまん燙箔嚕嚕米、昭文社尾瀬（Wire）；Marimekko 展開幕、梵谷《跳ね橋》名古屋（Wire）。日本 GN 另有鐵道 9 社車輛立體拼圖在 FamilyMart 送限量鑰匙圈（いこーよニュース），及 WalkerPlus 舊文重新索引（史努比、瑪利歐立體拼圖）。日本藝術 GN：豊田市美術館「長谷川 繁 ペイン天狗」10/24 開幕（約 120 件，茄子、香蕉、魚等靜物母題，下期評估）。</p></div>
+  <div class="pulse-region"><p class="pr-name">北美／社群</p><p class="pr-li">Galison 6 則（頭條二）；威斯康辛州賽（頭條三）；Centennial 速拼、King、Ravensburger、Little Spooky Studio（Wire）。交換通路：u/Successful_Hope6884 第一次參加在地拼圖交換社團，換到 Trefl 500 片《Sunny day in London》，但「拼片很鬆，稍微抬起就散」（<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1ww4j7w/completed_trelf_puzzlesunny_day_in_london500pcs/" target="_blank">原文</a>）；u/goldwalkingcane 在圖書館交換到 eeBoo《Fall in Brooklyn》（<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1ww30xa/fall_in_brooklyn_eeboo_1000/" target="_blank">原文</a>）。American Roadtrip《True South》盒面寫 1,000 片、盒側寫 500 片（<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1ww8opl/true_south_1000_pieces_american_roadtrip/" target="_blank">原文</a>）。Buffalo《Cats of Charles Wysocki》二手店買到、片數齊全（<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1wwfxe2/cats_of_charles_wysocki_all_burned_out_buffalo/" target="_blank">原文</a>）。</p></div>
+  <div class="pulse-region"><p class="pr-name">歐洲</p><p class="pr-li">AEPUZZ 最新仍為 9/28 兩則賽事公告；WJPF 無 48 小時內新公告。Toy Book 報導 Brand Licensing Europe 2026 參展商 325 家創紀錄，未見拼圖品牌細目。</p></div>
+  <div class="pulse-region"><p class="pr-name">澳洲</p><p class="pr-li pr-quiet">AJPA RSS 最新仍為 6/4；澳洲 GN 與美國結果重複。無新訊號。</p></div>
+  <div class="pulse-region"><p class="pr-name">大中華</p><p class="pr-li pr-quiet">中文 GN 命中大紀元「北美洲台灣拼圖第一屆比賽溫哥華登場」，同一事件本報 9/28 已報導（中央社），不重複刊出。玩具反斗城港、台、澳等地業務不受日本轉手影響。</p></div>
+  <div class="pulse-region"><p class="pr-name">中東（零售貨架觀察）</p><p class="pr-li pr-quiet">非排程日（每週三）。</p></div>
+  <div class="pulse-region"><p class="pr-name">追蹤更新</p><p class="pr-li">Galison：9/30 色差、今日兩則切工，品質回報累計 3 則（三位使用者）。Cavallini 二手多片、Villager 徵選、Tate Shop 清倉、Gözde İlkin：反查第 2 日，無第二來源。Boardwalk 強迫咬合、Watertown Puzzle Wars、小店抽獎、Dalí 偏鬆、Eurographics 合成圖、草間南京：反查滿 3 日，列為「僅單一來源，暫無佐證」。</p></div>
+</section>
+
+<!-- ═══ PAGE 4 · FOCUS + WATCHLIST + SOURCE DESK ═══ -->
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">Focus &amp; Watchlist · No.70 · 2026-10-03</span></div>
+
+  <div class="focus">
+    <p class="f-tag">Focus · 社群品質訊號</p>
+    <p class="f-hed">一天 6 則切工回報，橫跨 5 個品牌：拼片形狀太像，比咬合鬆緊更常被抱怨</p>
+    <div class="f-lede">
+      <p><b>發生了什麼</b>：10/2–10/3 的 r/Jigsawpuzzles，除了頭條的 Galison 兩則（沒切斷、咬太緊），另有 4 則切工相關貼文，品牌都不同：Buffalo 2,000 片《Maroon Lake Reflections》有 3 處「幾乎拼得上」的拼片要拆掉重換（<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1ww6do7/2000p_buffalo_i_have_challenges/" target="_blank">原文</a>）；King（推定）《Windmills at Kinderdijk》天空區拼片形狀太像、易誤拼，還有重複片（Wire）；Bits and Pieces 500 片「拼片夠大、很堅固」，但切法讓使用者想起社群裡有名的難拼帖（<a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1wwfsme/two_of_these_are_edge_pieces/" target="_blank">原文</a>）；Trefl 500 片「拼片很鬆，一抬就散」（Pulse）。</p>
+      <p><b>增量</b>：9/30 本報 Focus 把吻合度問題分成三種：咬太鬆、咬太緊、強迫咬合。今天 6 則可以這樣歸：「似是而非的拼片」（false fit：Buffalo、King 推定）2 則；咬太緊或沒切斷（Galison 兩則）2 則；咬太鬆（Trefl）1 則；切法難辨（Bits and Pieces）1 則。「false fit」是本週生效的 Tier 3 搜尋詞，本週起算新增 2 筆。兩則都發生在大片同色的天空或湖面，形狀相近的拼片集中在同一區。</p>
+      <p><b>可以怎麼用</b>：大面積天空、水面的圖，靠形狀辨識的比例高，刀模如果在同一區重複使用相近的片形，誤拼就會增加。設計大片同色畫面時，可檢查該區的片形變化，或在盒內附參考海報（Little Spooky Studio、Cavallini 都附）。本報目前只是累積樣本，各品牌都不到 8 則，不做品牌間比較。</p>
+    </div>
+  </div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　週日：Tier 3 詞頻與新詞報告（false fit、missing piece 本週累計）</p>
+  <p class="wl-item"><b>2</b>　玩具反斗城日本業務的成交時程，PPIH 是否調整拼圖與玩具品項</p>
+  <p class="wl-item"><b>3</b>　Galison 是否回應切工與色差回報</p>
+  <p class="wl-item"><b>4</b>　威斯康辛州賽各組比賽用拼圖的品項與成績（10/24 後）</p>
+  <p class="wl-item"><b>5</b>　BEVERLY 網店零售價何時換成 11/2 新價；其他日本拼圖廠是否跟進</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期（週六，只有每日來源）共檢視 18 項。可用內容：Reddit r/Jigsawpuzzles（含 2 則單帖留言）、日本 GN、中文 GN、Toy Book／Toy World GN、全球藝術 GN（英、日）、核心 GN 第 1、3 組與澳洲 GN（賽事）。查證另用 The Toy Book、nippon.com、Inside Retail Asia、PR TIMES、昭文社、Tokyo Art Beat、東京都庭園美術館、名古屋市美術館、Visit Wausau、Patch。無新內容：BEVERLY Atom、AJPA RSS、AEPUZZ RSS、WJPF、Karen Puzzles YouTube（最新 9/29）、核心 GN 第 2 組。非拼圖內容：r/Puzzles（邏輯謎題）。失敗：r/speedpuzzling 空回應；部分 Reddit 單帖留言 429。⚠ 斷刊記錄：9/24、10/2 未產出。完整清單見 backstage.md。</div>
+</section>
+
+<!-- NAV -->
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 4</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a><a class="toc-link" onclick="goPage(2);return false;"><span class="toc-n">P3</span>Regional Pulse</a><a class="toc-link" onclick="goPage(3);return false;"><span class="toc-n">P4</span>Focus 與追蹤</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-10-01.html">&larr; 2026-10-01</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
