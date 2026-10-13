@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-10-13 · No.80</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0;object-fit:cover}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">ELMS Puzzles</span><span class="bchip">Tate</span><span class="bchip">Trefl</span><span class="bchip">Piecing Taiwan</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.80 · 2026年10月13日 週二</span><span>Front Page · News Wire</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日三大重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">Fortune 專訪 ELMS Puzzles：手工切割木質拼圖 300 片售 $950，租賃收入去年成長四倍，業主目標讓租賃占營收 50%</h2>
+    <p class="s-body">Fortune 10/12 報導，ELMS Puzzles（1987 年由 Betsy Stuart 在緬因州創立的手工切割木質拼圖品牌）現任業主 Chris Danner 於 2023 年 3 月接手；前任業主曾改名 Waterford Puzzles，因溝通不足與暫停行銷，部分老客戶以為公司已倒閉，品牌於 2023 年 9 月改回 ELMS。Danner 保留原切割團隊，切割師由 6 位增至 9 位，採分散式「Cutter Collective」，主工作室在南達科他州。價格：100 片起 $325、熱門的 300 片 $950，1000–1200 片客製單超過 $3,000；另有約 350 款的租賃書庫，月租 $88–200，會員享 30% 折扣與免運。Fortune 稱租賃收入 2025 年成長四倍、今年迄今再翻倍，Danner 的目標是租賃占營收 50%；客戶含 Oprah Winfrey、Martha Stewart，Bush 家族每年訂購。以上數字皆為業主自述，本報未取得第三方財務資料。品牌歷史：創立於 1987 年，屬既有品牌，非新進者。</p>
+    <img class="wire-img" src="https://fortune.com/img-assets/wp-content/uploads/2026/10/Chris-Danner-Portrait-347B-color-edited-2800px.jpg?format=webp&w=1440&quality=75" alt="Elms Puzzles owner Chris Danner" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Fortune 報導配圖（Elms Puzzles 業主 Chris Danner）</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源（Fortune；ELMS 的租賃模式另有 Mainebiz、Fox23 舊報導可作背景，非同一事件）</span> · fortune.com · <a href="https://fortune.com/2026/10/12/elms-puzzles-chris-danner-handmade-jigsaw-puzzles-small-business/" target="_blank">→</a></p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">藝術策展：Tate Modern 渦輪大廳 10/13 開幕 Tarek Atoui《Hold》——以風、織物與銅號組成、會隨展期變化的聲音裝置，展至 2027/4/11</h2>
+    <p class="s-body"><b>展覽摘要：</b>第 11 屆 Hyundai Commission，由黎巴嫩出生、現居巴黎的聲音藝術家與作曲家 Tarek Atoui（1980 年生）創作的多感官聲音裝置，結合雕塑、表演、音樂、科技與社會研究。裝置使用烏茲別克的銅號（karnai）、3D 列印號角，以及中國與東南亞的笙，並以電腦控制的馬達導引氣流；織物塗有導電顏料，會把微弱電流傳進合成器，隨風與濕度產生低頻聲響；麥克風收錄樂器與大廳環境聲，再由藝術家的軟體即時重組。作品會隨展期演變，並有定期現場演出邀音樂家「接入」演奏。<b>藝術家：</b>Tarek Atoui（單人委託）；策展人 Nabila Abdel Nabi、Dina Akhmadeeva。<b>作品：</b>《Hold》（單一委託裝置；個別構件名稱官方未逐項公布）。<b>展期與地點：</b>2026/10/13–2027/4/11，Tate Modern 渦輪大廳（倫敦），免費入場；每月週五有免費現場演出，2027 年 2 月將出版同名專書。<b>視覺／轉化觀察：</b>展覽以裝置與聲音為主，視覺轉化為拼圖的難度高；本報僅記錄為藝術風向。Tate Shop 拼圖分類目前無相關商品（本日未重查，沿用 10/12 的 16 項清單）。</p>
+    <img class="wire-img" src="https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/1._The_Hyundai_Commission_Tarek_At.width-420.format-jpeg.jpg" alt="Hyundai Commission Tarek Atoui Hold Tate Modern Turbine Hall" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Tate 官網新聞稿（Hyundai Commission: Tarek Atoui: Hold）</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源（Tate 官方新聞稿）</span> · tate.org.uk · <a href="https://www.tate.org.uk/press/press-releases/hyundai-commission-tarek-atoui-hold" target="_blank">→</a></p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed">北美／台灣：「Piecing Taiwan into the World」台灣主題拼圖團隊賽已在 20 座北美城市舉辦，Kickstarter《Home of Bubble Tea》據 Reddit 貼文只剩 5 天</h2>
+    <p class="s-body">Taipei Times 9/28 報導，由美國安娜堡的駱筱雯（Lo Hsiao-wen）發起的台灣主題拼圖賽已在 20 個北美城市舉辦，以夜市、台北 101、動植物、山岳與美食入畫；團隊限時 90 分鐘，溫哥華場原 25 隊、因需求加開 2 隊，冠軍隊 44 分鐘完成。10/12 r/Jigsawpuzzles 使用者 u/ChaosWithoutS 貼出《Island of Life》500 片實拼照，說他在圖書館活動拼過，並稱另有一個 Kickstarter 專案（含另一款珍珠奶茶主題拼圖）「只剩 5 天」；該圖書館以此專案的拼圖辦速拼比賽。PledgeBox 專案頁顯示同主辦先前一輪「Piecing Taiwan into the World」募資 30 天（2 月 13 日–3 月 15 日，頁面未載年份）、目標 $19,375、實募 $20,301（105%）、133 位贊助者、已成功。限制：Kickstarter 頁對本報回 403，現行專案的目標金額、已募金額與截止日本報未取得；「剩 5 天」僅 Reddit 單一來源。本報首次記錄 Piecing Taiwan 該專案團隊，其歷史待查證。</p>
+    <p class="s-src"><span class="ok">✓ 賽事為雙來源（Reddit＋Taipei Times）</span>；<span class="warn">⚠ 現行募資進度為單一來源（Reddit）</span> · reddit.com／taipeitimes.com／pledgebox.com · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1x4hrgv/taiwanthemed_puzzle_island_of_life_500_pieces/" target="_blank">Reddit →</a> · <a href="https://www.taipeitimes.com/News/taiwan/archives/2026/09/28/2003865033" target="_blank">Taipei Times →</a> · <a href="https://www.pledgebox.com/projects/piecing-taiwan-into-the-world" target="_blank">PledgeBox →</a></p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">ELMS 的數字顯示：高端手工拼圖的收入重心正從「販售」轉向「租賃」，其中 $88–200 的月租等於把拼圖定價成體驗而非商品。唯一來源是業主自述，須待第三方佐證再視為趨勢。⚠ 另：本報 9/20 稱森美術館森万里子展「約 80 件作品」有誤，官方頁載「約 40 件」，已更正（見 News Wire，COR-007）。</p>
+  </div>
+</section>
+
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.80 · 2026-10-13</span></div>
+
+  <p class="wire-cat">社群排雷與爆款預警</p>
+  <div class="wire"><span class="geo">[US]</span> <b>Trefl 萬聖節限量系列：買家買齊六款，回報少數片「圖面與背紙剝離」，以膠水修復</b> — r/Jigsawpuzzles 使用者 u/SilentJoe1986（10/12）說先買了《無頭騎士》款試拼，後補買其餘五款，正在拼外星人款；唯一抱怨是有幾片的圖面與背紙（image and backing）分離，他用膠水、牙籤與衣夾修好，認為「不是大問題」。依 D1，此處 peeling 為品質抱怨，但樣本僅一人一批，工法與紙材未載明【工法未知】。<span class="src"><span class="warn">⚠ 單一來源（社群，作者自述）</span> · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1x4ced6/just_received_my_delivery_of_the_rest_of_the/" target="_blank">→</a></span></div>
+  <img class="wire-img" src="https://i.redd.it/z680lr3ye3vh1.jpeg" alt="Trefl Halloween limited run puzzles" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Reddit 使用者 u/SilentJoe1986 原貼文實拍</p>
+
+  <p class="wire-cat">全球藝術策展與藝術 IP 風向球</p>
+  <div class="wire"><span class="geo">[UK]</span> <b>Tate Modern《Light and Magic: The Birth of Art Photography》10/14 開幕【新增】：約 200 件原作、80 餘位藝術家，首個以全球視角談畫意攝影的大展</b> — 本報 9/28 僅列檔期；本日取得官方稿：聚焦 1880 年代起的畫意攝影（Pictorialism）並追溯至 1960 年代，分四單元（運動興起、攝影印製工藝、攝影協會與沙龍的國際網絡、與現代主義的關係），策展人 Charmaine Toh、Genevieve Barton。代表作含 Long Chin-san《Pavilion Fairyland》（1940 年代）、Peter Henry Emerson《A Norfolk Boat-Yard》（1886）、Emma Barton《The Awakening》（1903）、Ho Fan《Smoky World》（1959）、Edward Steichen《Primo Carnera》（約 1922）。2026/10/14–2027/2/21，Eyal Ofer Galleries（倫敦）。柔焦、水墨感與手作印相的視覺語彙，是慢生活拼圖客群可參考的風格方向；Tate Shop 拼圖分類（10/12 查）未見相關商品。<span class="src"><span class="warn">⚠ 單一來源（Tate 官方新聞稿）</span> · <a href="https://www.tate.org.uk/press/press-releases/light-and-magic-october-press-release" target="_blank">→</a></span></div>
+
+  <div class="wire"><span class="geo">[JP]</span> <b>森美術館《森万里子：燦燦》【更正＋新增】：官方頁載展出「約 40 件」，非本報 9/20 所寫「約 80 件」</b> — 【更正】本報 9/20 稱約 80 件作品，核對森美術館日英文官方頁均寫約 40 件（日文「約40点」、英文 "some forty works"），原稿有誤，已登錄 COR-007。【新增】此展與 Solomon R. Guggenheim Foundation 共同主辦，為日本繼 2002 年東京都現代美術館「ピュアランド」後 24 年來首次大型個展，共同策展 Alexandra Munroe、片岡真実；代表作含《巫女の祈り》（1996）、《Wave UFO》（1999–2002）、《トムナフーリ》（2006）、《プライマル・リズム：サンピラー》（2011）、《リング：自然とひとつに》（2016）；2026/10/31–2027/3/28，東京・六本木ヒルズ森タワー 53 階；平日一般 ¥2,800。同館 9/24–10/30 為換展休館，同期尚有《MAMスクリーン024：ジャッカワーン・ニンタムロン》、《MAMプロジェクト035：ブリー・ルエイ》與片山真理展。<span class="src"><span class="ok">✓ 日英官方頁互證</span> · <a href="https://www.mori.art.museum/jp/exhibitions/marikomori/index.html" target="_blank">森美術館 →</a></span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse 摘要</span><div class="sec-l"></div></div>
+  <div class="rsum">今天的焦點是 Fortune 對 ELMS 租賃模式的專訪，加上兩個美術館展覽與一則 Trefl 的剝離回報；價格定錨本期無超過 10% 的變動。</div>
+  <div class="pulse-region"><p class="pr-name">日本</p><p class="pr-li">BEVERLY Atom 最新仍為 10/8 的 12/11 新品公告（已報）；12/11 新品集合頁共 10 項（300 片 ¥1,683–2,244、1000 片 ¥2,805–3,740）。森美術館展覽頁見更正＋新增（Wire）。</p></div>
+  <div class="pulse-region"><p class="pr-name">北美／社群</p><p class="pr-li">Fortune 的 ELMS 專訪（頭條一）；Reddit r/Jigsawpuzzles 25 則，Trefl 限量系列剝離回報（Wire）與台灣主題團隊賽 Kickstarter（頭條三）。</p></div>
+  <div class="pulse-region"><p class="pr-name">歐洲</p><p class="pr-li">Tate Modern 兩檔新展（頭條二、Wire）。AEPUZZ RSS 最新仍為 10/7，已報。</p></div>
+  <div class="pulse-region"><p class="pr-name">澳洲</p><p class="pr-li">AJPA RSS 最新仍為 6/4，無新訊號。Metro Hobbies 定錨 A$31.99 無變動；Puzzle Palace 定錨 A$32.90（較 9/18 的 A$34.90 低 5.7%，未達 10%，僅記 backstage）。</p></div>
+  <div class="pulse-region"><p class="pr-name">大中華</p><p class="pr-li">台灣主題拼圖團隊賽與 Kickstarter（頭條三）；故宮本日未抓。</p></div>
+  <div class="pulse-region"><p class="pr-name">中東</p><p class="pr-li pr-quiet">非週三排程；Jarir 定錨 SAR 59.00 無變動。無新訊號。</p></div>
+  <div class="pulse-region"><p class="pr-name">追蹤更新</p><p class="pr-li">單一來源反查：10/12 清單中 Galison《Bibliophile》未見第二則獨立回報，維持 ⚠（第 2 日）；Tate St Ives／Chicago Puzzle Club 無第二來源，維持 ⚠。近 7 日無斷刊。</p></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　週三（10/14）：中東零售觀察（Jarir／Amazon.ae）、日本協會分頁、歐洲文創 GN、藝術家趨勢 GN、MOMAT 專用 GN；每日來源</p>
+  <p class="wl-item"><b>2</b>　Piecing Taiwan 現行 Kickstarter 的目標、已募金額與截止日；ELMS 是否有第二則獨立報導</p>
+  <p class="wl-item"><b>3</b>　Tate Modern《Light and Magic》10/14 開幕後的評論與周邊；Chicago Puzzle Club 10/24</p>
+  <p class="wl-item"><b>4</b>　Trefl 萬聖節系列是否出現第二則剝離回報；Minnesota 與瑞士 SPM 賽果</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期（週二）共檢視約 24 項。可用內容：Fortune 專訪、Tate press 清單與兩頁新聞稿、森美術館日英文展覽頁、Reddit r/Jigsawpuzzles RSS 與單串留言、Taipei Times、PledgeBox、WebSearch；價格定錨 Tate Shop、BEVERLY、Metro Hobbies、Puzzle Palace、Jarir 皆取得。無新內容：BEVERLY Atom（最新 10/8）、AJPA RSS（6/4）、AEPUZZ RSS（10/7）。失敗或空回應：Reddit 首次空回應（重試後成功）、Karen Puzzles RSS（404）、Kickstarter 頁（403）、Amazon.ae（回應 200 但為防爬空頁，未取得商品）、核心 GN 三組（僅 Fortune 一則相關）。週二來源未抓：故宮。完整清單見 backstage.md。</div>
+</section>
+
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 2</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-10-12.html">&larr; 2026-10-12</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
