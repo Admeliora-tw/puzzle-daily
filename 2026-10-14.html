@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-10-14 · No.81</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0;object-fit:cover}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Blueforest</span><span class="bchip">Ravensburger</span><span class="bchip">Amazon</span><span class="bchip">Pokémon</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.81 · 2026年10月14日 週三</span><span>Front Page · News Wire</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日三大重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">社群排雷：同一天兩串 Reddit 貼文把「AI 生成圖」列為退貨理由——一款在 Amazon 評分 4.6 星、逾 2,000 則評價的 Blueforest 拼圖也被點名</h2>
+    <p class="s-body">r/Jigsawpuzzles 10/13（UTC）出現兩串獨立貼文。其一，u/StoryStar21 貼出在 Amazon 買到的 Blueforest（賣家 Jiujiu）街景拼圖，稱該商品在 Amazon 為 4.6 星、逾 2,000 則評價，但圖像一看便是 AI 生成，「失望」並將退貨；討論串約 14 則留言，有人說「現在只買大品牌拼圖」，也有人說大品牌至少願意聽客訴，另有使用者反駁「怪異不等於 AI」並舉畢卡索畫作為例。其二，u/Easy_Paramedic2586 為萬聖節挑了一款溫馨風拼圖（約 35 歐元，品牌貼文未載明），付款後才從樹葉細節察覺是 AI 圖，想取消訂單已來不及，打算到貨後退貨，稱「AI 圖是我的底線」；該串約 46 則留言，接近但未達本報 50 則的爆款門檻。依 D4，兩串都以退貨與失望為明確表態，故歸為負面抱怨，但仍是社群自述，本報未能核實圖像是否確為 AI 生成。背景：該版 3/5 另有版主發布〈社群與 AI 生成圖像〉公告。品牌查證：Blueforest 本報首次記錄；美國商標資料庫（Justia）顯示 BLUEFOREST 由 Shenzhen Jiujiu Packing Co., Ltd. 於 2024-08-25 申請，零售頁面顯示該品牌亦在阿聯 Carrefour 上架，品牌歷史其餘待查證。</p>
+    <img class="wire-img" src="https://i.redd.it/5lgpkuwhn9vh1.jpeg" alt="Reddit 貼文：退貨的 AI 生成圖拼圖" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Reddit 使用者 u/Easy_Paramedic2586 原貼文</p>
+    <p class="s-src"><span class="warn">⚠ 單一平台來源（Reddit 兩串獨立貼文，作者自述）</span> · reddit.com · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1x5c8nk/ai_slop_blueforest_brand_from_jiujiu_on_amazon/" target="_blank">Blueforest 串 →</a> · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1x52f6i/returning_puzzle_after_discovering_it_was_ai/" target="_blank">退貨串 →</a> · <a href="https://trademark.justia.com/owners/shenzhen-jiujiu-packing-co-ltd-6006235" target="_blank">商標資料 →</a></p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">藝術策展：東京國立近代美術館公布 2027 年展覽時程——速水御舟回顧展（2027/3/19–5/9）、山口晃《見／世／物》（6/18–8/29）、Milton Avery 展（10/9 起）</h2>
+    <p class="s-body"><b>展覽摘要：</b>《斬新！速水御舟》是該館創立七十餘年來首度為速水御舟（1894–1935）舉辦的回顧展，約 100 點作品、四章構成；速水是大正至昭和初期的日本畫家，風格從細密寫實、前衛平面構成到不依賴視覺的「真實」表現，一路變換。館方並以多年保管整理的日記、書簡、美術與解剖學資料與作品對照，重新解讀其「斬新」。國立美術館體系上一次速水回顧展為 1980 年京都國立近代美術館，相隔 47 年。館方 10/5 發表；初次公開作品含《小春日図》（1929），另有自 1935 年遺作展後首度展出的《芙蓉図》（1932）。<b>藝術家：</b>速水御舟；山口晃；Milton Avery。<b>作品：</b>《京の舞妓》（1920，東京國立博物館藏，僅 3/19–4/11 展出）；山口晃展報導稱將發表新作，作品清單官方尚未公布；Milton Avery 展（暫定名）作品清單官方尚未公布。<b>展期與地點：</b>速水御舟 2027/3/19–5/9；山口晃《見／世／物》2027/6/18–8/29；Milton Avery 展 2027/10/9–2028/1/30；皆為東京國立近代美術館（東京竹橋）企劃展。<b>視覺／轉化觀察：</b>速水展的細密寫實與單色平面構成，屬於近年日本館藏類拼圖偏愛的「近看有細節」路線；目前本報未查到對應商品，待展期臨近再追蹤。</p>
+    <p class="s-src"><span class="ok">✓ 官方頁＋媒體報導（Tokyo Art Beat、美術手帖 10/7–10/13 另有報導，個別連結待補）</span> · momat.go.jp · <a href="https://www.momat.go.jp/exhibitions/572" target="_blank">速水御舟 →</a> · <a href="https://www.momat.go.jp/exhibitions/575" target="_blank">山口晃 →</a> · <a href="https://www.momat.go.jp/exhibitions/576" target="_blank">Milton Avery →</a></p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed">澳洲賽事：ACT 拼圖錦標賽 10/17 在坎培拉 EPIC 舉行，預計約 200 名選手；選手稱 Ravensburger 的切割「少有 false fit」是世界賽標準</h2>
+    <p class="s-body">Canberra Daily 10/14 報導（記者 Georgia Curry），本週六（10/17）的 ACT Jigsaw Puzzle Competition 2026 在 EPIC 舉行，預計約 200 名選手。受訪的當地選手 Tracey Oliver（52 歲）每週練習約 10 小時，500 片個人最佳為 42 分鐘，去年全國賽個人組第 150 名、雙人與團體組第 14 名。她說世界賽以 Ravensburger 為標準，因其切割較少出現「false fit」；並提到紐西蘭 Masters Games 曾用一款品質不佳的千片照片拼圖，約七小時後選手紛紛放棄。賽規：遺失一片罰 5 或 10 秒；選手須短袖、紮髮、不戴首飾以免拼圖片卡在衣物上。文中並稱今年在德國舉辦了首屆 Speed Puzzle World Series（單一來源自述，本報未另行查證）。D1 語境：此處 false fit 為賽事選手對切割精準度的專業評價，屬產業術語。AJPA 活動頁網址（australianjigsawpuzzle.org.au/event-info/act-2026）HTTP 200，本報未能解析內文，故不引用其細節。</p>
+    <img class="wire-img" src="https://canberradaily.com.au/wp-content/uploads/2026/10/puzzle-pic.jpg" alt="ACT 拼圖錦標賽選手 Tracey Oliver" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Canberra Daily 報導配圖（選手 Tracey Oliver）</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源（Canberra Daily）</span> · canberradaily.com.au · <a href="https://canberradaily.com.au/speed-puzzling-the-missing-piece/" target="_blank">Canberra Daily →</a> · <a href="https://australianjigsawpuzzle.org.au/event-info/act-2026" target="_blank">AJPA 活動頁 →</a></p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">同一天兩串獨立貼文把「AI 生成圖」直接當成退貨理由，且有人回應「改買大品牌」；Amazon 4.6 星、2,000 則評價並未擋下這類質疑，顯示買家開始以圖像來源而非星等判斷可信度。單日兩串樣本，須累積後才能視為趨勢。</p>
+  </div>
+</section>
+
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.81 · 2026-10-14</span></div>
+
+  <p class="wire-cat">國際賽事與選手動態／大型商品</p>
+  <div class="wire"><span class="geo">[US]</span> <b>Ravensburger《Pokémon Celebration Journey》40,320 片組開始到貨：買家已收到、首批社群曬單</b> — r/Jigsawpuzzles 使用者 u/teruponey（10/13）貼出到貨照，說打算分袋拼、不混袋，因空間不足，天冷正好開拼；留言者 u/Sayamael 稱前一天收到，但因居住空間只能先收進儲藏室。商品背景：由十幅各 4,000 片的獨立拼圖組成，完成後約 6.8 × 1.92 公尺，預購價約 $730（games.gg 7/22 報導）；另見 Ravensburger 的 Nathaniel Welton 與 Wigwam Studios 的 Ian Smith 談這款巨型拼圖的訪談（Google News 10/13 標題，原文連結待補）。<span class="src"><span class="warn">⚠ 到貨回報為社群單一來源；商品規格來自 games.gg</span> · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1x545z9/40k_pieces_celebration_journey_ravensburger_any/" target="_blank">Reddit →</a> · <a href="https://games.gg/news/pokemon-celebration-journey-40000-piece-puzzle/" target="_blank">games.gg →</a></span></div>
+  <img class="wire-img" src="https://i.redd.it/04thi4bmz9vh1.jpg" alt="Pokémon Celebration Journey 40,320 片到貨照" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Reddit 使用者 u/teruponey 原貼文實拍</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse 摘要</span><div class="sec-l"></div></div>
+  <div class="rsum">今天的焦點是 Reddit 上的 AI 生成圖退貨潮、東京國立近代美術館的 2027 年展覽，以及澳洲 ACT 賽事；價格定錨非本日排程。</div>
+  <div class="pulse-region"><p class="pr-name">日本</p><p class="pr-li">BEVERLY Atom 最新仍為 10/8 的 12/11 新品公告（已報）。東京國立近代美術館 2027 年時程見頭條二；Google News 另見やのまん「コンパクトピース」新圖案 6 款 10 月下旬發售（PR TIMES，僅標題層級，原文連結待補）。</p></div>
+  <div class="pulse-region"><p class="pr-name">北美／社群</p><p class="pr-li">Reddit r/Jigsawpuzzles 本日兩串 AI 圖退貨貼文（頭條一）與 Pokémon 40K 到貨（Wire）；Toy Book、Toy World 本日無拼圖相關新聞。</p></div>
+  <div class="pulse-region"><p class="pr-name">歐洲</p><p class="pr-li">AEPUZZ RSS 最新仍為 10/7，已報；歐洲文創 GN（西語）僅見非拼圖的比喻用法，已排除。</p></div>
+  <div class="pulse-region"><p class="pr-name">澳洲</p><p class="pr-li">AJPA RSS 最新仍為 6/4；ACT 錦標賽 10/17（頭條三）。</p></div>
+  <div class="pulse-region"><p class="pr-name">大中華</p><p class="pr-li">Google News 見新唐人 10/11 報導「雙十國慶台灣拼圖賽 18 隊」，原文本報未取得，待查證是否與 Piecing Taiwan 有關。</p></div>
+  <div class="pulse-region"><p class="pr-name">中東</p><p class="pr-li">週三貨架觀察：Jarir 拼圖分類頁 HTTP 404、Amazon.ae HTTP 503，本日皆未取得；網搜顯示 Blueforest 1000 片已在阿聯 Carrefour 上架（零售頁，價格未取得）。</p></div>
+  <div class="pulse-region"><p class="pr-name">追蹤更新</p><p class="pr-li">單一來源反查：ELMS Puzzles（Fortune）、Galison《Bibliophile》、Piecing Taiwan 募資進度本日未見第二則獨立報導，ELMS 為第 2 日、其餘維持 ⚠。近 7 日（10/7–10/13）無斷刊。</p></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　週四（10/15）：Tate press 與 Tate Shop 拼圖 SKU、Masterpiece Shop、Jigsaw Junkies／PuzzleWarehouse、德西文 GN；每日來源</p>
+  <p class="wl-item"><b>2</b>　Reddit AI 圖退貨討論是否出現第三串；Blueforest／Jiujiu 其餘品牌歷史</p>
+  <p class="wl-item"><b>3</b>　ACT 拼圖錦標賽 10/17 賽果；やのまんスピードパズル大阪大會 10/31（網搜得知，連結待補）</p>
+  <p class="wl-item"><b>4</b>　週五（10/16）價格定錨日；Piecing Taiwan 現行募資；ELMS 第二則獨立報導</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期（週三）共檢視約 28 項。可用內容：Reddit r/Jigsawpuzzles RSS 與三串單串留言 RSS、東京國立近代美術館展覽頁（WebFetch）、Canberra Daily、games.gg 與 Justia 輔助查證、核心 GN 三組與日本／台灣／藝術／MOMAT GN。無新內容：BEVERLY Atom（10/8）、AJPA RSS（6/4）、AEPUZZ RSS（10/7）、Toy Book／Toy World（無拼圖）。失敗：Reddit r/Puzzles、r/speedpuzzling RSS（HTTP 429，本日重試 1 次仍失敗）、Karen Puzzles RSS（HTTP 404）、Jarir 分類頁（HTTP 404）、Amazon.ae（HTTP 503）、日本協會網站（連線失敗）、阿文 GN（無相關）。本日非排程：Tate、故宮、價格定錨。完整清單見 backstage.md。</div>
+</section>
+
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 2</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-10-13.html">&larr; 2026-10-13</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
