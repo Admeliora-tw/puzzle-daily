@@ -14,13 +14,33 @@ body{background:#f0eee2;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:#
 .name{font-family:'Playfair Display',Georgia,serif;font-size:44px;font-weight:900;line-height:.9;letter-spacing:-1px}
 .name em{font-style:italic;font-weight:400}
 .tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:10px}
-.sec{font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:#b06020;margin:1.5rem 0 .5rem;padding-bottom:6px;border-bottom:2px solid #c47a30}
-.issue{display:flex;align-items:baseline;gap:12px;padding:.65rem .5rem;border-bottom:.5px solid #e8e0d0;text-decoration:none;color:#1e1a14;transition:background .15s}
+.newest{display:flex;align-items:center;gap:10px;margin:1.4rem 0 .4rem;padding:.8rem 1rem;background:#1e1a14;color:#fffdf9;text-decoration:none}
+.newest:hover{background:#332c22}
+.newest .lbl{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#c9a06a}
+.newest .dt{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:700}
+.newest .no{margin-left:auto;font-size:11px;color:#c9a06a;font-weight:600}
+.yr{display:flex;align-items:baseline;gap:10px;margin:1.6rem 0 .7rem;padding-bottom:5px;border-bottom:2px solid #c47a30}
+.yn{font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:900;letter-spacing:-.5px}
+.yc{font-size:10px;color:#8a7a60;letter-spacing:.1em;margin-left:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.6rem;align-items:start}
+.mon{border:1px solid #e0d8c4;background:#faf7ee;min-width:0}
+.mon[open]{background:#fff;border-color:#c47a30}
+summary{list-style:none;cursor:pointer;padding:.7rem .85rem;display:flex;align-items:baseline;gap:8px;user-select:none}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:#f3eee0}
+.mon[open] summary{border-bottom:1px solid #eee6d6}
+.mn{font-family:'Playfair Display',Georgia,serif;font-size:17px;font-weight:700}
+.mr{font-size:10px;color:#9a8a70}
+.mc{margin-left:auto;font-size:10px;font-weight:700;color:#fffdf9;background:#7a9464;border-radius:9px;padding:1px 7px;min-width:22px;text-align:center}
+.list{padding:.25rem .4rem .5rem}
+.issue{display:flex;align-items:baseline;gap:9px;padding:.4rem .45rem;border-bottom:.5px solid #f0ead9;text-decoration:none;color:#1e1a14}
+.issue:last-child{border-bottom:none}
 .issue:hover{background:#f6f4ea}
-.d{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;min-width:110px}
-.w{font-size:11px;color:#8a7a60;min-width:32px}
-.n{font-size:11px;color:#7a9464;font-weight:600;margin-left:auto}
+.d{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;min-width:22px}
+.w{font-size:10px;color:#8a7a60}
+.n{font-size:10px;color:#7a9464;font-weight:600;margin-left:auto}
 .foot{margin-top:2rem;padding-top:1rem;border-top:.5px solid #e8e0d0;font-size:10px;color:#9a8a70;text-align:center;line-height:1.8}
+@media(max-width:420px){.wrap{padding:1.75rem 1.1rem}.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -30,93 +50,116 @@ body{background:#f0eee2;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:#
     <div class="name">Puzzle<br><em>Market</em><br>Daily</div>
     <p class="tag">The Global Record of Jigsaw Puzzle Commerce</p>
   </div>
-  <p class="sec">歷期報紙</p>
-  <a class="issue" href="2026-10-18.html"><span class="d">2026-10-18</span><span class="w">週日</span><span class="n">No.85</span></a>
-  <a class="issue" href="2026-10-17.html"><span class="d">2026-10-17</span><span class="w">週六</span><span class="n">No.84</span></a>
-  <a class="issue" href="2026-10-16.html"><span class="d">2026-10-16</span><span class="w">週五</span><span class="n">No.83</span></a>
-  <a class="issue" href="2026-10-15.html"><span class="d">2026-10-15</span><span class="w">週四</span><span class="n">No.82</span></a>
-  <a class="issue" href="2026-10-14.html"><span class="d">2026-10-14</span><span class="w">週三</span><span class="n">No.81</span></a>
-  <a class="issue" href="2026-10-13.html"><span class="d">2026-10-13</span><span class="w">週二</span><span class="n">No.80</span></a>
-  <a class="issue" href="2026-10-12.html"><span class="d">2026-10-12</span><span class="w">週一</span><span class="n">No.79</span></a>
-  <a class="issue" href="2026-10-11.html"><span class="d">2026-10-11</span><span class="w">週日</span><span class="n">No.78</span></a>
-  <a class="issue" href="2026-10-10.html"><span class="d">2026-10-10</span><span class="w">週六</span><span class="n">No.77</span></a>
-  <a class="issue" href="2026-10-09.html"><span class="d">2026-10-09</span><span class="w">週五</span><span class="n">No.76</span></a>
-  <a class="issue" href="2026-10-08.html"><span class="d">2026-10-08</span><span class="w">週四</span><span class="n">No.75</span></a>
-  <a class="issue" href="2026-10-07.html"><span class="d">2026-10-07</span><span class="w">週三</span><span class="n">No.74</span></a>
-  <a class="issue" href="2026-10-06.html"><span class="d">2026-10-06</span><span class="w">週二</span><span class="n">No.73</span></a>
-  <a class="issue" href="2026-10-05.html"><span class="d">2026-10-05</span><span class="w">週一</span><span class="n">No.72</span></a>
-  <a class="issue" href="2026-10-04.html"><span class="d">2026-10-04</span><span class="w">週日</span><span class="n">No.71</span></a>
-  <a class="issue" href="2026-10-03.html"><span class="d">2026-10-03</span><span class="w">週六</span><span class="n">No.70</span></a>
-  <a class="issue" href="2026-10-01.html"><span class="d">2026-10-01</span><span class="w">週四</span><span class="n">No.69</span></a>
-  <a class="issue" href="2026-09-30.html"><span class="d">2026-09-30</span><span class="w">週三</span><span class="n">No.68</span></a>
-  <a class="issue" href="2026-09-29.html"><span class="d">2026-09-29</span><span class="w">週二</span><span class="n">No.67</span></a>
-  <a class="issue" href="2026-09-28.html"><span class="d">2026-09-28</span><span class="w">週一</span><span class="n">No.66</span></a>
-  <a class="issue" href="2026-09-27.html"><span class="d">2026-09-27</span><span class="w">週日</span><span class="n">No.65</span></a>
-  <a class="issue" href="2026-09-26.html"><span class="d">2026-09-26</span><span class="w">週六</span><span class="n">No.64</span></a>
-  <a class="issue" href="2026-09-25.html"><span class="d">2026-09-25</span><span class="w">週五</span><span class="n">No.63</span></a>
-  <a class="issue" href="2026-09-23.html"><span class="d">2026-09-23</span><span class="w">週三</span><span class="n">No.62</span></a>
-  <a class="issue" href="2026-09-22.html"><span class="d">2026-09-22</span><span class="w">週二</span><span class="n">No.61</span></a>
-  <a class="issue" href="2026-09-20.html"><span class="d">2026-09-20</span><span class="w">週日</span><span class="n">No.60</span></a>
-  <a class="issue" href="2026-09-19.html"><span class="d">2026-09-19</span><span class="w">週六</span><span class="n">No.59</span></a>
-  <a class="issue" href="2026-09-18.html"><span class="d">2026-09-18</span><span class="w">週五</span><span class="n">No.58</span></a>
-  <a class="issue" href="2026-09-17.html"><span class="d">2026-09-17</span><span class="w">週四</span><span class="n">No.57</span></a>
-  <a class="issue" href="2026-09-16.html"><span class="d">2026-09-16</span><span class="w">週三</span><span class="n">No.56</span></a>
-  <a class="issue" href="2026-09-14.html"><span class="d">2026-09-14</span><span class="w">週一</span><span class="n">No.55</span></a>
-  <a class="issue" href="2026-09-11.html"><span class="d">2026-09-11</span><span class="w">週五</span><span class="n">No.54</span></a>
-  <a class="issue" href="2026-09-10.html"><span class="d">2026-09-10</span><span class="w">週四</span><span class="n">No.53</span></a>
-  <a class="issue" href="2026-09-09.html"><span class="d">2026-09-09</span><span class="w">週三</span><span class="n">No.52</span></a>
-  <a class="issue" href="2026-09-07.html"><span class="d">2026-09-07</span><span class="w">週一</span><span class="n">No.51</span></a>
-  <a class="issue" href="2026-09-05.html"><span class="d">2026-09-05</span><span class="w">週六</span><span class="n">No.50</span></a>
-  <a class="issue" href="2026-09-04.html"><span class="d">2026-09-04</span><span class="w">週五</span><span class="n">No.49</span></a>
-  <a class="issue" href="2026-09-03.html"><span class="d">2026-09-03</span><span class="w">週四</span><span class="n">No.48</span></a>
-  <a class="issue" href="2026-09-02.html"><span class="d">2026-09-02</span><span class="w">週三</span><span class="n">No.47</span></a>
-  <a class="issue" href="2026-09-01.html"><span class="d">2026-09-01</span><span class="w">週二</span><span class="n">No.46</span></a>
-  <a class="issue" href="2026-08-31.html"><span class="d">2026-08-31</span><span class="w">週一</span><span class="n">No.45</span></a>
-  <a class="issue" href="2026-08-30.html"><span class="d">2026-08-30</span><span class="w">週日</span><span class="n">No.44</span></a>
-  <a class="issue" href="2026-08-28.html"><span class="d">2026-08-28</span><span class="w">週五</span><span class="n">No.43</span></a>
-  <a class="issue" href="2026-08-27.html"><span class="d">2026-08-27</span><span class="w">週四</span><span class="n">No.42</span></a>
-  <a class="issue" href="2026-08-25.html"><span class="d">2026-08-25</span><span class="w">週二</span><span class="n">No.41</span></a>
-  <a class="issue" href="2026-08-24.html"><span class="d">2026-08-24</span><span class="w">週一</span><span class="n">No.40</span></a>
-  <a class="issue" href="2026-08-23.html"><span class="d">2026-08-23</span><span class="w">週日</span><span class="n">No.39</span></a>
-  <a class="issue" href="2026-08-22.html"><span class="d">2026-08-22</span><span class="w">週六</span><span class="n">No.38</span></a>
-  <a class="issue" href="2026-08-21.html"><span class="d">2026-08-21</span><span class="w">週五</span><span class="n">No.37</span></a>
-  <a class="issue" href="2026-08-20.html"><span class="d">2026-08-20</span><span class="w">週四</span><span class="n">No.36</span></a>
-  <a class="issue" href="2026-08-19.html"><span class="d">2026-08-19</span><span class="w">週三</span><span class="n">No.35</span></a>
-  <a class="issue" href="2026-08-18.html"><span class="d">2026-08-18</span><span class="w">週二</span><span class="n">No.34</span></a>
-  <a class="issue" href="2026-08-13.html"><span class="d">2026-08-13</span><span class="w">週四</span><span class="n">No.33</span></a>
-  <a class="issue" href="2026-08-12.html"><span class="d">2026-08-12</span><span class="w">週三</span><span class="n">No.32</span></a>
-  <a class="issue" href="2026-08-11.html"><span class="d">2026-08-11</span><span class="w">週二</span><span class="n">No.31</span></a>
-  <a class="issue" href="2026-08-10.html"><span class="d">2026-08-10</span><span class="w">週一</span><span class="n">No.30</span></a>
-  <a class="issue" href="2026-08-09.html"><span class="d">2026-08-09</span><span class="w">週日</span><span class="n">No.29</span></a>
-  <a class="issue" href="2026-08-08.html"><span class="d">2026-08-08</span><span class="w">週六</span><span class="n">No.28</span></a>
-  <a class="issue" href="2026-08-07.html"><span class="d">2026-08-07</span><span class="w">週五</span><span class="n">No.27</span></a>
-  <a class="issue" href="2026-08-06.html"><span class="d">2026-08-06</span><span class="w">週四</span><span class="n">No.26</span></a>
-  <a class="issue" href="2026-08-05.html"><span class="d">2026-08-05</span><span class="w">週三</span><span class="n">No.25</span></a>
-  <a class="issue" href="2026-08-04.html"><span class="d">2026-08-04</span><span class="w">週二</span><span class="n">No.24</span></a>
-  <a class="issue" href="2026-08-03.html"><span class="d">2026-08-03</span><span class="w">週一</span><span class="n">No.23</span></a>
-  <a class="issue" href="2026-08-02.html"><span class="d">2026-08-02</span><span class="w">週日</span><span class="n">No.22</span></a>
-  <a class="issue" href="2026-08-01.html"><span class="d">2026-08-01</span><span class="w">週六</span><span class="n">No.21</span></a>
-  <a class="issue" href="2026-07-31.html"><span class="d">2026-07-31</span><span class="w">週五</span><span class="n">No.20</span></a>
-  <a class="issue" href="2026-07-30.html"><span class="d">2026-07-30</span><span class="w">週四</span><span class="n">No.19</span></a>
-  <a class="issue" href="2026-07-29.html"><span class="d">2026-07-29</span><span class="w">週三</span><span class="n">No.18</span></a>
-  <a class="issue" href="2026-07-28.html"><span class="d">2026-07-28</span><span class="w">週二</span><span class="n">No.17</span></a>
-  <a class="issue" href="2026-07-27.html"><span class="d">2026-07-27</span><span class="w">週一</span><span class="n">No.16</span></a>
-  <a class="issue" href="2026-07-24.html"><span class="d">2026-07-24</span><span class="w">週五</span><span class="n">No.15</span></a>
-  <a class="issue" href="2026-07-23.html"><span class="d">2026-07-23</span><span class="w">週四</span><span class="n">No.14</span></a>
-  <a class="issue" href="2026-07-22.html"><span class="d">2026-07-22</span><span class="w">週三</span><span class="n">No.13</span></a>
-  <a class="issue" href="2026-07-21.html"><span class="d">2026-07-21</span><span class="w">週二</span><span class="n">No.12</span></a>
-  <a class="issue" href="2026-07-20.html"><span class="d">2026-07-20</span><span class="w">週一</span><span class="n">No.11</span></a>
-  <a class="issue" href="2026-07-19.html"><span class="d">2026-07-19</span><span class="w">週日</span><span class="n">No.10</span></a>
-  <a class="issue" href="2026-07-18.html"><span class="d">2026-07-18</span><span class="w">週六</span><span class="n">No.9</span></a>
-  <a class="issue" href="2026-07-17.html"><span class="d">2026-07-17</span><span class="w">週五</span><span class="n">No.8</span></a>
-  <a class="issue" href="2026-07-16.html"><span class="d">2026-07-16</span><span class="w">週四</span><span class="n">No.7</span></a>
-  <a class="issue" href="2026-07-15.html"><span class="d">2026-07-15</span><span class="w">週三</span><span class="n">No.6</span></a>
-  <a class="issue" href="2026-07-14.html"><span class="d">2026-07-14</span><span class="w">週二</span><span class="n">No.5</span></a>
-  <a class="issue" href="2026-07-13.html"><span class="d">2026-07-13</span><span class="w">週一</span><span class="n">No.4</span></a>
-  <a class="issue" href="2026-07-12.html"><span class="d">2026-07-12</span><span class="w">週日</span><span class="n">No.3</span></a>
-  <a class="issue" href="2026-07-11.html"><span class="d">2026-07-11</span><span class="w">週六</span><span class="n"></span></a>
-  <a class="issue" href="2026-07-10.html"><span class="d">2026-07-10</span><span class="w">週五</span><span class="n"></span></a>
-  <a class="issue" href="2026-07-09.html"><span class="d">2026-07-09</span><span class="w">週四</span><span class="n"></span></a>
+  <a class="newest" href="2026-10-18.html"><span class="lbl">最新一期</span><span class="dt">2026-10-18</span><span class="no">No.85</span></a>
+  <div class="yr"><span class="yn">2026</span><span class="yc">86 期</span></div>
+  <div class="grid">
+    <details class="mon" open>
+      <summary><span class="mn">10月</span><span class="mr">01–18 日</span><span class="mc">17</span></summary>
+      <div class="list">
+        <a class="issue" href="2026-10-18.html"><span class="d">18</span><span class="w">日</span><span class="n">No.85</span></a>
+        <a class="issue" href="2026-10-17.html"><span class="d">17</span><span class="w">六</span><span class="n">No.84</span></a>
+        <a class="issue" href="2026-10-16.html"><span class="d">16</span><span class="w">五</span><span class="n">No.83</span></a>
+        <a class="issue" href="2026-10-15.html"><span class="d">15</span><span class="w">四</span><span class="n">No.82</span></a>
+        <a class="issue" href="2026-10-14.html"><span class="d">14</span><span class="w">三</span><span class="n">No.81</span></a>
+        <a class="issue" href="2026-10-13.html"><span class="d">13</span><span class="w">二</span><span class="n">No.80</span></a>
+        <a class="issue" href="2026-10-12.html"><span class="d">12</span><span class="w">一</span><span class="n">No.79</span></a>
+        <a class="issue" href="2026-10-11.html"><span class="d">11</span><span class="w">日</span><span class="n">No.78</span></a>
+        <a class="issue" href="2026-10-10.html"><span class="d">10</span><span class="w">六</span><span class="n">No.77</span></a>
+        <a class="issue" href="2026-10-09.html"><span class="d">09</span><span class="w">五</span><span class="n">No.76</span></a>
+        <a class="issue" href="2026-10-08.html"><span class="d">08</span><span class="w">四</span><span class="n">No.75</span></a>
+        <a class="issue" href="2026-10-07.html"><span class="d">07</span><span class="w">三</span><span class="n">No.74</span></a>
+        <a class="issue" href="2026-10-06.html"><span class="d">06</span><span class="w">二</span><span class="n">No.73</span></a>
+        <a class="issue" href="2026-10-05.html"><span class="d">05</span><span class="w">一</span><span class="n">No.72</span></a>
+        <a class="issue" href="2026-10-04.html"><span class="d">04</span><span class="w">日</span><span class="n">No.71</span></a>
+        <a class="issue" href="2026-10-03.html"><span class="d">03</span><span class="w">六</span><span class="n">No.70</span></a>
+        <a class="issue" href="2026-10-01.html"><span class="d">01</span><span class="w">四</span><span class="n">No.69</span></a>
+      </div>
+    </details>
+    <details class="mon">
+      <summary><span class="mn">9月</span><span class="mr">01–30 日</span><span class="mc">23</span></summary>
+      <div class="list">
+        <a class="issue" href="2026-09-30.html"><span class="d">30</span><span class="w">三</span><span class="n">No.68</span></a>
+        <a class="issue" href="2026-09-29.html"><span class="d">29</span><span class="w">二</span><span class="n">No.67</span></a>
+        <a class="issue" href="2026-09-28.html"><span class="d">28</span><span class="w">一</span><span class="n">No.66</span></a>
+        <a class="issue" href="2026-09-27.html"><span class="d">27</span><span class="w">日</span><span class="n">No.65</span></a>
+        <a class="issue" href="2026-09-26.html"><span class="d">26</span><span class="w">六</span><span class="n">No.64</span></a>
+        <a class="issue" href="2026-09-25.html"><span class="d">25</span><span class="w">五</span><span class="n">No.63</span></a>
+        <a class="issue" href="2026-09-23.html"><span class="d">23</span><span class="w">三</span><span class="n">No.62</span></a>
+        <a class="issue" href="2026-09-22.html"><span class="d">22</span><span class="w">二</span><span class="n">No.61</span></a>
+        <a class="issue" href="2026-09-20.html"><span class="d">20</span><span class="w">日</span><span class="n">No.60</span></a>
+        <a class="issue" href="2026-09-19.html"><span class="d">19</span><span class="w">六</span><span class="n">No.59</span></a>
+        <a class="issue" href="2026-09-18.html"><span class="d">18</span><span class="w">五</span><span class="n">No.58</span></a>
+        <a class="issue" href="2026-09-17.html"><span class="d">17</span><span class="w">四</span><span class="n">No.57</span></a>
+        <a class="issue" href="2026-09-16.html"><span class="d">16</span><span class="w">三</span><span class="n">No.56</span></a>
+        <a class="issue" href="2026-09-14.html"><span class="d">14</span><span class="w">一</span><span class="n">No.55</span></a>
+        <a class="issue" href="2026-09-11.html"><span class="d">11</span><span class="w">五</span><span class="n">No.54</span></a>
+        <a class="issue" href="2026-09-10.html"><span class="d">10</span><span class="w">四</span><span class="n">No.53</span></a>
+        <a class="issue" href="2026-09-09.html"><span class="d">09</span><span class="w">三</span><span class="n">No.52</span></a>
+        <a class="issue" href="2026-09-07.html"><span class="d">07</span><span class="w">一</span><span class="n">No.51</span></a>
+        <a class="issue" href="2026-09-05.html"><span class="d">05</span><span class="w">六</span><span class="n">No.50</span></a>
+        <a class="issue" href="2026-09-04.html"><span class="d">04</span><span class="w">五</span><span class="n">No.49</span></a>
+        <a class="issue" href="2026-09-03.html"><span class="d">03</span><span class="w">四</span><span class="n">No.48</span></a>
+        <a class="issue" href="2026-09-02.html"><span class="d">02</span><span class="w">三</span><span class="n">No.47</span></a>
+        <a class="issue" href="2026-09-01.html"><span class="d">01</span><span class="w">二</span><span class="n">No.46</span></a>
+      </div>
+    </details>
+    <details class="mon">
+      <summary><span class="mn">8月</span><span class="mr">01–31 日</span><span class="mc">25</span></summary>
+      <div class="list">
+        <a class="issue" href="2026-08-31.html"><span class="d">31</span><span class="w">一</span><span class="n">No.45</span></a>
+        <a class="issue" href="2026-08-30.html"><span class="d">30</span><span class="w">日</span><span class="n">No.44</span></a>
+        <a class="issue" href="2026-08-28.html"><span class="d">28</span><span class="w">五</span><span class="n">No.43</span></a>
+        <a class="issue" href="2026-08-27.html"><span class="d">27</span><span class="w">四</span><span class="n">No.42</span></a>
+        <a class="issue" href="2026-08-25.html"><span class="d">25</span><span class="w">二</span><span class="n">No.41</span></a>
+        <a class="issue" href="2026-08-24.html"><span class="d">24</span><span class="w">一</span><span class="n">No.40</span></a>
+        <a class="issue" href="2026-08-23.html"><span class="d">23</span><span class="w">日</span><span class="n">No.39</span></a>
+        <a class="issue" href="2026-08-22.html"><span class="d">22</span><span class="w">六</span><span class="n">No.38</span></a>
+        <a class="issue" href="2026-08-21.html"><span class="d">21</span><span class="w">五</span><span class="n">No.37</span></a>
+        <a class="issue" href="2026-08-20.html"><span class="d">20</span><span class="w">四</span><span class="n">No.36</span></a>
+        <a class="issue" href="2026-08-19.html"><span class="d">19</span><span class="w">三</span><span class="n">No.35</span></a>
+        <a class="issue" href="2026-08-18.html"><span class="d">18</span><span class="w">二</span><span class="n">No.34</span></a>
+        <a class="issue" href="2026-08-13.html"><span class="d">13</span><span class="w">四</span><span class="n">No.33</span></a>
+        <a class="issue" href="2026-08-12.html"><span class="d">12</span><span class="w">三</span><span class="n">No.32</span></a>
+        <a class="issue" href="2026-08-11.html"><span class="d">11</span><span class="w">二</span><span class="n">No.31</span></a>
+        <a class="issue" href="2026-08-10.html"><span class="d">10</span><span class="w">一</span><span class="n">No.30</span></a>
+        <a class="issue" href="2026-08-09.html"><span class="d">09</span><span class="w">日</span><span class="n">No.29</span></a>
+        <a class="issue" href="2026-08-08.html"><span class="d">08</span><span class="w">六</span><span class="n">No.28</span></a>
+        <a class="issue" href="2026-08-07.html"><span class="d">07</span><span class="w">五</span><span class="n">No.27</span></a>
+        <a class="issue" href="2026-08-06.html"><span class="d">06</span><span class="w">四</span><span class="n">No.26</span></a>
+        <a class="issue" href="2026-08-05.html"><span class="d">05</span><span class="w">三</span><span class="n">No.25</span></a>
+        <a class="issue" href="2026-08-04.html"><span class="d">04</span><span class="w">二</span><span class="n">No.24</span></a>
+        <a class="issue" href="2026-08-03.html"><span class="d">03</span><span class="w">一</span><span class="n">No.23</span></a>
+        <a class="issue" href="2026-08-02.html"><span class="d">02</span><span class="w">日</span><span class="n">No.22</span></a>
+        <a class="issue" href="2026-08-01.html"><span class="d">01</span><span class="w">六</span><span class="n">No.21</span></a>
+      </div>
+    </details>
+    <details class="mon">
+      <summary><span class="mn">7月</span><span class="mr">09–31 日</span><span class="mc">21</span></summary>
+      <div class="list">
+        <a class="issue" href="2026-07-31.html"><span class="d">31</span><span class="w">五</span><span class="n">No.20</span></a>
+        <a class="issue" href="2026-07-30.html"><span class="d">30</span><span class="w">四</span><span class="n">No.19</span></a>
+        <a class="issue" href="2026-07-29.html"><span class="d">29</span><span class="w">三</span><span class="n">No.18</span></a>
+        <a class="issue" href="2026-07-28.html"><span class="d">28</span><span class="w">二</span><span class="n">No.17</span></a>
+        <a class="issue" href="2026-07-27.html"><span class="d">27</span><span class="w">一</span><span class="n">No.16</span></a>
+        <a class="issue" href="2026-07-24.html"><span class="d">24</span><span class="w">五</span><span class="n">No.15</span></a>
+        <a class="issue" href="2026-07-23.html"><span class="d">23</span><span class="w">四</span><span class="n">No.14</span></a>
+        <a class="issue" href="2026-07-22.html"><span class="d">22</span><span class="w">三</span><span class="n">No.13</span></a>
+        <a class="issue" href="2026-07-21.html"><span class="d">21</span><span class="w">二</span><span class="n">No.12</span></a>
+        <a class="issue" href="2026-07-20.html"><span class="d">20</span><span class="w">一</span><span class="n">No.11</span></a>
+        <a class="issue" href="2026-07-19.html"><span class="d">19</span><span class="w">日</span><span class="n">No.10</span></a>
+        <a class="issue" href="2026-07-18.html"><span class="d">18</span><span class="w">六</span><span class="n">No.9</span></a>
+        <a class="issue" href="2026-07-17.html"><span class="d">17</span><span class="w">五</span><span class="n">No.8</span></a>
+        <a class="issue" href="2026-07-16.html"><span class="d">16</span><span class="w">四</span><span class="n">No.7</span></a>
+        <a class="issue" href="2026-07-15.html"><span class="d">15</span><span class="w">三</span><span class="n">No.6</span></a>
+        <a class="issue" href="2026-07-14.html"><span class="d">14</span><span class="w">二</span><span class="n">No.5</span></a>
+        <a class="issue" href="2026-07-13.html"><span class="d">13</span><span class="w">一</span><span class="n">No.4</span></a>
+        <a class="issue" href="2026-07-12.html"><span class="d">12</span><span class="w">日</span><span class="n">No.3</span></a>
+        <a class="issue" href="2026-07-11.html"><span class="d">11</span><span class="w">六</span><span class="n"></span></a>
+        <a class="issue" href="2026-07-10.html"><span class="d">10</span><span class="w">五</span><span class="n"></span></a>
+        <a class="issue" href="2026-07-09.html"><span class="d">09</span><span class="w">四</span><span class="n"></span></a>
+      </div>
+    </details>
+  </div>
 
   <p class="foot">每日自動彙整全球拼圖產業情報<br>來源：Google News · BEVERLY · Tate · AJPA · AEPUZZ · Reddit · Karen Puzzles 等 36 個來源</p>
 </div>
