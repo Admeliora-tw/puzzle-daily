@@ -22,9 +22,9 @@ body{background:#f0eee2;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:#
 .yr{display:flex;align-items:baseline;gap:10px;margin:1.6rem 0 .7rem;padding-bottom:5px;border-bottom:2px solid #c47a30}
 .yn{font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:900;letter-spacing:-.5px}
 .yc{font-size:10px;color:#8a7a60;letter-spacing:.1em;margin-left:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.6rem;align-items:start}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.6rem;align-items:start}
 .mon{border:1px solid #e0d8c4;background:#faf7ee;min-width:0}
-.mon[open]{background:#fff;border-color:#c47a30}
+.mon[open]{background:#fff;border-color:#c47a30;grid-column:1/-1}
 summary{list-style:none;cursor:pointer;padding:.7rem .85rem;display:flex;align-items:baseline;gap:8px;user-select:none}
 summary::-webkit-details-marker{display:none}
 summary:hover{background:#f3eee0}
@@ -32,7 +32,9 @@ summary:hover{background:#f3eee0}
 .mn{font-family:'Playfair Display',Georgia,serif;font-size:17px;font-weight:700}
 .mr{font-size:10px;color:#9a8a70}
 .mc{margin-left:auto;font-size:10px;font-weight:700;color:#fffdf9;background:#7a9464;border-radius:9px;padding:1px 7px;min-width:22px;text-align:center}
-.list{padding:.25rem .4rem .5rem}
+.list{padding:.35rem .5rem .6rem}
+.mon[open] .list{columns:3;column-gap:1.2rem}
+.issue{break-inside:avoid}
 .issue{display:flex;align-items:baseline;gap:9px;padding:.4rem .45rem;border-bottom:.5px solid #f0ead9;text-decoration:none;color:#1e1a14}
 .issue:last-child{border-bottom:none}
 .issue:hover{background:#f6f4ea}
@@ -40,7 +42,8 @@ summary:hover{background:#f3eee0}
 .w{font-size:10px;color:#8a7a60}
 .n{font-size:10px;color:#7a9464;font-weight:600;margin-left:auto}
 .foot{margin-top:2rem;padding-top:1rem;border-top:.5px solid #e8e0d0;font-size:10px;color:#9a8a70;text-align:center;line-height:1.8}
-@media(max-width:420px){.wrap{padding:1.75rem 1.1rem}.grid{grid-template-columns:1fr}}
+@media(max-width:560px){.mon[open] .list{columns:2}}
+@media(max-width:420px){.wrap{padding:1.75rem 1.1rem}.grid{grid-template-columns:1fr}.mon[open] .list{columns:1}}
 </style>
 </head>
 <body>
