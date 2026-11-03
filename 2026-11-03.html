@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-11-03 · No.101</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0;object-fit:cover}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Pintoo</span><span class="bchip">PieceRelax</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.101 · 2026年11月3日 週二</span><span>Front Page · News Wire</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">社群工法：Reddit 玩家首次嘗試塑膠片拼圖（Pintoo／3DJP 風格）——「卡入的滿足感」，但片偏小</h2>
+    <p class="s-body">r/Jigsawpuzzles 玩家 u/Real_Efficiency_8167（11/2 UTC）貼出一款 300 片小兔圖案拼圖，標題「Tried a new brand…」。他說自己「從沒玩過塑膠片拼圖，平常也不會買 300 片」，但被圖案吸引；塑膠片拼合時「令人驚訝地滿足」（oddly very satisfying as the pieces sunk together，他類比軟木拼圖），缺點是「片有點小」，他打算再買幾款。留言補充了通路與工法資訊：u/lumyire 表示 Amazon US 偶爾有 pintoo／piecerelax（3djp 海外線）大幅折扣，但這款兔子圖<b>僅在中國販售、需自行進口</b>；piecerelax 片較大、<b>沒有白邊</b>，成品「近乎平面無縫」；u/N3rdProbl3ms 說 PieceRelax 與 Pintoo 同屬一家公司。也有玩家（u/cupid51db）表示偏好優質紙板的觸感，不確定會不會喜歡塑膠拼圖。<b>品牌查證：</b>Pintoo 為既有品牌（美國商標紀錄顯示 Pintoo 於 2008/6/11 即申請拼圖類商標；PIECERELAX 商標由 Pintoo Corporation 於 2023/7/28 申請，與留言「同公司」說法相符）。工法依貼文明示：塑膠片（非紙板）。單一玩家體感，不推論品質。</p>
+    <img class="wire-img" src="https://i.redd.it/tga3msikh9zh1.jpeg" alt="Reddit 玩家貼出的 300 片塑膠片拼圖成品" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Reddit 使用者 u/Real_Efficiency_8167 原貼文</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源（Reddit 使用者體感；品牌歷史另有商標紀錄）</span> · reddit.com、justia.com · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1xm90m2/tried_a_new_brand/" target="_blank">原貼文 →</a> · <a href="https://trademark.justia.com/owners/pintoo-corporation-1323837" target="_blank">Pintoo 商標紀錄 →</a></p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">賽事／社群：美國癌症協會「Puzzling for Hope」11 月整月拼圖募款挑戰 11/1 在 Latham 開跑——免報名費、無最低募款</h2>
+    <p class="s-body">American Cancer Society 活動頁載明：這是一項為期一個月的募款挑戰，參加者完成拼圖並邀請親友以捐款或認捐支持，<b>免報名費、無最低募款門檻</b>，11/1（週日）在 Latham 的 ACS HopeClub 辦開幕活動，內容含現場共拼、拼圖交換、抽獎、攤商與餐點。參加者須在 <b>12/5 前提交完成片數</b>才符合領獎資格；主辦方並販售活動服飾與周邊。地點：活動頁僅寫 Latham，第三方活動列表載明地址為紐約州 Latham（郵遞區號 12110）。已募得金額活動頁未顯示。Google News 另見 WRGB 11/2 報導同一活動，本報未能解析該則個別連結，故僅以官方活動頁為準。</p>
+    <p class="s-src"><span class="ok">✓ 官方一手資料（American Cancer Society 活動頁）</span> · raiseyourway.donordrive.com · <a href="https://raiseyourway.donordrive.com/puzzling" target="_blank">原文 →</a></p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed">藝術策展：故宮《養心：巨幅名作展》以乾隆〈文殊〉巨幅畫軸為核心，展至 2026/12/27</h2>
+    <p class="s-body"><b>展覽摘要：</b>展覽從乾隆皇帝信仰藏傳佛教、自居文殊菩薩轉世的背景切入，探討宗教圖像如何鞏固帝王統治的崇高與正當性。核心是巨幅畫軸〈文殊〉，左右搭配松、竹畫軸同展，另有對聯與文人風格山水畫卷，呈現乾隆處理政務之餘賞玩書畫、涵養心性的情境。<b>藝術家：</b>官方展覽頁未載明作者姓名。<b>作品（官方點名）：</b>巨幅畫軸〈文殊〉、松畫軸、竹畫軸、〈武將文臣對語聯〉、文人風格山水畫卷。<b>展期與地點：</b>2026/9/22 – 12/27，國立故宮博物院北部院區第一展覽館 202 室（台北）；另有「策展人陪我看展覽」導覽活動。<b>上游觀察：</b>展覽頁無圖像可供判斷視覺特徵，商品化（故宮文創拼圖）本期未查證，無法評估拼圖轉化性。故宮首頁今日另列「獨具慧眼：美感原則與繪畫欣賞」「國寶聚焦 2026-III」等展，皆非本期焦點。</p>
+    <p class="s-src"><span class="ok">✓ 官方一手資料（故宮展覽頁）</span> · npm.gov.tw · <a href="https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014551&l=1" target="_blank">原文 →</a></p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日市場平穩，無結構性訊號。BEVERLY 新價生效後，定錨 1000-187 首次取價仍為 ¥2,805，五檔定錨皆持平。</p>
+  </div>
+</section>
+
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.101 · 2026-11-03</span></div>
+
+  <p class="wire-cat">本日 Wire</p>
+  <div class="wire">今日無頭條以外的獨立項目；各來源皆已併入頭條，或已於前期報導。每則新聞全報只完整出現一次。</div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse 摘要</span><div class="sec-l"></div></div>
+  <div class="rsum">週二：價格定錨五檔持平；社群出現塑膠片拼圖入門體驗；美國癌症協會拼圖募款活動開跑；故宮巨幅名作展。</div>
+  <div class="pulse-region"><p class="pr-name">日本</p><p class="pr-li">BEVERLY Atom 最新仍為 10/22 PHP 告知；日文三組 GN 僅有已報的《ワイルド・スピード》1000 片（10/29 已報）與 Walker Plus 重新索引舊文。</p></div>
+  <div class="pulse-region"><p class="pr-name">北美／社群</p><p class="pr-li">r/Jigsawpuzzles 當日多為成品照；品質訊號為塑膠片拼圖體驗（頭條一）。Toy Book 無拼圖專題。美國癌症協會活動見頭條二。</p></div>
+  <div class="pulse-region"><p class="pr-name">歐洲</p><p class="pr-li">AEPUZZ 最新仍為 10/21 兩項賽事（已報）。</p></div>
+  <div class="pulse-region"><p class="pr-name">澳洲</p><p class="pr-li">AJPA RSS 最新仍為 6/4；Metro Hobbies、Puzzle Palace AU 定錨商品價格持平。</p></div>
+  <div class="pulse-region"><p class="pr-name">大中華</p><p class="pr-li">故宮《養心：巨幅名作展》見頭條三。</p></div>
+  <div class="pulse-region"><p class="pr-name">中東</p><p class="pr-li">週三才有貨架快照；Jarir 定錨商品價格持平。</p></div>
+  <div class="pulse-region"><p class="pr-name">追蹤更新</p><p class="pr-li">價格定錨（週二）：Tate £20.00、BEVERLY ¥2,805、Metro A$31.99、Jarir SAR 59.00、Puzzle Palace A$32.90，全數與 10/30 持平，未達 10% 門檻。Narnia Aslan 500 片（11/1 頭條）再查仍無第二來源，續單一來源第 2 日。</p></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　週三：Jarir 貨架快照、日本協會分頁、歐洲文創 GN、MOMAT 專用 GN、藝術家趨勢 GN</p>
+  <p class="wl-item"><b>2</b>　Pintoo／PieceRelax 塑膠片拼圖是否有更多玩家回饋；Narnia Aslan 500 片零售商頁</p>
+  <p class="wl-item"><b>3</b>　Puzzling for Hope 募款進度；Galison 缺片個案官方回應</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期可用內容：BEVERLY Atom 與 products.json、AJPA／AEPUZZ RSS、Toy Book／Toy World、Reddit r/Jigsawpuzzles RSS 與單串 RSS、故宮與森美術館官網、美國癌症協會活動頁、Google News 多組、五檔價格定錨頁。受阻與限制：Reddit r/Puzzles、r/speedpuzzling（HTTP 429）；YouTube 三頻道 feed（HTTP 404，疑似限流）；openPR（WebFetch HTTP 403）。完整清單見 backstage.md。</div>
+</section>
+
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 2</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-11-02.html">&larr; 2026-11-02</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
