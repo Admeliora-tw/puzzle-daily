@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-11-04 · No.102</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0;object-fit:cover}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Galison</span><span class="bchip">Magic Puzzle Company</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.102 · 2026年11月4日 週三</span><span>Front Page · News Wire</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">社群工法：Galison《The Gilded Spine》燙金拼圖獲玩家好評——片面霧面、僅燙金處反光，「幾乎沒有誤合」</h2>
+    <p class="s-body">r/Jigsawpuzzles 兩位玩家於 11/3 各自貼文分享 Galison 1000 片《The Gilded Spine》（藝術家 Sally Wilson，哥德風書店場景）。u/SuperVeeBee 說這是自己做的<b>第一款燙金（foil）拼圖</b>，「非常美」；他特別指出<b>拼圖片本身是霧面，只有燙金處會反光</b>，且儘管「似乎只有兩種片形」，卻「很少誤合（false fit）」；最難的部分是書本區域，也說照片拍不出燙金的質感。u/justpuzzles 另貼同款，稱圖案「令人驚艷」、難度「有挑戰但有趣」，並說這會是他「每年都做的一款」。<b>語境判讀（D1）：</b>此處「shiny」限於燙金區，並伴隨「beautiful／pretty」，屬材質工藝效果的正面評價；「少誤合」在兩種片形的設計下是對刀模精準度的讚美。<b>商品資料（零售商頁）：</b>Galison 出品，ISBN 9780735389038，標價 US$21.99，燙金位於書架金色書背；各零售商顯示的出版日與庫存不一（Rizzoli 列 2026/7/14 在庫，另有店家列預購或售罄），本報未能確認。工法依品牌系列名稱為燙金印刷，紙板類型【工法未知】。兩則皆為單一玩家體感，不推論整體品質。</p>
+    <img class="wire-img" src="https://i.redd.it/5ykgkqvz0hzh1.jpeg" alt="Reddit 玩家完成的 Galison The Gilded Spine 燙金拼圖" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Reddit 使用者 u/SuperVeeBee 原貼文實拍</p>
+    <p class="s-src"><span class="ok">✓ 雙來源（兩位玩家獨立貼文＋零售商商品頁）</span> · reddit.com、rizzolibookstore.com · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1xn6ryh/galison_1000_pieces_the_gilded_spine/" target="_blank">原貼文 →</a> · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1xn16ay/the_gilded_spine_by_galison_1000_art_by_sally/" target="_blank">另一則貼文 →</a> · <a href="https://www.rizzolibookstore.com/product/gilded-spine-1000-piece-foil-puzzle" target="_blank">Rizzoli 商品頁 →</a></p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">通路價格：Reddit 玩家通報 The Magic Puzzle Company《The Busy Bistro》在美國 Amazon 降至 US$11</h2>
+    <p class="s-body">u/chillychili 於 11/3 貼文指出，The Magic Puzzle Company 的《The Busy Bistro》目前在 Amazon US 僅 11 美元，並補充「其他款式在發文當下都沒有折扣」。貼文未載明片數與原價，本報<b>未能查證常態售價與折扣幅度</b>，故不判斷降幅；僅記錄為單日通路促銷訊號，供後續觀察該品牌在 Amazon 的定價是否持續浮動。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源（Reddit 使用者通報，未見 Amazon 商品頁佐證）</span> · reddit.com · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1xn24b5/the_magic_puzzle_companys_the_busy_bistro_is_only/" target="_blank">原貼文 →</a></p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed">社群排雷：圓形 NASA 海王星拼圖多出 2 片散片——玩家首次遇到，推測是重複片</h2>
+    <p class="s-body">u/wikimilo 於 11/3 貼出照片，稱一款 NASA 圓形拼圖（海王星圖案）完成後<b>多出兩片散片</b>，「這是第一次發生」，起初還以為是自己哪裡弄錯。留言中 u/olderThanAGod 推測那是拼圖內<b>重複的兩片</b>，並建議可嘗試找出是哪兩片重複；發文者表示隔天會試試看。貼文<b>未載明品牌</b>（【品牌未載明】），也無法確認是裝箱或模具問題。單一個案，不推論該品牌品質。</p>
+    <p class="s-src"><span class="warn">⚠ 單一來源（Reddit 使用者個案）</span> · reddit.com · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1xmuidv/my_puzzles_had_2_loose_extra_pieces/" target="_blank">原貼文 →</a></p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日市場平穩，無結構性訊號。社群端「燙金＋霧面片＋少誤合」是值得持續累積的工法詞組。</p>
+  </div>
+</section>
+
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.102 · 2026-11-04</span></div>
+
+  <p class="wire-cat">本日 Wire</p>
+  <div class="wire">今日無頭條以外的獨立項目；各來源皆已併入頭條，或已於前期報導。每則新聞全報只完整出現一次。</div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse 摘要</span><div class="sec-l"></div></div>
+  <div class="rsum">週三：社群端燙金拼圖獲好評；Amazon US 單日促銷通報；其餘來源無新訊號。</div>
+  <div class="pulse-region"><p class="pr-name">日本</p><p class="pr-li">BEVERLY Atom 最新仍為 10/22；日文三組 GN 僅見已報的《ワイルド・スピード》1000 片與エンスカイ「ポケモン まめパズル」2027 年 2 月新品（10/30，歷期已報）。</p></div>
+  <div class="pulse-region"><p class="pr-name">北美／社群</p><p class="pr-li">r/Jigsawpuzzles 當日多為成品照；Galison 燙金款見頭條一。Toy Book／Toy World 無拼圖專題。</p></div>
+  <div class="pulse-region"><p class="pr-name">歐洲</p><p class="pr-li">AEPUZZ 最新仍為 10/21 兩項賽事（已報）；德文 GN 見 SPIELEtage 展會預告，內文未能取得，未採用。</p></div>
+  <div class="pulse-region"><p class="pr-name">澳洲</p><p class="pr-li">AJPA RSS 最新仍為 6/4，澳洲 GN 無拼圖結果。</p></div>
+  <div class="pulse-region"><p class="pr-name">大中華</p><p class="pr-li">本期無新訊號；故宮《養心》已於 11/3 報導。</p></div>
+  <div class="pulse-region"><p class="pr-name">中東</p><p class="pr-li">Jarir 定錨商品頁價格仍為 SAR 59.00；分類頁與搜尋頁無法解析，本週貨架快照從缺。</p></div>
+  <div class="pulse-region"><p class="pr-name">追蹤更新</p><p class="pr-li">Narnia Aslan 500 片（11/1 頭條）連續三日反查仍無第二來源，標「僅單一來源，暫無佐證」並停止反查。MOMAT 2027 年度展覽時程（速水御舟、山口晃、Milton Avery 等）已於 10 月報導，本期無新增角度。</p></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　週四：Tate 新聞與 Tate Shop 快照、Jigsaw Junkies、PuzzleWarehouse Blog、德／西 GN</p>
+  <p class="wl-item"><b>2</b>　Galison 燙金系列是否有更多玩家回饋（foil、matte、false fit）</p>
+  <p class="wl-item"><b>3</b>　Busy Bistro 促銷是否持續；やのまん第二回大會賽果</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期可用內容：BEVERLY Atom、AJPA／AEPUZZ RSS、WJPF 首頁、Toy Book／Toy World、Reddit r/Jigsawpuzzles RSS 與單串 RSS、Google News 多組、Jarir 商品頁。受阻與限制：Reddit r/Puzzles、r/speedpuzzling 與三串單串 RSS（HTTP 429）；YouTube Karen Puzzles（HTTP 500）、The Puzzled Mandy（HTTP 404，疑似限流）；Wayback 快照逾時。完整清單見 backstage.md。</div>
+</section>
+
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 2</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-11-03.html">&larr; 2026-11-03</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
