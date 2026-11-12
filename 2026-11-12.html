@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Market Daily · 2026-11-12 · No.110</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#7a9464;--amber:#c47a30;--lav:#9080a8;--blk:#1e1a14;--bg:#f4f2ee}
+body{background:#e8e6e0;font-family:"Segoe UI","Noto Sans TC",sans-serif;color:var(--blk);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem .5rem}
+.paper{background:#fff;max-width:720px;width:100%;position:relative;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page{display:none;padding:1.5rem 1.5rem 5.6rem;animation:fadein .25s ease;min-height:1060px}
+.page.active{display:block}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+.mast{text-align:center;padding-bottom:.7rem;border-bottom:1.5px solid var(--blk)}
+.m-eye{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#6a5a40;margin-bottom:5px}
+.m-name{font-family:'Playfair Display',Georgia,serif;font-size:42px;font-weight:900;line-height:.9;letter-spacing:-1px}
+.m-name em{font-style:italic;font-weight:400}
+.m-tag{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a60;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;font-size:12px;color:#6a5a40;padding:5px 0;border-bottom:1.5px solid var(--blk);margin-bottom:.6rem}
+.mast-mini{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px solid var(--blk);padding-bottom:.45rem;margin-bottom:.6rem}
+.mm-name{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:900}
+.mm-name em{font-style:italic;font-weight:400}
+.mm-date{font-size:11px;color:#6a5a40}
+.sec{margin:1rem 0 .5rem;display:flex;align-items:center;gap:8px}
+.sec-l{flex:1;height:1px;background:var(--blk)}
+.sec-t{font-size:8px;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.story{padding:.7rem 0;border-bottom:.5px solid #e8e0d0}
+.story:last-child{border-bottom:none}
+.s-num{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a70;margin-bottom:2px}
+.s-hed{font-size:18px;font-weight:700;line-height:1.32;margin-bottom:5px}
+.s-body{font-size:15px;line-height:1.65;color:#3a3020}
+.s-src{font-size:11px;color:#9a8a70;margin-top:5px}
+.s-src a{color:var(--sage);text-decoration:underline}
+.ok{color:#5a8040}.warn{color:#b07020}
+.viral{color:#b02020;font-weight:700}
+.why{font-size:14px;line-height:1.55;color:#3a3020;margin-top:5px;padding-left:.75rem;border-left:2px solid var(--sage)}
+.why b{color:#5a8040;font-weight:600}
+.ednote{background:var(--bg);padding:.8rem 1rem;margin-top:.75rem}
+.ed-h{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;margin-bottom:5px}
+.ed-t{font-size:14px;line-height:1.7;color:#3a3020}
+.wire-cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:.75rem 0 .25rem;color:#6a5a40}
+.wire{padding:.4rem 0;border-bottom:.5px solid #ececec;font-size:15px;line-height:1.6;color:#3a3020}
+.wire:last-child{border-bottom:none}
+.wire b{font-weight:700;color:var(--blk)}
+.wire .geo{font-weight:600;color:#6a5a90;font-size:12px}
+.wire .src{font-size:11px;color:#9a8a70;white-space:nowrap}
+.wire a{color:var(--sage)}
+.newsimg{max-width:100%;max-height:280px;display:block;margin:.4rem 0;border:.5px solid #e8e0d0;object-fit:cover}
+.imgcap{font-size:9px;color:#9a8a70;margin:-.25rem 0 .5rem;font-style:italic}
+.rsum{background:var(--bg);padding:.6rem .85rem;font-size:14px;line-height:1.65;color:#3a3020;margin-bottom:.75rem;font-style:italic}
+.pulse-region{margin-bottom:.5rem}
+.pr-name{font-size:15px;font-weight:700;letter-spacing:.04em;margin-bottom:3px}
+.pr-li{font-size:14px;line-height:1.6;color:#3a3020;padding-left:.85em;text-indent:-.85em}
+.pr-li::before{content:"– "}
+.pr-li a{color:var(--sage)}
+.pr-quiet{font-size:14px;color:#aaa090;font-style:italic}
+.focus{border:1.5px solid var(--blk);padding:1.1rem;margin:.75rem 0}
+.f-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;font-weight:600;margin-bottom:5px}
+.f-hed{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+.f-lede{font-size:15px;line-height:1.7;color:#3a3020}
+.f-lede a{color:var(--sage)}
+.f-lede p{margin-top:.55rem}
+.wl-item{font-size:15px;line-height:1.95;color:#3a3020;padding-left:1.4em;text-indent:-1.4em}
+.wl-item b{font-weight:600;color:#9a8a70}
+.srcnote{background:var(--bg);padding:.5rem .75rem;font-size:12px;color:#6a5a40;margin-top:.85rem;text-align:center;letter-spacing:.04em}
+.nav{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1.5rem;background:#fff;border-top:.5px solid #e8e0d0}
+.nav button{font-family:inherit;font-size:11px;color:var(--blk);background:none;border:.5px solid var(--blk);padding:5px 14px;cursor:pointer;letter-spacing:.05em}
+.nav button:disabled{opacity:.25;cursor:default}
+.nav button:not(:disabled):hover{background:var(--bg)}
+.pageno{font-size:9px;letter-spacing:.15em;color:#9a8a70}
+.toc{display:flex;gap:4px}
+.toc span{width:6px;height:6px;border-radius:50%;background:#d8d0c0;cursor:pointer}
+.toc span.on{background:var(--blk)}
+.layout{display:flex;gap:1.25rem;align-items:flex-start;justify-content:center;width:100%}
+.aside{width:230px;flex-shrink:0;position:sticky;top:1rem}
+.ap{background:#fffdf9;border:1px solid #e0dcd0;padding:.9rem 1rem;margin-bottom:.75rem}
+.ap-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b06020;border-bottom:1px solid #e8e0d0;padding-bottom:6px;margin-bottom:.65rem}
+.ap-t{font-size:13.5px;line-height:1.7;color:#3a3020}
+.ap-link{display:block;font-size:13.5px;color:#7a9464;text-decoration:none;padding:4px 0;border-bottom:.5px solid #f0ece0}
+.ap-link:last-child{border-bottom:none}
+.ap-link:hover{color:#5a7a3a}
+.bwrap{display:flex;flex-wrap:wrap;gap:5px}
+.bchip{font-size:13px;line-height:1.5;color:#3a3020;background:#f4f2ee;border:.5px solid #e8e0d0;padding:3px 8px;white-space:nowrap}
+.toc-link{display:flex;align-items:baseline;gap:8px;font-size:13.5px;color:#3a3020;text-decoration:none;padding:5px 0;border-bottom:.5px solid #f0ece0;cursor:pointer}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:#7a9464}
+.toc-n{font-size:12px;color:#b06020;font-weight:600;min-width:19px}
+.navwrap{display:flex;flex-direction:column;gap:2px}
+@media(max-width:1240px){.aside{display:none}.layout{display:block}}
+@media(max-width:560px){.m-name{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="aside aside-l">
+  <div class="ap">
+    <p class="ap-h">今日品牌</p>
+    <div class="bwrap"><span class="bchip">Clementoni</span><span class="bchip">Flame Tree</span><span class="bchip">Pomegranate</span><span class="bchip">Bepuzzled</span><span class="bchip">Tate</span></div>
+  </div>
+</aside>
+<div class="paper" id="paper">
+
+<section class="page active">
+  <div class="mast">
+    <p class="m-eye">International Puzzle Intelligence · Est. 2026</p>
+    <div class="m-name">Puzzle<br><em>Market</em><br>Daily</div>
+    <p class="m-tag">The Global Record of Jigsaw Puzzle Commerce</p>
+  </div>
+  <div class="dateline"><span>Vol. I · No.110 · 2026年11月12日 週四</span><span>Front Page · News Wire</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">今日重點</span><div class="sec-l"></div></div>
+
+  <div class="story">
+    <p class="s-num">一</p>
+    <h2 class="s-hed">藝術：Tate Britain《Vanessa Bell &amp; Duncan Grant: Inside Bloomsbury》今日開幕，逾 300 件作品、含家具、陶瓷、紡織與重現 Charleston 工作室</h2>
+    <p class="s-body">Tate 新聞稿載明，展覽為首個完整梳理兩位英國現代主義畫家五十年創作夥伴關係的大型展，展期 2026/11/12–2027/4/11，地點為倫敦 Tate Britain，每日 10:00–18:00，策展人為 Thomas Kennedy 與 Eliza Spindel。展出涵蓋早期後印象派與抽象繪畫，以及 Omega Workshops 時期的委託設計、家具、陶瓷與紡織；Charleston 工作室被搬到倫敦重現；另展出共同創作的《Famous Women Dinner Service》（1932–34）。官方公布的代表作包括 Bell 的《Iceland Poppies》（c.1908–9）、《Studland Beach》（c.1912）、《Still Life on Corner of a Mantelpiece》（1914）、《Interior with the Artist's Daughter》（c.1935–36），Grant 的《After Chardin》（c.1906）、《Group at Asheham》（1913）、《The Mantelpiece》（1914）、《The Hammock》（1921–23）。<b>本報判讀（上游風向參考）：</b>強烈色塊、裝飾性圖樣與居家物件設計，是適合轉化為高端拼圖的視覺語彙；但這是本報的觀察推論，非 Tate 或任何廠商的商品宣告。</p>
+    <img class="wire-img" src="https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/Screenshot_2026-11-06_115338.width-420.format-jpeg.jpg" alt="Inside Bloomsbury 展覽新聞稿圖" style="max-width:100%;max-height:280px;object-fit:cover" onerror="this.style.display='none'">
+  <p class="imgcap">圖／Tate 官方新聞稿頁面</p>
+    <p class="s-src"><span class="warn">&#9888; 單一來源（Tate 新聞稿）</span> · Tate · <a href="https://www.tate.org.uk/press/press-releases/vanessa-bell--duncan-grant-inside-bloomsbury-open" target="_blank">原文 →</a></p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">二</p>
+    <h2 class="s-hed">社群：r/Jigsawpuzzles「史上最難的拼圖？」串——難度主因集中在大面積同色、漸層與圖像本身，部分抱怨連帶「誤合」與像素化</h2>
+    <p class="s-body">u/mel_win22 於 11/11 發問，RSS 擷取約 40 則留言（未達 50 則，不標爆款）。<b>語境判讀：</b>(1) <b>名畫複刻</b>——發問者與多位留言者點名 Clementoni 與 Flame Tree 版《神奈川沖浪裏》、Clementoni《星夜》：「浪花與純白區域是地獄」（mel_win22）、「1500 片的《星夜》花了三週」；CypripediumGuttatum 則說 Clementoni 星夜（Starry Night over the Rhone）12–13 小時完成，難度因人而異。(2) <b>大面積同色</b>——Jennibooms 稱 Pomegranate 的 Pollock《Convergence》「花了六個月」；其他留言者以「純色混在一起」形容。(3) <b>辨色困難</b>——alextyrian 稱漸層款加上自身色盲屬「極端困難模式」。(4) <b>製程瑕疵相關</b>——corcelito 貼出某款拼圖，抱怨「quality 差、false fits、圖像像素化」，且原圖本就難拼，其品牌未載明、本報不推定；pawleypurrice 稱花三個月並遺失數片。(5) <b>形狀／雙面</b>——citizenmono 的 470 片海龜造型拼圖四天、Bepuzzled「Puzzle-Os」被稱「absolute misery」。<b>本報判讀：</b>「難」在本串被拆成圖像難度、辨色、形狀三種來源；與「誤合」同時出現者僅 1 例。留言者為社群使用者，非隨機抽樣。</p>
+    <p class="s-src"><span class="warn">&#9888; 單一來源（Reddit 單一貼文與留言串）</span> · reddit.com · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1xtlqmr/whats_the_hardest_puzzle_youve_ever_done/" target="_blank">原貼文 →</a></p>
+  </div>
+
+  <div class="story">
+    <p class="s-num">三</p>
+    <h2 class="s-hed">通路：Tate Shop 拼圖分類本週快照——19 項商品中僅 1 款 1000 片拼圖（《The Story of Art》£20），無 Bloomsbury 展相關拼圖</h2>
+    <p class="s-body">本報週四檢視 Tate Shop 遊戲與拼圖分類：共 19 項，絕大多數為撲克牌（£7.50）、桌遊與木製遊戲（£16.50–£80）及藝術家盒組（£19.99）；拼圖相關只有《The Story of Art in 1000 pieces》（£20.00，與定錨 tate-02 同價）與《Miffy the Artist: Jigsaw Puzzle Book》（£10.99，書籍型）。頭條一的 Bloomsbury 展今日開幕，但商店該分類頁未見對應拼圖；展覽出版物（精裝 £45、平裝 £32）則於展覽頁載明。<b>本報判讀：</b>展覽開幕當日尚無拼圖周邊，是否後續上架待追蹤；此為單日快照，不構成商品計畫的證據。</p>
+    <p class="s-src"><span class="warn">&#9888; 單一來源（Tate Shop 頁面）</span> · Tate Shop · <a href="https://shop.tate.org.uk/the-story-of-art-in-1000-pieces-jigsaw-puzzle/347117.html" target="_blank">商品頁 →</a></p>
+  </div>
+
+  <div class="ednote">
+    <p class="ed-h">Editor's Note · 今日判斷</p>
+    <p class="ed-t">今日清淡，無結構性訊號。社群串再次顯示「難」其實有三種來源（大面積同色、辨色、形狀），與前日的品牌口碑串互補；藝術面為 Tate 大展開幕，留待觀察是否出現拼圖商品化。</p>
+  </div>
+</section>
+
+<section class="page">
+  <div class="mast-mini"><span class="mm-name">Puzzle <em>Market</em> Daily</span><span class="mm-date">News Wire · No.110 · 2026-11-12</span></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">News Wire</span><div class="sec-l"></div></div>
+  <p class="wire-cat">4 · 社群排雷與爆款預警</p>
+  <p class="wire"><span class="geo">[北美]</span> <b>Reddit 假日優惠串開張</b> — r/Jigsawpuzzles 管理員於 11/11 開設「Official Holiday Sales And Promo Code Thread」，彙整年末促銷；內文因 Reddit 回 429 未取得，優惠細節待查證。 <span class="src">Reddit · &#9888; 單一來源 · <a href="https://www.reddit.com/r/Jigsawpuzzles/comments/1xtrcrr/official_holiday_sales_and_promo_code_thread/" target="_blank">原貼文 →</a></span></p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Regional Pulse 摘要</span><div class="sec-l"></div></div>
+  <div class="rsum">週四：Tate 展覽開幕與商店快照、Reddit 難度串；西班牙／德語 GN 無新賽事。</div>
+  <div class="pulse-region"><p class="pr-name">日本</p><p class="pr-li">BEVERLY 無新公告（最新仍為 11/6 的 2027/1/22 新品）。日文 GN 三組 7 日內 0 則。</p></div>
+  <div class="pulse-region"><p class="pr-name">北美／社群</p><p class="pr-li">頭條二為 Reddit 難度串。GN 見 WTHR（印第安納）「Old school pastime」報導年輕世代以拼圖戒除螢幕、在地業者 MyPuzzle.com 稱年輕客群興趣上升——僅取得標題與摘要層級，個別連結待補，未採為頭條；Warsaw（Indiana）Baker Youth Club 12/8 世界紀錄拼圖、Peterborough 速拼賽為既有或僅標題層級。</p></div>
+  <div class="pulse-region"><p class="pr-name">歐洲</p><p class="pr-li">AEPUZZ 無新公告（最新為 11/10 三場賽事，已報）。德語 GN 0 則；西語 GN 無新賽事。</p></div>
+  <div class="pulse-region"><p class="pr-name">澳洲</p><p class="pr-li">AJPA RSS 最新仍為 6/4；澳洲 GN 無相關內容。</p></div>
+  <div class="pulse-region"><p class="pr-name">大中華</p><p class="pr-li">本日無排程來源有新內容。</p></div>
+  <div class="pulse-region"><p class="pr-name">中東</p><p class="pr-li">本週零售貨架快照排程在週三，今日未排程。</p></div>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Tomorrow Watchlist</span><div class="sec-l"></div></div>
+  <p class="wl-item"><b>1</b>　週五：定錨價格（beverly-01／metro-01／ppau-01 等）、Met Store／Louvre Boutique 快照</p>
+  <p class="wl-item"><b>2</b>　Bloomsbury 展是否出現拼圖周邊；布宜諾斯艾利斯賽事冠軍名單</p>
+  <p class="wl-item"><b>3</b>　Reddit 假日優惠串內容與 WTHR 報導原文連結</p>
+
+  <div class="sec"><div class="sec-l"></div><span class="sec-t">Source Desk</span><div class="sec-l"></div></div>
+  <div class="srcnote">本期可用內容：BEVERLY Atom、AJPA／AEPUZZ／Toy Book／Toy World RSS、Reddit r/Jigsawpuzzles RSS 與單串 RSS、YouTube 三頻道、Google News 多組、Tate press 與 Tate Shop。受阻與限制：Reddit r/Puzzles、r/speedpuzzling 與假日優惠串回 429；Jigsaw Junkies 現轉址至 PuzzleWarehouse；本期未做 Wayback 存檔。</div>
+</section>
+
+<div class="nav">
+  <button id="prev">← 上一頁</button>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <a href="https://admeliora-tw.github.io/puzzle-daily/" style="font-size:9px;letter-spacing:.12em;color:#6a5a40;text-decoration:none;border-bottom:.5px solid #d8d0c0;padding-bottom:2px;" title="回到歷期索引">&#8592; 全部期數</a><span class="pageno" id="pgno">PAGE 1 / 2</span>
+    <div class="toc" id="toc"></div>
+  </div>
+  <button id="next">下一頁 →</button>
+</div>
+</div>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page'),cur=0,n=pages.length;
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pgno=document.getElementById('pgno'),toc=document.getElementById('toc');
+  for(var i=0;i<n;i++){var d=document.createElement('span');d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};toc.appendChild(d)}
+  function go(i){if(i<0||i>=n)return;pages[cur].classList.remove('active');cur=i;pages[cur].classList.add('active');
+    pgno.textContent='PAGE '+(cur+1)+' / '+n;prev.disabled=(cur===0);next.disabled=(cur===n-1);
+    var dots=toc.children;for(var j=0;j<n;j++)dots[j].className=(j===cur)?'on':'';
+    window.scrollTo(0,0)}
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(cur-1);if(e.key==='ArrowRight')go(cur+1)});
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>60){dx<0?go(cur+1):go(cur-1)}x0=null},{passive:true});
+  window.goPage=go;
+  var h=parseInt((location.hash||'').replace('#p',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+<aside class="aside aside-r">
+  <div class="ap">
+    <p class="ap-h">本期目錄</p>
+    <a class="toc-link" onclick="goPage(0);return false;"><span class="toc-n">P1</span>今日三大重點</a><a class="toc-link" onclick="goPage(1);return false;"><span class="toc-n">P2</span>News Wire 五維度</a>
+  </div>
+  <div class="ap">
+    <p class="ap-h">前後期</p>
+    <div class="navwrap"><a class="ap-link" href="2026-11-11.html">&larr; 2026-11-11</a></div>
+  </div>
+  <div class="ap">
+    <p class="ap-h">歷期</p>
+    <a class="ap-link" href="https://admeliora-tw.github.io/puzzle-daily/">全部期數索引 &rarr;</a>
+    <p class="ap-t" style="margin-top:.5rem;color:#9a8a70">鍵盤 &larr; &rarr; 或滑動可翻頁</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
